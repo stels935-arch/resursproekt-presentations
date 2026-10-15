@@ -3,7 +3,7 @@ const params=new URLSearchParams(location.search);
 const file=params.get('file');
 const projectId=params.get('project');
 const validFile=file==='resursproekt-portfolio.pdf'||/^p(0[1-9]|[1-4]\d|5[0-3])\.pdf$/.test(file||'');
-const validProject=/^n(0[1-9]|[12]\d|3[0-7])$/.test(projectId||'');
+const validProject=/^n(0[1-9]|[12]\d|3[0-8])$/.test(projectId||'');
 if(window.self===window.top)document.body.classList.add('standalone');
 const primaryDownload=document.querySelector('#download-pdf');
 if(validFile)primaryDownload.href=file;else primaryDownload.hidden=true;
@@ -11,23 +11,23 @@ if(validFile)primaryDownload.href=file;else primaryDownload.hidden=true;
 function element(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node}
 function metadata(label,value){const row=element('div');row.append(element('dt','',label),element('dd','',value));return row}
 function photograph(photo,index,title,eager=false){
-  const figure=element('figure','photo'+(photo.wide||photo.width/photo.height>1.95?' wide':''));
+  const figure=element('figure','photo'+(photo.wide??photo.width/photo.height>1.95?' wide':''));
   const link=element('a');link.href=photo.src;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Открыть фото '+index+' в полном размере');
   const image=element('img');image.src=photo.src;image.alt=photo.caption||title+'. Фото '+index;image.width=photo.width;image.height=photo.height;image.decoding='async';image.loading=eager?'eager':'lazy';
   if(eager)image.fetchPriority='high';link.append(image);figure.append(link);if(photo.caption)figure.append(element('figcaption','',photo.caption));return figure;
 }
 
 async function renderGallery(){
-  const id=validProject?projectId:file==='p13.pdf'?'p08':file.slice(0,-4),response=await fetch('galleries/'+id+'.json?v=4');
+  const id=validProject?projectId:file==='p13.pdf'?'p08':file.slice(0,-4),response=await fetch('galleries/'+id+'.json?v=5');
   if(!response.ok)throw new Error('Gallery unavailable');
   const doc=await response.json();document.title=doc.title+' — РесурсПроект';document.body.dataset.mode='gallery';document.body.dataset.photoCount=String(doc.photoCount);
   const page=element('article','document-page');
   const head=element('header','project-head'),description=element('div','project-description');
   description.append(element('p','eyebrow',doc.type+' / '+doc.photoCount+' фото'),element('h1','',doc.title),element('p','brief',doc.summary));
-  const meta=element('dl','project-meta');if(doc.address)meta.append(metadata('Адрес',doc.address));if(doc.customer)meta.append(metadata(doc.customerLabel||'Заказчик',doc.customer));if(doc.period)meta.append(metadata('Период',doc.period));meta.append(metadata('Раздел',doc.group));description.append(meta);head.append(description);
+  const meta=element('dl','project-meta');if(doc.object)meta.append(metadata('Объект',doc.object));if(doc.address)meta.append(metadata('Адрес',doc.address));if(doc.customer)meta.append(metadata(doc.customerLabel||'Заказчик',doc.customer));if(doc.period)meta.append(metadata('Период',doc.period));meta.append(metadata('Раздел',doc.group));description.append(meta);head.append(description);
   const cover=doc.sections.flatMap(section=>section.photos)[0];let photoNumber=1;
   if(cover){const photo=photograph(cover,photoNumber++,doc.title,true);photo.classList.add('cover');head.append(photo)}page.append(head);
-  if(doc.details?.length){const details=element('details','description-details');details.append(element('summary','','Подробное описание и статус работ'),element('div','source-description',doc.details.join('\n')));page.append(details)}
+  if(doc.details?.length){const details=element('details','description-details');if(doc.detailsOpen)details.open=true;details.append(element('summary','',doc.detailsTitle||'Подробное описание и статус работ'),element('div','source-description',doc.details.join('\n')));page.append(details)}
   for(const section of doc.sections){
     const photos=section.photos.filter(photo=>photo!==cover);if(!photos.length)continue;
     const block=element('section','gallery-section');block.append(element('h2','',section.title));if(section.notes?.length)block.append(element('p','section-notes',section.notes.join('\n')));

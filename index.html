@@ -4,427 +4,935 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>РесурсПроект — презентация компании и работ</title>
 <meta name="description" content="Проектирование, генеральный подряд, строительство, отделка и инженерные системы. Основное портфолио РесурсПроекта и презентации по объектам и тендерам.">
-<meta name="theme-color" content="#073f42">
+<meta name="theme-color" content="#043232">
 <meta property="og:title" content="РесурсПроект — презентация компании и работ"><meta property="og:description" content="Основное портфолио, объекты и презентации РесурсПроекта в одном месте."><meta property="og:type" content="website"><meta property="og:image" content="https://stels935-arch.github.io/resursproekt-presentations/hero.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23073f42'/%3E%3Ctext x='32' y='44' fill='white' font-family='Arial' font-weight='bold' font-size='38' text-anchor='middle'%3EР%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/roboto-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/open-sans-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--ink:#102f31;--teal:#073f42;--muted:#667474;--line:#dce3df;--paper:#f5f6f2;--lime:#d9edb0;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--ink);background:var(--paper);font-family:"Segoe UI",Arial,sans-serif;line-height:1.55}button,input,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button,input{font:inherit}button,a{touch-action:manipulation}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #52836b;outline-offset:5px}.wrap{width:min(1240px,calc(100% - 96px));margin:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.skip{position:fixed;top:-60px;left:20px;background:white;padding:10px;z-index:100}.skip:focus{top:10px}.topbar{background:rgba(245,246,242,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(10px)}.topbar .wrap{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:700;font-size:27px;letter-spacing:-1px;line-height:1.1}.brand small{display:block;text-transform:uppercase;font-size:9px;letter-spacing:3.2px;margin-top:9px;font-weight:600;color:var(--muted)}.nav{display:flex;gap:30px;align-items:center;font-size:14px}.nav a:hover{color:#38756a}.nav .phone{font-weight:600;margin-left:12px}.hero{padding:64px 0 58px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:600;color:#52716d;margin:0 0 26px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:stretch}.hero h1{font-size:clamp(43px,4.6vw,68px);letter-spacing:-3px;line-height:1.06;font-weight:500;margin:0 0 28px}.hero h1 span{color:#5a7c70}.intro{font-size:17px;line-height:1.7;max-width:490px;color:#4f6563;margin:0 0 30px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;gap:25px;padding:16px 22px;border:1px solid var(--teal);font-weight:600;font-size:14px;cursor:pointer;background:var(--teal);color:white;transition:background .2s}.button:hover{background:#205b56}.button.light{color:var(--ink);background:transparent;border-color:#b6c5bf}.button.light:hover{background:#e7ece4}.file-meta{font-size:12px;color:var(--muted);margin:13px 0 0}.hero-figure{margin:0;position:relative;min-height:480px;display:flex;flex-direction:column}.hero-figure img{width:100%;height:100%;min-height:430px;object-fit:cover;flex:1;position:absolute;inset:0}.hero-figure figcaption{position:relative;margin-top:auto;padding:24px;color:white;background:linear-gradient(transparent,rgba(0,28,25,.83));padding-top:70px;font-size:12px;z-index:1}.hero-figure figcaption strong{display:block;font-size:20px;font-weight:500;margin-bottom:5px}.hero-foot{display:flex;gap:26px;align-items:center;margin-top:42px;padding-top:23px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.hero-foot span:first-child{color:var(--teal);font-size:13px;font-weight:600}.section{padding:68px 0;border-top:1px solid var(--line)}.section-heading{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:36px}.section-heading h2{font-size:39px;line-height:1.14;letter-spacing:-1.3px;margin:0;font-weight:500}.section-heading p{max-width:490px;color:var(--muted);font-size:15px;margin:0}.directions{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}.direction .n{font-size:12px;color:#71917b;display:block;margin-bottom:19px}.direction h3{font-size:19px;font-weight:500;line-height:1.3;margin:0 0 14px}.direction p{font-size:14px;color:var(--muted);margin:0;line-height:1.7}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.feature{display:block}.feature .photo{overflow:hidden;aspect-ratio:1.35;background:#dfe7e1}.feature img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.feature:hover img{transform:scale(1.03)}.feature small{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);display:block;margin-top:20px}.feature h3{display:flex;justify-content:space-between;gap:12px;font-size:21px;font-weight:500;line-height:1.3;margin:7px 0}.feature p{font-size:13px;color:var(--muted);margin:0}.catalog{background:white}.catalog-head{display:flex;justify-content:space-between;align-items:center;gap:22px;margin:30px 0 24px}.filters{display:flex;gap:4px;flex-wrap:wrap}.filter{border:1px solid transparent;background:none;cursor:pointer;padding:11px 14px;color:var(--muted);font-size:13px}.filter span{font-size:11px;margin-left:5px;opacity:.7}.filter[aria-pressed="true"]{color:white;background:var(--teal)}.filter:hover:not([aria-pressed="true"]){background:var(--paper)}.search-wrap{position:relative;width:270px;flex:none}.search-wrap input{width:100%;border:0;border-bottom:1px solid #a3b9af;padding:13px 27px 13px 2px;outline-offset:4px;border-radius:0;background:white;font-size:13px;color:var(--ink)}.search-wrap .search-icon{position:absolute;right:5px;top:10px;font-size:21px;color:var(--muted);pointer-events:none}.catalog-note{font-size:12px;line-height:1.7;color:var(--muted);max-width:770px;margin:0 0 26px}.results-line{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:12px;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:1px}.document{display:flex;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:24px}.document[hidden]{display:none}.document-number{font-size:12px;color:#8c9c96;width:28px;align-self:flex-start;padding-top:3px}.document-info{flex:1;min-width:0}.document-group{font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#688477}.document h3{font-size:18px;font-weight:500;margin:3px 0 6px;line-height:1.4}.document p{margin:0;color:var(--muted);font-size:11px}.document p span{margin:0 8px;color:#abb8b1}.document-actions{display:flex;align-items:center;gap:14px;flex:none}.view-button{border:1px solid #bdcbc3;padding:10px 15px;display:inline-flex;gap:24px;align-items:center;font-size:12px;font-weight:600;min-height:42px}.view-button:hover{color:white;background:var(--teal);border-color:var(--teal)}.download{width:38px;height:42px;display:grid;place-items:center;font-size:24px;color:#617e6f}.download:hover{background:var(--paper)}.empty{padding:50px 0;color:var(--muted);font-size:16px}.contacts{background:var(--teal);color:white;padding:70px 0 36px}.contacts .eyebrow{color:#b1c6bd}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}.contacts h2{font-size:42px;line-height:1.15;font-weight:500;letter-spacing:-1.3px;margin:0 0 32px}.contact-links{display:flex;flex-direction:column;gap:12px;align-items:flex-start}.contact-links a{font-size:26px;letter-spacing:-.4px;border-bottom:1px solid #527e76;padding-bottom:3px}.contact-links a:hover{color:var(--lime)}.contact-links .website{font-size:15px;margin-top:10px}.requisites{font-size:13px;margin:0}.requisites>div{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid #315c5a}.requisites dt{color:#b1c6bd}.requisites dd{margin:0}.footer-line{display:flex;justify-content:space-between;gap:25px;align-items:center;border-top:1px solid #315c5a;margin-top:60px;padding-top:24px;font-size:11px;color:#b1c6bd}.footer-line a{color:white}.back-top{white-space:nowrap}.viewer{width:calc(100% - 48px);max-width:1500px;height:calc(100dvh - 48px);padding:0;border:0;background:#e6e8e5;color:var(--ink)}.viewer::backdrop{background:rgba(2,25,26,.83);backdrop-filter:blur(3px)}.viewer-bar{display:flex;align-items:center;gap:18px;justify-content:space-between;background:white;padding:15px 22px;min-height:86px}.viewer-title{min-width:0;flex:1}.viewer-title h2{font-size:17px;line-height:1.35;margin:0;font-weight:600}.viewer-title p{font-size:11px;color:var(--muted);margin:4px 0 0}.viewer-tools{display:flex;align-items:center;gap:20px;font-size:12px}.viewer-tools a{text-decoration:underline;text-underline-offset:4px;white-space:nowrap}.close-viewer{background:none;border:1px solid var(--line);padding:3px 11px;font-size:27px;cursor:pointer;line-height:1.3;color:var(--ink)}.viewer-frame{width:100%;height:calc(100% - 86px);display:block;border:0}.mobile-open{display:none}.viewer-loading{background:#e6e8e5}
-@media(min-width:1500px){.hero h1{font-size:72px}}
-@media(max-width:1050px){.wrap{width:calc(100% - 56px)}.nav{gap:20px}.nav .phone{display:none}.hero-grid{gap:30px}.hero h1{font-size:52px}.hero-figure{min-height:480px}.directions{grid-template-columns:repeat(2,1fr);gap:34px}.section-heading h2{font-size:34px}.contact-grid{gap:50px}.catalog-head{align-items:flex-start;flex-direction:column}.search-wrap{width:100%}}
-@media(max-width:700px){html{scroll-padding-top:76px}.wrap{width:calc(100% - 40px)}.topbar .wrap{height:75px;gap:12px}.brand{font-size:23px}.brand small{font-size:8px;letter-spacing:2px}.nav{gap:15px;font-size:11px}.nav a:first-child{display:none}.hero{padding:36px 0}.hero-grid{grid-template-columns:1fr;gap:30px}.eyebrow{font-size:10px;letter-spacing:1.6px;margin-bottom:22px}.hero h1{font-size:46px;letter-spacing:-2px;margin-bottom:22px}.intro{font-size:15px;margin-bottom:24px}.hero-actions{display:grid;grid-template-columns:1fr}.button{padding:15px 18px;font-size:13px;justify-content:space-between}.hero-figure{min-height:330px}.hero-figure img{min-height:330px}.hero-figure figcaption{padding:19px;padding-top:60px}.hero-foot{gap:14px;flex-wrap:wrap;margin-top:28px;padding-top:20px;font-size:11px}.section{padding:45px 0}.section-heading{display:block;margin-bottom:28px}.section-heading h2{font-size:31px;margin-bottom:15px}.section-heading p{font-size:14px}.directions{gap:28px 22px}.direction h3{font-size:17px}.direction p{font-size:12px}.feature-grid{grid-template-columns:1fr;gap:32px}.feature .photo{aspect-ratio:1.65}.feature small{margin-top:14px}.feature h3{font-size:20px}.catalog-head{gap:18px;margin-top:20px}.filters{width:100%;display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.filter{text-align:left;border-color:var(--line);font-size:12px;padding:10px 12px}.document{gap:9px;padding:18px 0;flex-wrap:wrap}.document-number{width:22px;font-size:10px}.document-info{width:calc(100% - 32px);flex:initial}.document h3{font-size:16px}.document-actions{margin-left:31px;gap:12px}.view-button{font-size:12px;padding:8px 14px;min-height:40px}.document-group{font-size:9px}.download{height:40px}.results-line{font-size:9px}.contact-grid{grid-template-columns:1fr;gap:38px}.contacts{padding:45px 0 25px}.contacts h2{font-size:34px;margin-bottom:25px}.contact-links a{font-size:25px}.requisites{font-size:12px}.requisites>div{grid-template-columns:88px 1fr;gap:15px}.footer-line{align-items:flex-start;margin-top:35px;font-size:10px}.viewer{width:100%;height:100dvh;max-height:100dvh;margin:0}.viewer-bar{padding:12px;gap:12px;align-items:flex-start;min-height:116px}.viewer-title h2{font-size:14px}.viewer-tools{gap:10px}.viewer-tools .desktop-open{display:none}.viewer-tools .save-pdf{display:none}.close-viewer{font-size:25px}.viewer-frame{height:calc(100% - 166px)}.mobile-open{height:50px;display:flex;align-items:center;justify-content:center;background:var(--lime);font-size:13px;font-weight:600;text-decoration:underline}.viewer-title p{font-size:10px;line-height:1.6}}
+/* Фирменный стиль РесурсПроекта: цвета с res-proekt.ru и из логотипа, шрифты Roboto и Open Sans (как на сайте) */
+@font-face{font-family:'Roboto Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url(assets/fonts/roboto-cyrillic-wght-normal.woff2) format('woff2-variations');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Roboto Variable';font-style:normal;font-display:swap;font-weight:100 900;src:url(assets/fonts/roboto-latin-wght-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Open Sans Variable';font-style:normal;font-display:swap;font-weight:300 800;src:url(assets/fonts/open-sans-cyrillic-wght-normal.woff2) format('woff2-variations');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Open Sans Variable';font-style:normal;font-display:swap;font-weight:300 800;src:url(assets/fonts/open-sans-latin-wght-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --orange:#F2A03D;--orange-deep:#E08C25;
+  --teal:#043232;--teal-2:#014040;--teal-3:#035959;
+  --mint:#D0F2D5;--cream:#FFFAF3;--sand:#F2ECE4;--line:#E7DFD3;
+  --ink:#222;--muted:#5E5E5E;
+  --head:'Roboto Variable',Roboto,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --body:'Open Sans Variable','Open Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --dots:radial-gradient(rgb(255 255 255 / .06) 1px,transparent 1.4px);
+  --topbar:76px;--radius:6px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--topbar) + 16px);-webkit-text-size-adjust:100%}
+body{margin:0;color:var(--ink);background:var(--cream);font-family:var(--body);font-size:16px;line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
+.wrap{width:min(1240px,calc(100% - 80px));margin:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;top:-60px;left:20px;background:#fff;padding:10px 14px;z-index:100;border-radius:var(--radius)}
+.skip:focus{top:10px}
+
+/* Шапка */
+.topbar{position:sticky;top:0;z-index:20;background:rgb(4 50 50 / .97);color:#fff;border-bottom:1px solid rgb(255 255 255 / .08);backdrop-filter:blur(8px)}
+.topbar .wrap{height:var(--topbar);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{height:50px;width:auto}
+.brand span{font-size:11px;line-height:1.35;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);opacity:.85;padding-left:14px;border-left:1px solid rgb(255 255 255 / .2)}
+.nav{display:flex;gap:28px;align-items:center;font-size:15px}
+.nav a{opacity:.9;transition:color .2s}
+.nav a:hover{color:var(--orange);opacity:1}
+.nav .phone{font-weight:600;opacity:1;border:1px solid var(--orange);color:var(--orange);padding:8px 16px;border-radius:999px}
+.nav .phone:hover{background:var(--orange);color:var(--teal)}
+
+/* Первый экран */
+.hero{background:var(--teal) var(--dots);background-size:14px 14px;color:#fff;padding:64px 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:600;color:var(--mint);margin:0 0 24px}
+.eyebrow::before{content:"";width:36px;height:3px;background:var(--orange);flex:none}
+.hero h1{font-size:clamp(40px,4.6vw,64px);line-height:1.08;letter-spacing:-.02em;font-weight:700;margin:0 0 26px}
+.hero h1 span{display:block;color:var(--orange)}
+.intro{font-size:18px;line-height:1.7;max-width:520px;color:rgb(255 255 255 / .82);margin:0 0 34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;padding:16px 26px;border:2px solid var(--orange);border-radius:var(--radius);font-family:var(--head);font-weight:600;font-size:16px;cursor:pointer;background:var(--orange);color:var(--teal);transition:background .2s,color .2s,border-color .2s}
+.button:hover{background:var(--orange-deep);border-color:var(--orange-deep)}
+.button.ghost{background:transparent;color:#fff;border-color:rgb(255 255 255 / .35)}
+.button.ghost:hover{border-color:#fff;background:rgb(255 255 255 / .06)}
+.file-meta{font-size:13px;color:rgb(255 255 255 / .6);margin:14px 0 0}
+.hero-figure{margin:0;position:relative;aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -20px rgb(0 0 0 / .5)}
+.hero-figure img{width:100%;height:100%;object-fit:cover}
+.hero-figure figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 26px 22px;background:linear-gradient(transparent,rgb(2 30 30 / .88));font-size:14px;color:rgb(255 255 255 / .85)}
+.hero-figure figcaption strong{display:block;font-family:var(--head);font-size:21px;font-weight:600;color:#fff;margin-bottom:2px}
+.stats{list-style:none;margin:56px 0 0;padding:28px 0 32px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid rgb(255 255 255 / .14)}
+.stats li{display:flex;align-items:baseline;gap:12px}
+.stats b{font-family:var(--head);font-size:44px;line-height:1;font-weight:700;color:var(--orange)}
+.stats span{font-size:14px;line-height:1.4;color:rgb(255 255 255 / .78);max-width:210px}
+
+/* Разделы */
+.section{padding:88px 0}
+.label{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-3);margin:0 0 10px}
+.section-heading{display:flex;justify-content:space-between;gap:48px;align-items:flex-end;margin-bottom:44px}
+.section-heading h2{font-size:clamp(30px,3.2vw,42px);line-height:1.15;letter-spacing:-.015em;color:var(--teal)}
+.section-heading>p{max-width:480px;color:var(--muted);font-size:16px;margin:0}
+
+.directions{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.direction{background:#fff;border-top:4px solid var(--orange);border-radius:var(--radius);padding:28px 26px 30px;box-shadow:0 1px 2px rgb(4 50 50 / .06)}
+.direction .n{display:block;font-family:var(--head);font-size:34px;font-weight:700;line-height:1;color:var(--orange);margin-bottom:22px}
+.direction h3{font-size:20px;line-height:1.3;color:var(--teal);margin:0 0 12px}
+.direction p{font-size:15px;color:var(--muted);margin:0;line-height:1.65}
+
+/* Каталог */
+.catalog{background:var(--sand);padding-top:88px}
+.toolbar{position:sticky;top:var(--topbar);z-index:10;display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:rgb(242 236 228 / .96);backdrop-filter:blur(8px);padding:14px 0;margin-bottom:8px;border-bottom:1px solid var(--line)}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filter{border:1px solid #D8CDBE;background:#fff;cursor:pointer;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--teal);transition:background .2s,border-color .2s}
+.filter span{font-weight:400;margin-left:4px;color:var(--muted)}
+.filter:hover{border-color:var(--teal-3)}
+.filter[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.filter[aria-pressed="true"] span{color:var(--mint)}
+.search-wrap{position:relative;flex:1;min-width:240px;max-width:380px;margin-left:auto}
+.search-wrap svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search-wrap input{width:100%;border:1px solid #D8CDBE;border-radius:999px;padding:10px 16px 10px 42px;background:#fff;font-size:14px}
+.search-wrap input:focus{outline:none;border-color:var(--teal-3);box-shadow:0 0 0 3px rgb(242 160 61 / .35)}
+.result-count{font-size:13px;color:var(--muted);white-space:nowrap}
+
+#document-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.group-head{grid-column:1/-1;display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;padding:36px 0 4px}
+.group-head h3{font-size:26px;color:var(--teal)}
+.group-head h3 span{font-size:15px;font-weight:600;color:var(--teal);background:#fff;border-radius:999px;padding:3px 11px;margin-left:6px;vertical-align:4px}
+.group-head p{margin:0;font-size:15px;color:var(--muted)}
+.group-head[hidden],.card[hidden]{display:none}
+
+.card{display:flex;flex-direction:column;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 2px rgb(4 50 50 / .06);transition:box-shadow .25s,transform .25s;min-width:0}
+.card:hover{box-shadow:0 16px 36px -14px rgb(4 50 50 / .28);transform:translateY(-2px)}
+.card-open{display:flex;flex-direction:column;flex:1}
+.card-photo{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--sand)}
+.card-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .card-photo img{transform:scale(1.04)}
+.card-badge{position:absolute;left:12px;top:12px;background:var(--teal);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.card[data-group="objects"] .card-badge{background:var(--orange);color:var(--teal)}
+.card-body{padding:20px 22px 6px;display:flex;flex-direction:column;flex:1}
+.card-type{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-3);margin-bottom:6px}
+.card h3{font-size:21px;line-height:1.25;color:var(--teal);margin:0 0 14px;transition:color .2s}
+.card:hover h3{color:var(--teal-3);text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px}
+.card-meta{margin:0 0 14px;display:grid;gap:6px;font-size:14px;line-height:1.5}
+.card-meta div{display:grid;grid-template-columns:84px 1fr;gap:10px}
+.card-meta dt{color:var(--muted)}
+.card-meta dd{margin:0;color:var(--ink)}
+.card-task{margin:0 0 16px;padding-top:14px;border-top:1px solid #F0EAE1;font-size:15px;line-height:1.6;color:#3B3B3B}
+.card-task span{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.card-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 22px;background:#FBF8F4;border-top:1px solid #F0EAE1}
+.card-file{font-size:13px;color:var(--muted)}
+.card-download{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--teal);padding:6px 12px;border:1px solid #D8CDBE;border-radius:999px;min-height:36px;transition:background .2s,color .2s}
+.card-download:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.empty{padding:50px 0;color:var(--muted);font-size:17px}
+
+/* Контакты */
+.contacts{background:var(--teal) var(--dots);background-size:14px 14px;color:#fff;padding:84px 0 32px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contacts h2{font-size:clamp(34px,3.6vw,48px);line-height:1.12;letter-spacing:-.015em;color:var(--orange);margin:0 0 30px}
+.contact-links{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.contact-links a{font-family:var(--head);font-size:28px;font-weight:500;border-bottom:1px solid rgb(255 255 255 / .25);padding-bottom:2px}
+.contact-links a:hover{color:var(--orange);border-color:var(--orange)}
+.contact-links .website{font-size:17px;margin-top:8px}
+.requisites{font-size:14px;margin:0;align-self:end}
+.requisites>div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:12px 0;border-bottom:1px solid rgb(255 255 255 / .12)}
+.requisites dt{color:var(--mint);opacity:.8}
+.requisites dd{margin:0}
+.footer-line{display:flex;align-items:center;gap:20px;border-top:1px solid rgb(255 255 255 / .12);margin-top:64px;padding-top:24px;font-size:13px;color:rgb(255 255 255 / .65)}
+.footer-line img{height:40px;width:auto}
+.back-top{margin-left:auto;color:#fff;white-space:nowrap}
+.back-top:hover{color:var(--orange)}
+
+/* Просмотр PDF */
+.viewer{width:calc(100% - 48px);max-width:1500px;height:calc(100dvh - 48px);max-height:none;padding:0;border:0;border-radius:var(--radius);overflow:hidden;background:#E6E2DC;color:var(--ink)}
+.viewer::backdrop{background:rgb(2 25 25 / .85);backdrop-filter:blur(3px)}
+.viewer-bar{display:flex;align-items:center;gap:18px;justify-content:space-between;background:var(--teal);color:#fff;padding:14px 22px;min-height:76px}
+.viewer-title{min-width:0;flex:1}
+.viewer-title h2{font-size:18px;line-height:1.35;font-weight:600}
+.viewer-title p{font-size:12px;color:rgb(255 255 255 / .65);margin:3px 0 0}
+.viewer-tools{display:flex;align-items:center;gap:18px;font-size:14px}
+.viewer-tools a{white-space:nowrap;border-bottom:1px solid rgb(255 255 255 / .35)}
+.viewer-tools a:hover{color:var(--orange);border-color:var(--orange)}
+.close-viewer{background:var(--orange);border:0;border-radius:var(--radius);width:42px;height:42px;font-size:26px;line-height:1;cursor:pointer;color:var(--teal)}
+.close-viewer:hover{background:var(--orange-deep)}
+.viewer-frame{width:100%;height:calc(100% - 76px);display:block;border:0}
+.mobile-open{display:none}
+
+/* Адаптивность */
+@media(max-width:1100px){
+  .wrap{width:calc(100% - 56px)}
+  .nav{gap:20px}
+  .nav .phone{display:none}
+  .hero-grid{gap:36px}
+  .directions{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  #document-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .search-wrap{max-width:none}
+}
+@media(max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  .section-heading{display:block}
+  .section-heading>p{margin-top:14px}
+  .contact-grid{grid-template-columns:1fr;gap:44px}
+  .result-count{display:none}
+}
+@media(max-width:640px){
+  :root{--topbar:64px}
+  .wrap{width:calc(100% - 32px)}
+  .brand img{height:40px}
+  .brand span{display:none}
+  .nav{gap:16px;font-size:14px}
+  .nav a:first-child{display:none}
+  .hero{padding-top:36px}
+  .hero h1{font-size:38px}
+  .intro{font-size:16px}
+  .hero-actions{display:grid}
+  .button{justify-content:space-between}
+  .stats{margin-top:36px;gap:18px 14px}
+  .stats li{flex-direction:column;gap:6px}
+  .stats b{font-size:34px}
+  .stats span{font-size:13px}
+  .section,.catalog{padding:56px 0}
+  .directions{grid-template-columns:1fr;gap:14px}
+  .direction{padding:22px 20px 24px}
+  .direction .n{font-size:28px;margin-bottom:14px}
+  .toolbar{gap:10px;padding:10px 0}
+  .filters{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none;margin:0 -16px;padding:0 16px;width:calc(100% + 32px)}
+  .filters::-webkit-scrollbar{display:none}
+  .filter{white-space:nowrap;font-size:13px;padding:8px 14px}
+  .search-wrap{min-width:0;width:100%}
+  #document-list{grid-template-columns:1fr;gap:18px}
+  .group-head{padding-top:24px}
+  .group-head h3{font-size:22px}
+  .card-body{padding:18px 18px 4px}
+  .card-footer{padding:10px 18px}
+  .card h3{font-size:20px}
+  .card-meta div{grid-template-columns:76px 1fr}
+  .contacts{padding:56px 0 26px}
+  .contact-links a{font-size:23px}
+  .requisites{font-size:13px}
+  .requisites>div{grid-template-columns:1fr;gap:2px}
+  .footer-line{flex-wrap:wrap;margin-top:40px}
+  .footer-line img{height:32px}
+  .viewer{width:100%;height:100dvh;margin:0;border-radius:0}
+  .viewer-bar{padding:12px;gap:10px;min-height:72px}
+  .viewer-title h2{font-size:15px}
+  .viewer-title p{display:none}
+  .viewer-tools .desktop-open,.viewer-tools .save-pdf{display:none}
+  .mobile-open{height:48px;display:flex;align-items:center;justify-content:center;background:var(--orange);color:var(--teal);font-size:14px;font-weight:600}
+  .viewer-frame{height:calc(100% - 120px)}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-/* Project presentation cards */
-#document-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;row-gap:44px;padding-top:30px}
-.document{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0 0 18px;min-width:0;border-bottom:1px solid var(--line)}
-.card-open{display:flex;flex-direction:column;flex:1;min-width:0}
-.card-photo{aspect-ratio:1.35;overflow:hidden;background:#e2e7e1;margin-bottom:20px}
-.card-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.card-open:hover .card-photo img{transform:scale(1.025)}
-.card-type{display:block;font-size:10px;line-height:1.5;letter-spacing:1.4px;text-transform:uppercase;color:#627f73;margin-bottom:8px}
-.document h3{display:flex;justify-content:space-between;gap:14px;margin:0 0 13px;font-size:21px;line-height:1.3;font-weight:500;letter-spacing:-.25px}
-.document h3>span{font-size:18px;flex:none;font-weight:400}
-.card-open:hover h3{color:#407362}
-.card-meta{display:grid;gap:5px;margin-bottom:12px}
-.document .card-meta p{font-size:12px;line-height:1.6;color:#59706b;margin:0}
-.card-meta span{color:#81918a}
-.document .card-task{font-size:14px;line-height:1.65;margin:0 0 19px;color:#526963}
-.card-task>span{font-weight:600;color:#264b42}
-.card-footer{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid #e6ebe6}
-.card-footer>span{font-size:10px;color:#7b8e83;line-height:1.8}
-.card-download{font-size:11px;display:inline-flex;align-items:center;gap:8px;padding:6px 0 6px 8px;white-space:nowrap;color:#386052;min-height:32px}
-.card-download span{font-size:20px;line-height:1}
-.card-download:hover{text-decoration:underline;text-underline-offset:4px}
-@media(max-width:820px){#document-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 26px}.document h3{font-size:20px}}
-@media(max-width:650px){#document-list{grid-template-columns:1fr;gap:32px;padding-top:24px}.card-photo{aspect-ratio:1.4;margin-bottom:18px}.document{display:flex;flex-wrap:nowrap;padding:0 0 17px}.document h3{font-size:22px}.document .card-meta p{font-size:13px}.document .card-task{font-size:15px}.card-type{font-size:10px}.card-footer>span{font-size:11px}.card-download{font-size:12px;min-height:40px}}
 </style>
 </head>
 <body>
 <a class="skip" href="#main-content">К содержанию</a>
-<header class="topbar"><div class="wrap"><a href="#" class="brand" aria-label="РесурсПроект — начало страницы">РесурсПроект<small>Проектирование и строительство</small></a><nav class="nav" aria-label="Навигация"><a href="#about">О компании</a><a href="#presentations">Презентации</a><a href="#contacts">Контакты</a><a href="tel:+74994041167" class="phone">+7 (499) 404-11-67</a></nav></div></header>
+<header class="topbar"><div class="wrap">
+  <a href="#" class="brand" aria-label="РесурсПроект — начало страницы"><img src="assets/logo.svg" alt="РесурсПроект" width="404" height="316"><span>Проектирование<br>и строительство</span></a>
+  <nav class="nav" aria-label="Навигация"><a href="#about">О компании</a><a href="#presentations">Презентации</a><a href="#contacts">Контакты</a><a href="tel:+74994041167" class="phone">+7 (499) 404-11-67</a></nav>
+</div></header>
 <main id="main-content">
-<section class="hero"><div class="wrap"><p class="eyebrow">Презентация компании и работ</p><div class="hero-grid"><div><h1>Проектирование,<br>строительство<br><span>и отделка</span></h1><p class="intro">«РесурсПроект» выполняет проектные и строительно-монтажные работы, капитальный ремонт и отделку помещений. Работаем с коммерческими, общественными и жилыми объектами.</p><div class="hero-actions"><a href="#main" class="button" data-view="main">Основная презентация <span aria-hidden="true">↗</span></a><a href="resursproekt-portfolio.pdf" class="button light" download="РесурсПроект — портфолио.pdf">Скачать PDF <span aria-hidden="true">↓</span></a></div><p class="file-meta">Портфолио компании / 39 страниц / 14,2 МБ</p></div><figure class="hero-figure"><img src="hero.jpg" alt="Интерьер ресторана центра «Сенеж» с декоративными стеновыми и потолочными панелями" width="872" height="654" fetchpriority="high"><figcaption><strong>Мастерская управления «Сенеж»</strong>Декоративные стеновые и потолочные панели</figcaption></figure></div><div class="hero-foot"><span>Портфолио РесурсПроекта</span><span>Объекты и направления работы</span><a href="#presentations">Все презентации ↓</a></div></div></section>
-<section class="section" id="about"><div class="wrap"><div class="section-heading"><h2>Направления работы</h2><p>От проектной документации до строительных работ и инженерных систем. Работаем по государственным и коммерческим контрактам.</p></div><div class="directions"><article class="direction"><span class="n">01</span><h3>Проектирование<br>и генподряд</h3><p>Проектная и рабочая документация. Организация и выполнение строительных работ.</p></article><article class="direction"><span class="n">02</span><h3>Капитальный ремонт<br>и fit-out</h3><p>Офисы, банковские отделения, медицинские и торговые помещения. Перепланировка и отделка.</p></article><article class="direction"><span class="n">03</span><h3>Инженерные<br>системы</h3><p>Водоснабжение, отопление, вентиляция, электроснабжение. Внутренние и наружные сети.</p></article><article class="direction"><span class="n">04</span><h3>Строительство<br>и производство</h3><p>Общестроительные работы, фасады и благоустройство. Панели, металлоконструкции и модульные здания.</p></article></div></div></section>
-<section class="section catalog" id="presentations"><div class="wrap"><div class="section-heading"><h2>Объекты в деталях</h2><p>Фотографии, заказчики, адреса и задачи по всем 53 презентациям. Откройте карточку, чтобы посмотреть материал целиком.</p></div><div class="catalog-head"><div class="filters" role="group" aria-label="Раздел презентаций"><button class="filter" type="button" aria-pressed="true" data-filter="all">Все <span>53</span></button><button class="filter" type="button" aria-pressed="false" data-filter="objects">Объекты <span>16</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2025">Тендеры 2025 <span>5</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2026">Тендеры 2026 <span>32</span></button></div><div class="search-wrap"><label class="sr-only" for="search">Поиск презентации</label><input id="search" type="search" placeholder="Объект, адрес или вид работ" autocomplete="off"><span class="search-icon" aria-hidden="true">⌕</span></div></div><p class="catalog-note">В разделе «Объекты» собраны материалы с указанными в них статусами работ. Тендерные презентации описывают задачи закупок и исходное состояние помещений.</p><div class="results-line"><span>Каталог материалов</span><span id="result-count" role="status" aria-live="polite">Показано 53 из 53</span></div><div id="document-list"><article class="document" data-group="objects" data-search="земляной вал, 75 капитальный ремонт офиса москва, ул. земляной вал, д. 75 ооо «ангел ист рус» выполнить капитальный ремонт 5–6 этажей: перепланировку, отделку и обновление инженерных систем. объекты">
-      <a class="card-open" href="#p02" data-view="p02" aria-label="Смотреть: Земляной Вал, 75">
-        <div class="card-photo"><img src="office.jpg" alt="Капитальный ремонт офиса. Земляной Вал, 75" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Капитальный ремонт офиса</span><h3>Земляной Вал, 75 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Земляной Вал, д. 75</p><p class="card-customer"><span>Заказчик:</span> ООО «Ангел Ист Рус»</p></div><p class="card-task"><span>Задача:</span> Выполнить капитальный ремонт 5–6 этажей: перепланировку, отделку и обновление инженерных систем.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,0 МБ</span><a href="p02.pdf" class="card-download" download="РесурсПроект — Земляной Вал, 75.pdf" aria-label="Скачать: Земляной Вал, 75">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="центр «сенеж» гостиница и ресторан московская обл., г.о. солнечногорск, г. солнечногорск, ул. прибрежная, стр. 2 ооо «неоклассик»; ао «концерн титан-2» поставить и смонтировать декоративные стеновые и потолочные панели, выполнить потолки и сборку мебели. объекты">
-      <a class="card-open" href="#p09" data-view="p09" aria-label="Смотреть: Центр «Сенеж»">
-        <div class="card-photo"><img src="senezh.jpg" alt="Гостиница и ресторан. Центр «Сенеж»" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Гостиница и ресторан</span><h3>Центр «Сенеж» <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Московская обл., г.о. Солнечногорск, г. Солнечногорск, ул. Прибрежная, стр. 2</p><p class="card-customer"><span>Заказчик:</span> ООО «НЕОКЛАССИК»; АО «Концерн Титан-2»</p></div><p class="card-task"><span>Задача:</span> Поставить и смонтировать декоративные стеновые и потолочные панели, выполнить потолки и сборку мебели.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 5 стр. / 1,3 МБ</span><a href="p09.pdf" class="card-download" download="РесурсПроект — Сенеж, гостиница и ресторан.pdf" aria-label="Скачать: Центр «Сенеж»">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="отп банк, проспект мира, 29 банковское отделение москва, проспект мира, д. 29 ао «отп банк» спроектировать и отремонтировать отделение: выполнить перепланировку, отделку, инженерные системы и кассовый узел. объекты">
-      <a class="card-open" href="#p06" data-view="p06" aria-label="Смотреть: ОТП Банк, проспект Мира, 29">
-        <div class="card-photo"><img src="bank.jpg" alt="Банковское отделение. ОТП Банк, проспект Мира, 29" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Банковское отделение</span><h3>ОТП Банк, проспект Мира, 29 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, проспект Мира, д. 29</p><p class="card-customer"><span>Заказчик:</span> АО «ОТП Банк»</p></div><p class="card-task"><span>Задача:</span> Спроектировать и отремонтировать отделение: выполнить перепланировку, отделку, инженерные системы и кассовый узел.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 5 стр. / 1,2 МБ</span><a href="p06.pdf" class="card-download" download="РесурсПроект — ОТП Банк, проспект Мира, 29.pdf" aria-label="Скачать: ОТП Банк, проспект Мира, 29">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="автодом, санузлы ремонт санузлов московская обл., ул. луговая, 1.2 ао «автодом» отремонтировать два санузла: заменить отделку, перегородки, сантехнику и инженерные разводки. объекты">
-      <a class="card-open" href="#p01" data-view="p01" aria-label="Смотреть: Автодом, санузлы">
-        <div class="card-photo"><img src="previews/p01.webp" alt="Ремонт санузлов. Автодом, санузлы" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт санузлов</span><h3>Автодом, санузлы <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Московская обл., ул. Луговая, 1.2</p><p class="card-customer"><span>Заказчик:</span> АО «АВТОДОМ»</p></div><p class="card-task"><span>Задача:</span> Отремонтировать два санузла: заменить отделку, перегородки, сантехнику и инженерные разводки.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 2 стр. / 0,4 МБ</span><a href="p01.pdf" class="card-download" download="РесурсПроект — Автодом, санузлы.pdf" aria-label="Скачать: Автодом, санузлы">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="лодочная, 27 наружные инженерные сети москва, сзао, ул. лодочная, вл. 27, корп. 2 ооо «сз «лодочная» вынести водопровод и теплосеть из зоны строительства, подключить новые участки и восстановить благоустройство. объекты">
-      <a class="card-open" href="#p03" data-view="p03" aria-label="Смотреть: Лодочная, 27">
-        <div class="card-photo"><img src="previews/p03.webp" alt="Наружные инженерные сети. Лодочная, 27" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Наружные инженерные сети</span><h3>Лодочная, 27 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, СЗАО, ул. Лодочная, вл. 27, корп. 2</p><p class="card-customer"><span>Заказчик:</span> ООО «СЗ «Лодочная»</p></div><p class="card-task"><span>Задача:</span> Вынести водопровод и теплосеть из зоны строительства, подключить новые участки и восстановить благоустройство.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 2 стр. / 0,9 МБ</span><a href="p03.pdf" class="card-download" download="РесурсПроект — Лодочная, 27.pdf" aria-label="Скачать: Лодочная, 27">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="магазин мцз, трк «бум» отделка торгового помещения москва, ул. перерва, 43, стр. 1, трк «бум» ооо «солнечный свет» (sunlight) переоборудовать магазин: выполнить демонтаж, новую отделку, остекление, освещение и системы вентиляции. объекты">
-      <a class="card-open" href="#p04" data-view="p04" aria-label="Смотреть: магазин МЦЗ, ТРК «БУМ»">
-        <div class="card-photo"><img src="previews/p04.webp" alt="Отделка торгового помещения. магазин МЦЗ, ТРК «БУМ»" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка торгового помещения</span><h3>магазин МЦЗ, ТРК «БУМ» <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Перерва, 43, стр. 1, ТРК «БУМ»</p><p class="card-customer"><span>Заказчик:</span> ООО «Солнечный свет» (SUNLIGHT)</p></div><p class="card-task"><span>Задача:</span> Переоборудовать магазин: выполнить демонтаж, новую отделку, остекление, освещение и системы вентиляции.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 3 стр. / 0,6 МБ</span><a href="p04.pdf" class="card-download" download="РесурсПроект — магазин МЦЗ, ТРК «БУМ».pdf" aria-label="Скачать: магазин МЦЗ, ТРК «БУМ»">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="медси, зелёный проспект, 7 демонтаж в медицинском здании москва, зелёный проспект, д. 7 гк «медси» подготовить 4–7 этажи к капитальному ремонту: разобрать отделку, перегородки и инженерные сети, вывезти мусор. объекты">
-      <a class="card-open" href="#p05" data-view="p05" aria-label="Смотреть: Медси, Зелёный проспект, 7">
-        <div class="card-photo"><img src="previews/p05.webp" alt="Демонтаж в медицинском здании. Медси, Зелёный проспект, 7" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Демонтаж в медицинском здании</span><h3>Медси, Зелёный проспект, 7 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Зелёный проспект, д. 7</p><p class="card-customer"><span>Заказчик:</span> ГК «Медси»</p></div><p class="card-task"><span>Задача:</span> Подготовить 4–7 этажи к капитальному ремонту: разобрать отделку, перегородки и инженерные сети, вывезти мусор.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,2 МБ</span><a href="p05.pdf" class="card-download" download="РесурсПроект — Медси, Зелёный проспект, 7.pdf" aria-label="Скачать: Медси, Зелёный проспект, 7">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="сгк, дубининская, 53 ремонт административного здания москва, ул. дубининская, д. 53, стр. 5, этажи 1–3 ооо «сибирская генерирующая компания» обновить лестничный холл 1–3 этажей: отделку, ограждения, противопожарные перегородки и инженерные системы. объекты">
-      <a class="card-open" href="#p07" data-view="p07" aria-label="Смотреть: СГК, Дубининская, 53">
-        <div class="card-photo"><img src="previews/p07.webp" alt="Ремонт административного здания. СГК, Дубининская, 53" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт административного здания</span><h3>СГК, Дубининская, 53 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Дубининская, д. 53, стр. 5, этажи 1–3</p><p class="card-customer"><span>Заказчик:</span> ООО «Сибирская генерирующая компания»</p></div><p class="card-task"><span>Задача:</span> Обновить лестничный холл 1–3 этажей: отделку, ограждения, противопожарные перегородки и инженерные системы.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,2 МБ</span><a href="p07.pdf" class="card-download" download="РесурсПроект — СГК, Дубининская, 53.pdf" aria-label="Скачать: СГК, Дубининская, 53">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="севастопольский пр-т, 66 многопрофильный медицинский центр москва, севастопольский проспект, д. 66 банк россии; чу «сервисная компания банка россии» отремонтировать помещения кардиологии, операционный блок, входные группы и ограждение территории. объекты">
-      <a class="card-open" href="#p08" data-view="p08" aria-label="Смотреть: Севастопольский пр-т, 66">
-        <div class="card-photo"><img src="previews/p08.webp" alt="Многопрофильный медицинский центр. Севастопольский пр-т, 66" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Многопрофильный медицинский центр</span><h3>Севастопольский пр-т, 66 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Севастопольский проспект, д. 66</p><p class="card-customer"><span>Заказчик:</span> Банк России; ЧУ «Сервисная компания Банка России»</p></div><p class="card-task"><span>Задача:</span> Отремонтировать помещения кардиологии, операционный блок, входные группы и ограждение территории.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 9 стр. / 4,0 МБ</span><a href="p08.pdf" class="card-download" download="РесурсПроект — Севастопольский пр-т, 66.pdf" aria-label="Скачать: Севастопольский пр-т, 66">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="тали, пятницкая, 44 реконструкция и отделка помещений москва, ул. пятницкая, д. 44, стр. 3 ооо «тали» выполнить отделку этажей, заменить внутренние лестницы, устроить новые крыльца и усилить проёмы. объекты">
-      <a class="card-open" href="#p10" data-view="p10" aria-label="Смотреть: ТАЛИ, Пятницкая, 44">
-        <div class="card-photo"><img src="previews/p10.webp" alt="Реконструкция и отделка помещений. ТАЛИ, Пятницкая, 44" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Реконструкция и отделка помещений</span><h3>ТАЛИ, Пятницкая, 44 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Пятницкая, д. 44, стр. 3</p><p class="card-customer"><span>Заказчик:</span> ООО «ТАЛИ»</p></div><p class="card-task"><span>Задача:</span> Выполнить отделку этажей, заменить внутренние лестницы, устроить новые крыльца и усилить проёмы.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,1 МБ</span><a href="p10.pdf" class="card-download" download="РесурсПроект — ТАЛИ, Пятницкая, 44.pdf" aria-label="Скачать: ТАЛИ, Пятницкая, 44">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, ларюшино ремонт зданий и территории московская обл., одинцовский г. о., д. ларюшино, д. 100 банк россии, многопрофильный медицинский центр обновить библиотеку, палаты и коридор, отремонтировать ограждение, фасад склада и аварийный участок теплосети. объекты">
-      <a class="card-open" href="#p11" data-view="p11" aria-label="Смотреть: ЦБ, Ларюшино">
-        <div class="card-photo"><img src="previews/p11.webp" alt="Ремонт зданий и территории. ЦБ, Ларюшино" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт зданий и территории</span><h3>ЦБ, Ларюшино <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Московская обл., Одинцовский г. о., д. Ларюшино, д. 100</p><p class="card-customer"><span>Заказчик:</span> Банк России, Многопрофильный медицинский центр</p></div><p class="card-task"><span>Задача:</span> Обновить библиотеку, палаты и коридор, отремонтировать ограждение, фасад склада и аварийный участок теплосети.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 3 стр. / 0,9 МБ</span><a href="p11.pdf" class="card-download" download="РесурсПроект — ЦБ, Ларюшино.pdf" aria-label="Скачать: ЦБ, Ларюшино">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, настасьинский пер., 5 ремонт гостиничных помещений москва, настасьинский пер., д. 5, стр. 7 банк россии отремонтировать номера, ресепшен и коридоры, помещения подвала, фасад и козырьки. объекты">
-      <a class="card-open" href="#p12" data-view="p12" aria-label="Смотреть: ЦБ, Настасьинский пер., 5">
-        <div class="card-photo"><img src="previews/p12.webp" alt="Ремонт гостиничных помещений. ЦБ, Настасьинский пер., 5" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт гостиничных помещений</span><h3>ЦБ, Настасьинский пер., 5 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Настасьинский пер., д. 5, стр. 7</p><p class="card-customer"><span>Заказчик:</span> Банк России</p></div><p class="card-task"><span>Задача:</span> Отремонтировать номера, ресепшен и коридоры, помещения подвала, фасад и козырьки.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 3 стр. / 0,8 МБ</span><a href="p12.pdf" class="card-download" download="РесурсПроект — ЦБ, Настасьинский пер., 5.pdf" aria-label="Скачать: ЦБ, Настасьинский пер., 5">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, севастопольский пр-т, 66 ремонт медицинского центра москва, севастопольский проспект, д. 66 банк россии (с 2026 года — чу «сервисная компания банка россии») обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение. объекты">
-      <a class="card-open" href="#p13" data-view="p13" aria-label="Смотреть: ЦБ, Севастопольский пр-т, 66">
-        <div class="card-photo"><img src="previews/p13.webp" alt="Ремонт медицинского центра. ЦБ, Севастопольский пр-т, 66" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт медицинского центра</span><h3>ЦБ, Севастопольский пр-т, 66 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Севастопольский проспект, д. 66</p><p class="card-customer"><span>Заказчик:</span> Банк России (с 2026 года — ЧУ «Сервисная компания Банка России»)</p></div><p class="card-task"><span>Задача:</span> Обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,2 МБ</span><a href="p13.pdf" class="card-download" download="РесурсПроект — ЦБ, Севастопольский пр-т, 66.pdf" aria-label="Скачать: ЦБ, Севастопольский пр-т, 66">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, селивёрстов пер., 6 ремонт офисных помещений москва, селивёрстов пер., д. 6 банк россии заменить противопожарные двери, демонтировать перегородку и отремонтировать санузлы на 1 и 4 этажах. объекты">
-      <a class="card-open" href="#p14" data-view="p14" aria-label="Смотреть: ЦБ, Селивёрстов пер., 6">
-        <div class="card-photo"><img src="previews/p14.webp" alt="Ремонт офисных помещений. ЦБ, Селивёрстов пер., 6" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт офисных помещений</span><h3>ЦБ, Селивёрстов пер., 6 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Селивёрстов пер., д. 6</p><p class="card-customer"><span>Заказчик:</span> Банк России</p></div><p class="card-task"><span>Задача:</span> Заменить противопожарные двери, демонтировать перегородку и отремонтировать санузлы на 1 и 4 этажах.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 2 стр. / 0,3 МБ</span><a href="p14.pdf" class="card-download" download="РесурсПроект — ЦБ, Селивёрстов пер., 6.pdf" aria-label="Скачать: ЦБ, Селивёрстов пер., 6">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, ул. мосфильмовская, 8 отделка лестниц и коридоров москва, ул. мосфильмовская, д. 8, корп. 2 банк россии отремонтировать четыре лестничных марша и стены коридоров офисной части здания. объекты">
-      <a class="card-open" href="#p15" data-view="p15" aria-label="Смотреть: ЦБ, ул. Мосфильмовская, 8">
-        <div class="card-photo"><img src="previews/p15.webp" alt="Отделка лестниц и коридоров. ЦБ, ул. Мосфильмовская, 8" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка лестниц и коридоров</span><h3>ЦБ, ул. Мосфильмовская, 8 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Мосфильмовская, д. 8, корп. 2</p><p class="card-customer"><span>Заказчик:</span> Банк России</p></div><p class="card-task"><span>Задача:</span> Отремонтировать четыре лестничных марша и стены коридоров офисной части здания.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 3 стр. / 0,5 МБ</span><a href="p15.pdf" class="card-download" download="РесурсПроект — ЦБ, ул. Мосфильмовская, 8.pdf" aria-label="Скачать: ЦБ, ул. Мосфильмовская, 8">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="objects" data-search="цб, ул. свободы, 57 ремонт административного комплекса москва, ул. свободы, д. 57, корп. 1 банк россии; чу «сервисная компания банка россии» отремонтировать кабинеты, ситуационный центр и конференц-зал, заменить кровлю над главным входом. объекты">
-      <a class="card-open" href="#p16" data-view="p16" aria-label="Смотреть: ЦБ, ул. Свободы, 57">
-        <div class="card-photo"><img src="previews/p16.webp" alt="Ремонт административного комплекса. ЦБ, ул. Свободы, 57" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт административного комплекса</span><h3>ЦБ, ул. Свободы, 57 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Свободы, д. 57, корп. 1</p><p class="card-customer"><span>Заказчик:</span> Банк России; ЧУ «Сервисная компания Банка России»</p></div><p class="card-task"><span>Задача:</span> Отремонтировать кабинеты, ситуационный центр и конференц-зал, заменить кровлю над главным входом.</p>
-      </a><div class="card-footer"><span>Объекты<br>PDF / 4 стр. / 1,2 МБ</span><a href="p16.pdf" class="card-download" download="РесурсПроект — ЦБ, ул. Свободы, 57.pdf" aria-label="Скачать: ЦБ, ул. Свободы, 57">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2025" data-search="отп банк, б. дорогомиловская, 8 проектирование и ремонт банка москва, ул. большая дорогомиловская, д. 8 ао «отп банк» перепланировать отделение, выполнить отделку, инженерные системы, зону 24/7 и техническое укрепление кассы. тендеры 2025 / № 22">
-      <a class="card-open" href="#p17" data-view="p17" aria-label="Смотреть: ОТП Банк, Б. Дорогомиловская, 8">
-        <div class="card-photo"><img src="previews/p17.webp" alt="Проектирование и ремонт банка. ОТП Банк, Б. Дорогомиловская, 8" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Проектирование и ремонт банка</span><h3>ОТП Банк, Б. Дорогомиловская, 8 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Большая Дорогомиловская, д. 8</p><p class="card-customer"><span>Заказчик:</span> АО «ОТП Банк»</p></div><p class="card-task"><span>Задача:</span> Перепланировать отделение, выполнить отделку, инженерные системы, зону 24/7 и техническое укрепление кассы.</p>
-      </a><div class="card-footer"><span>Тендеры 2025 / № 22<br>PDF / 3 стр. / 0,6 МБ</span><a href="p17.pdf" class="card-download" download="РесурсПроект — Тендер 22, ОТП Банк, Б. Дорогомиловская, 8.pdf" aria-label="Скачать: ОТП Банк, Б. Дорогомиловская, 8">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2025" data-search="отп банк, королёв проектирование и ремонт банка московская обл., г. королёв, пр-т королёва, д. 22 ао «отп банк» подготовить проект и переоборудовать отделение: отделку, инженерные сети, кассовую зону и входную группу. тендеры 2025 / № 23">
-      <a class="card-open" href="#p18" data-view="p18" aria-label="Смотреть: ОТП Банк, Королёв">
-        <div class="card-photo"><img src="previews/p18.webp" alt="Проектирование и ремонт банка. ОТП Банк, Королёв" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Проектирование и ремонт банка</span><h3>ОТП Банк, Королёв <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Московская обл., г. Королёв, пр-т Королёва, д. 22</p><p class="card-customer"><span>Заказчик:</span> АО «ОТП Банк»</p></div><p class="card-task"><span>Задача:</span> Подготовить проект и переоборудовать отделение: отделку, инженерные сети, кассовую зону и входную группу.</p>
-      </a><div class="card-footer"><span>Тендеры 2025 / № 23<br>PDF / 3 стр. / 0,5 МБ</span><a href="p18.pdf" class="card-download" download="РесурсПроект — Тендер 23, ОТП Банк, Королёв.pdf" aria-label="Скачать: ОТП Банк, Королёв">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2025" data-search="шоурум талату, artplay отделка шоурума москва, ул. нижняя сыромятническая, д. 10, стр. 3 ооо «талату» подготовить шоурум и колеровочную: выполнить перегородки, отделку, освещение, вентиляцию и кондиционирование. тендеры 2025 / № 31">
-      <a class="card-open" href="#p19" data-view="p19" aria-label="Смотреть: шоурум ТАЛАТУ, ARTPLAY">
-        <div class="card-photo"><img src="previews/p19.webp" alt="Отделка шоурума. шоурум ТАЛАТУ, ARTPLAY" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка шоурума</span><h3>шоурум ТАЛАТУ, ARTPLAY <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Нижняя Сыромятническая, д. 10, стр. 3</p><p class="card-customer"><span>Заказчик:</span> ООО «ТАЛАТУ»</p></div><p class="card-task"><span>Задача:</span> Подготовить шоурум и колеровочную: выполнить перегородки, отделку, освещение, вентиляцию и кондиционирование.</p>
-      </a><div class="card-footer"><span>Тендеры 2025 / № 31<br>PDF / 3 стр. / 0,6 МБ</span><a href="p19.pdf" class="card-download" download="РесурсПроект — Тендер 31, шоурум ТАЛАТУ, ARTPLAY.pdf" aria-label="Скачать: шоурум ТАЛАТУ, ARTPLAY">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2025" data-search="санузлы сгк, дубининская ремонт санузлов под ключ  санузлы сгк, ул. дубининская обновить санузлы 2–3 этажей: заменить плитку, кабины, сантехнику, потолок и освещение. тендеры 2025 / № 35">
-      <a class="card-open" href="#p20" data-view="p20" aria-label="Смотреть: санузлы СГК, Дубининская">
-        <div class="card-photo"><img src="previews/p20.webp" alt="Ремонт санузлов под ключ. санузлы СГК, Дубининская" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт санузлов под ключ</span><h3>санузлы СГК, Дубининская <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-customer"><span>Объект:</span> Санузлы СГК, ул. Дубининская</p></div><p class="card-task"><span>Задача:</span> Обновить санузлы 2–3 этажей: заменить плитку, кабины, сантехнику, потолок и освещение.</p>
-      </a><div class="card-footer"><span>Тендеры 2025 / № 35<br>PDF / 2 стр. / 0,7 МБ</span><a href="p20.pdf" class="card-download" download="РесурсПроект — Тендер 35, санузлы СГК, Дубининская.pdf" aria-label="Скачать: санузлы СГК, Дубининская">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2025" data-search="медси, зелёный пр-т, 7 подготовка клиники к ремонту москва, зелёный проспект, д. 7 гк «медси» разобрать отделку, ненесущие перегородки и инженерные сети на 4–7 этажах, организовать вывоз и утилизацию отходов. тендеры 2025 / № 87">
-      <a class="card-open" href="#p21" data-view="p21" aria-label="Смотреть: МЕДСИ, Зелёный пр-т, 7">
-        <div class="card-photo"><img src="previews/p21.webp" alt="Подготовка клиники к ремонту. МЕДСИ, Зелёный пр-т, 7" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Подготовка клиники к ремонту</span><h3>МЕДСИ, Зелёный пр-т, 7 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Зелёный проспект, д. 7</p><p class="card-customer"><span>Заказчик:</span> ГК «Медси»</p></div><p class="card-task"><span>Задача:</span> Разобрать отделку, ненесущие перегородки и инженерные сети на 4–7 этажах, организовать вывоз и утилизацию отходов.</p>
-      </a><div class="card-footer"><span>Тендеры 2025 / № 87<br>PDF / 3 стр. / 0,3 МБ</span><a href="p21.pdf" class="card-download" download="РесурсПроект — Тендер 87, МЕДСИ, Зелёный пр-т, 7.pdf" aria-label="Скачать: МЕДСИ, Зелёный пр-т, 7">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="бкс проспект мира 69 ремонт офисных помещений москва, проспект мира, д. 69, стр. 1 ооо «компания брокеркредитсервис» (бкс) обновить офис: выполнить перегородки, полы, потолки, освещение, скс, вентиляцию и кондиционирование. тендеры 2026 / № 1">
-      <a class="card-open" href="#p22" data-view="p22" aria-label="Смотреть: БКС проспект Мира 69">
-        <div class="card-photo"><img src="previews/p22.webp" alt="Ремонт офисных помещений. БКС проспект Мира 69" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт офисных помещений</span><h3>БКС проспект Мира 69 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, проспект Мира, д. 69, стр. 1</p><p class="card-customer"><span>Заказчик:</span> ООО «Компания Брокеркредитсервис» (БКС)</p></div><p class="card-task"><span>Задача:</span> Обновить офис: выполнить перегородки, полы, потолки, освещение, СКС, вентиляцию и кондиционирование.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 1<br>PDF / 3 стр. / 0,8 МБ</span><a href="p22.pdf" class="card-download" download="РесурсПроект — Тендер 1, БКС проспект Мира 69.pdf" aria-label="Скачать: БКС проспект Мира 69">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="банный комплекс демонтажные работы москва, пл. ганецкого, д. 1 ооо «варшава» демонтировать железобетонные полы и фундаменты внутри здания, вывезти и утилизировать строительный мусор. тендеры 2026 / № 12">
-      <a class="card-open" href="#p23" data-view="p23" aria-label="Смотреть: Банный комплекс">
-        <div class="card-photo"><img src="previews/p23.webp" alt="Демонтажные работы. Банный комплекс" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Демонтажные работы</span><h3>Банный комплекс <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, пл. Ганецкого, д. 1</p><p class="card-customer"><span>Заказчик:</span> ООО «Варшава»</p></div><p class="card-task"><span>Задача:</span> Демонтировать железобетонные полы и фундаменты внутри здания, вывезти и утилизировать строительный мусор.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 12<br>PDF / 2 стр. / 0,4 МБ</span><a href="p23.pdf" class="card-download" download="РесурсПроект — Тендер 12, Банный комплекс.pdf" aria-label="Скачать: Банный комплекс">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси на пироговской стоматологические кабинеты москва, ул. б. пироговская, д. 7 ао «медси 2» подготовить кабинеты под новые стоматологические установки: обновить отделку и подвести необходимые коммуникации. тендеры 2026 / № 124">
-      <a class="card-open" href="#p24" data-view="p24" aria-label="Смотреть: Медси на Пироговской">
-        <div class="card-photo"><img src="previews/p24.webp" alt="Стоматологические кабинеты. Медси на Пироговской" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Стоматологические кабинеты</span><h3>Медси на Пироговской <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Б. Пироговская, д. 7</p><p class="card-customer"><span>Заказчик:</span> АО «Медси 2»</p></div><p class="card-task"><span>Задача:</span> Подготовить кабинеты под новые стоматологические установки: обновить отделку и подвести необходимые коммуникации.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 124<br>PDF / 3 стр. / 0,7 МБ</span><a href="p24.pdf" class="card-download" download="РесурсПроект — Тендер 124, Медси на Пироговской.pdf" aria-label="Скачать: Медси на Пироговской">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="мцз охотный ряд ремонт торгового помещения москва, манежная площадь, д. 1, стр. 2 ооо «мцз ритейл» выполнить демонтаж, новые перегородки и отделку магазина, освещение, вентиляцию и кондиционирование. тендеры 2026 / № 128">
-      <a class="card-open" href="#p25" data-view="p25" aria-label="Смотреть: МЦЗ Охотный ряд">
-        <div class="card-photo"><img src="previews/p25.webp" alt="Ремонт торгового помещения. МЦЗ Охотный ряд" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт торгового помещения</span><h3>МЦЗ Охотный ряд <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Манежная площадь, д. 1, стр. 2</p><p class="card-customer"><span>Заказчик:</span> ООО «МЦЗ Ритейл»</p></div><p class="card-task"><span>Задача:</span> Выполнить демонтаж, новые перегородки и отделку магазина, освещение, вентиляцию и кондиционирование.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 128<br>PDF / 2 стр. / 0,7 МБ</span><a href="p25.pdf" class="card-download" download="РесурсПроект — Тендер 128, МЦЗ Охотный ряд.pdf" aria-label="Скачать: МЦЗ Охотный ряд">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="ресо-гарантия ремонт офиса москва, нагорный проезд, д. 6 сао «ресо-гарантия» обновить отделку офиса: полы, стены и потолки, смонтировать освещение и доработать климатические системы. тендеры 2026 / № 13">
-      <a class="card-open" href="#p26" data-view="p26" aria-label="Смотреть: РЕСО-Гарантия">
-        <div class="card-photo"><img src="previews/p26.webp" alt="Ремонт офиса. РЕСО-Гарантия" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт офиса</span><h3>РЕСО-Гарантия <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Нагорный проезд, д. 6</p><p class="card-customer"><span>Заказчик:</span> САО «РЕСО-Гарантия»</p></div><p class="card-task"><span>Задача:</span> Обновить отделку офиса: полы, стены и потолки, смонтировать освещение и доработать климатические системы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 13<br>PDF / 4 стр. / 1,2 МБ</span><a href="p26.pdf" class="card-download" download="РесурсПроект — Тендер 13, РЕСО-Гарантия.pdf" aria-label="Скачать: РЕСО-Гарантия">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="отель «стандарт» отделка гостиничного номера москва, страстной бульвар, д. 2 ооо «сфера» выполнить отделку и мебелирование номера, смонтировать инженерные системы, автоматику и противопожарные системы. тендеры 2026 / № 137">
-      <a class="card-open" href="#p27" data-view="p27" aria-label="Смотреть: Отель «СтандАрт»">
-        <div class="card-photo"><img src="previews/p27.webp" alt="Отделка гостиничного номера. Отель «СтандАрт»" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка гостиничного номера</span><h3>Отель «СтандАрт» <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Страстной бульвар, д. 2</p><p class="card-customer"><span>Заказчик:</span> ООО «Сфера»</p></div><p class="card-task"><span>Задача:</span> Выполнить отделку и мебелирование номера, смонтировать инженерные системы, автоматику и противопожарные системы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 137<br>PDF / 3 стр. / 0,7 МБ</span><a href="p27.pdf" class="card-download" download="РесурсПроект — Тендер 137, Отель «СтандАрт».pdf" aria-label="Скачать: Отель «СтандАрт»">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="мцз владимир отделка магазина г. владимир, ул. тракторная, д. 45 ооо «мцз ритейл» подготовить магазин: выполнить демонтаж, отделку, входную группу, освещение и климатические системы. тендеры 2026 / № 138">
-      <a class="card-open" href="#p28" data-view="p28" aria-label="Смотреть: МЦЗ Владимир">
-        <div class="card-photo"><img src="previews/p28.webp" alt="Отделка магазина. МЦЗ Владимир" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка магазина</span><h3>МЦЗ Владимир <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> г. Владимир, ул. Тракторная, д. 45</p><p class="card-customer"><span>Заказчик:</span> ООО «МЦЗ Ритейл»</p></div><p class="card-task"><span>Задача:</span> Подготовить магазин: выполнить демонтаж, отделку, входную группу, освещение и климатические системы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 138<br>PDF / 2 стр. / 0,4 МБ</span><a href="p28.pdf" class="card-download" download="РесурсПроект — Тендер 138, МЦЗ Владимир.pdf" aria-label="Скачать: МЦЗ Владимир">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси на красной пресне ремонт полов в клинике москва, ул. красная пресня, д. 16 ао «медси 2» заменить линолеум в 35 кабинетах, подготовить основания и обновить плинтусы без остановки работы клиники. тендеры 2026 / № 140">
-      <a class="card-open" href="#p29" data-view="p29" aria-label="Смотреть: Медси на Красной Пресне">
-        <div class="card-photo"><img src="previews/p29.webp" alt="Ремонт полов в клинике. Медси на Красной Пресне" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт полов в клинике</span><h3>Медси на Красной Пресне <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Красная Пресня, д. 16</p><p class="card-customer"><span>Заказчик:</span> АО «Медси 2»</p></div><p class="card-task"><span>Задача:</span> Заменить линолеум в 35 кабинетах, подготовить основания и обновить плинтусы без остановки работы клиники.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 140<br>PDF / 2 стр. / 0,5 МБ</span><a href="p29.pdf" class="card-download" download="РесурсПроект — Тендер 140, Медси на Красной Пресне.pdf" aria-label="Скачать: Медси на Красной Пресне">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="см-клиника, перерва 32 электроснабжение медицинского здания москва, ул. перерва, д. 32 ооо «см-клиника» смонтировать электрощиты и кабельные сети, обеспечить питание вентиляции, кондиционирования и дымоудаления. тендеры 2026 / № 142">
-      <a class="card-open" href="#p30" data-view="p30" aria-label="Смотреть: СМ-Клиника, Перерва 32">
-        <div class="card-photo"><img src="previews/p30.webp" alt="Электроснабжение медицинского здания. СМ-Клиника, Перерва 32" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Электроснабжение медицинского здания</span><h3>СМ-Клиника, Перерва 32 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Перерва, д. 32</p><p class="card-customer"><span>Заказчик:</span> ООО «СМ-Клиника»</p></div><p class="card-task"><span>Задача:</span> Смонтировать электрощиты и кабельные сети, обеспечить питание вентиляции, кондиционирования и дымоудаления.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 142<br>PDF / 3 стр. / 0,8 МБ</span><a href="p30.pdf" class="card-download" download="РесурсПроект — Тендер 142, СМ-Клиника, Перерва 32.pdf" aria-label="Скачать: СМ-Клиника, Перерва 32">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="ттк рублёвский ремонт автомобильного центра москва, рублёвское шоссе, д. 74 ооо «сп бизнес кар» обновить отделку шоурума, клиентских зон и санузлов, заменить отдельные покрытия и дверные блоки. тендеры 2026 / № 145">
-      <a class="card-open" href="#p31" data-view="p31" aria-label="Смотреть: ТТК Рублёвский">
-        <div class="card-photo"><img src="previews/p31.webp" alt="Ремонт автомобильного центра. ТТК Рублёвский" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт автомобильного центра</span><h3>ТТК Рублёвский <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Рублёвское шоссе, д. 74</p><p class="card-customer"><span>Заказчик:</span> ООО «СП Бизнес Кар»</p></div><p class="card-task"><span>Задача:</span> Обновить отделку шоурума, клиентских зон и санузлов, заменить отдельные покрытия и дверные блоки.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 145<br>PDF / 3 стр. / 0,7 МБ</span><a href="p31.pdf" class="card-download" download="РесурсПроект — Тендер 145, ТТК Рублёвский.pdf" aria-label="Скачать: ТТК Рублёвский">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="садовод противопожарные конструкции москва, ул. верхние поля: корпус 1, пск 4 и корпус 5 ооо «рынок «садовод» смонтировать противопожарный экран, изготовить и установить стальные двери, ворота и люки в корпусах комплекса. тендеры 2026 / № 146">
-      <a class="card-open" href="#p32" data-view="p32" aria-label="Смотреть: Садовод">
-        <div class="card-photo"><img src="previews/p32.webp" alt="Противопожарные конструкции. Садовод" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Противопожарные конструкции</span><h3>Садовод <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Верхние Поля: корпус 1, ПСК 4 и корпус 5</p><p class="card-customer"><span>Заказчик:</span> ООО «Рынок «Садовод»</p></div><p class="card-task"><span>Задача:</span> Смонтировать противопожарный экран, изготовить и установить стальные двери, ворота и люки в корпусах комплекса.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 146<br>PDF / 3 стр. / 0,7 МБ</span><a href="p32.pdf" class="card-download" download="РесурсПроект — Тендер 146, Садовод.pdf" aria-label="Скачать: Садовод">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="новохохловская, 23 перепланировка офисных помещений москва, ул. новохохловская, д. 23, стр. 1 ооо «азур эйр» изменить планировку кабинетов, заменить перегородки, восстановить потолки и обновить отделку стен и полов. тендеры 2026 / № 150">
-      <a class="card-open" href="#p33" data-view="p33" aria-label="Смотреть: Новохохловская, 23">
-        <div class="card-photo"><img src="previews/p33.webp" alt="Перепланировка офисных помещений. Новохохловская, 23" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Перепланировка офисных помещений</span><h3>Новохохловская, 23 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Новохохловская, д. 23, стр. 1</p><p class="card-customer"><span>Заказчик:</span> ООО «АЗУР эйр»</p></div><p class="card-task"><span>Задача:</span> Изменить планировку кабинетов, заменить перегородки, восстановить потолки и обновить отделку стен и полов.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 150<br>PDF / 3 стр. / 0,7 МБ</span><a href="p33.pdf" class="card-download" download="РесурсПроект — Тендер 150, Новохохловская, 23.pdf" aria-label="Скачать: Новохохловская, 23">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси в красногорске проектирование и ремонт клиники московская обл., г. красногорск, ул. успенская, д. 5 гк «медси» разработать рабочую документацию и выполнить капитальный ремонт с перепланировкой, отделкой и медицинскими инженерными системами. тендеры 2026 / № 167">
-      <a class="card-open" href="#p34" data-view="p34" aria-label="Смотреть: Медси в Красногорске">
-        <div class="card-photo"><img src="previews/p34.webp" alt="Проектирование и ремонт клиники. Медси в Красногорске" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Проектирование и ремонт клиники</span><h3>Медси в Красногорске <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Московская обл., г. Красногорск, ул. Успенская, д. 5</p><p class="card-customer"><span>Заказчик:</span> ГК «Медси»</p></div><p class="card-task"><span>Задача:</span> Разработать рабочую документацию и выполнить капитальный ремонт с перепланировкой, отделкой и медицинскими инженерными системами.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 167<br>PDF / 3 стр. / 0,7 МБ</span><a href="p34.pdf" class="card-download" download="РесурсПроект — Тендер 167, Медси в Красногорске.pdf" aria-label="Скачать: Медси в Красногорске">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="кафе на ленинградке ремонт кафетерия  ооо «городской супермаркет» переоборудовать кафетерий «лп52»: выполнить отделку, сантехнические системы, кондиционирование и электромонтаж. тендеры 2026 / № 171">
-      <a class="card-open" href="#p35" data-view="p35" aria-label="Смотреть: кафе на Ленинградке">
-        <div class="card-photo"><img src="previews/p35.webp" alt="Ремонт кафетерия. кафе на Ленинградке" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт кафетерия</span><h3>кафе на Ленинградке <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-customer"><span>Заказчик:</span> ООО «Городской супермаркет»</p></div><p class="card-task"><span>Задача:</span> Переоборудовать кафетерий «ЛП52»: выполнить отделку, сантехнические системы, кондиционирование и электромонтаж.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 171<br>PDF / 2 стр. / 0,5 МБ</span><a href="p35.pdf" class="card-download" download="РесурсПроект — Тендер 171, кафе на Ленинградке.pdf" aria-label="Скачать: кафе на Ленинградке">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="жк на ул. веткина отделка подземных этажей жк москва, муниципальный округ марьина роща, ул. веткина, з/у 2/1 ооо «осз» выполнить отделку лифтовых холлов, лестниц, кладовых, автостоянки и рампы на подземных этажах −1 и −2. тендеры 2026 / № 175">
-      <a class="card-open" href="#p36" data-view="p36" aria-label="Смотреть: ЖК на ул. Веткина">
-        <div class="card-photo"><img src="previews/p36.webp" alt="Отделка подземных этажей ЖК. ЖК на ул. Веткина" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка подземных этажей ЖК</span><h3>ЖК на ул. Веткина <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, муниципальный округ Марьина роща, ул. Веткина, з/у 2/1</p><p class="card-customer"><span>Технический заказчик:</span> ООО «ОСЗ»</p></div><p class="card-task"><span>Задача:</span> Выполнить отделку лифтовых холлов, лестниц, кладовых, автостоянки и рампы на подземных этажах −1 и −2.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 175<br>PDF / 4 стр. / 1,1 МБ</span><a href="p36.pdf" class="card-download" download="РесурсПроект — Тендер 175, ЖК на ул. Веткина.pdf" aria-label="Скачать: ЖК на ул. Веткина">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="конференц-зал мосэнергосбыта ремонт конференц-зала москва, ул. вавилова, д. 9 ао «мосэнергосбыт» обновить сцену, акустическую отделку и потолки, выполнить электроснабжение, освещение и инженерные системы. тендеры 2026 / № 176">
-      <a class="card-open" href="#p37" data-view="p37" aria-label="Смотреть: конференц-зал Мосэнергосбыта">
-        <div class="card-photo"><img src="previews/p37.webp" alt="Ремонт конференц-зала. конференц-зал Мосэнергосбыта" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт конференц-зала</span><h3>конференц-зал Мосэнергосбыта <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Вавилова, д. 9</p><p class="card-customer"><span>Заказчик:</span> АО «Мосэнергосбыт»</p></div><p class="card-task"><span>Задача:</span> Обновить сцену, акустическую отделку и потолки, выполнить электроснабжение, освещение и инженерные системы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 176<br>PDF / 3 стр. / 0,8 МБ</span><a href="p37.pdf" class="card-download" download="РесурсПроект — Тендер 176, конференц-зал Мосэнергосбыта.pdf" aria-label="Скачать: конференц-зал Мосэнергосбыта">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="бц «ново» перепланировка и ремонт офиса москва, ул. сущёвский вал, д. 18 ооо «ново»; работы для ооо «медея хоумапплайнс» перенести стеклянные перегородки, изменить планировку, обновить отделку, электрику и скс, переставить рабочие места. тендеры 2026 / № 186">
-      <a class="card-open" href="#p38" data-view="p38" aria-label="Смотреть: БЦ «Ново»">
-        <div class="card-photo"><img src="previews/p38.webp" alt="Перепланировка и ремонт офиса. БЦ «Ново»" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Перепланировка и ремонт офиса</span><h3>БЦ «Ново» <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Сущёвский Вал, д. 18</p><p class="card-customer"><span>Заказчик:</span> ООО «Ново»; работы для ООО «Медея Хоумапплайнс»</p></div><p class="card-task"><span>Задача:</span> Перенести стеклянные перегородки, изменить планировку, обновить отделку, электрику и СКС, переставить рабочие места.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 186<br>PDF / 3 стр. / 0,7 МБ</span><a href="p38.pdf" class="card-download" download="РесурсПроект — Тендер 186, БЦ «Ново».pdf" aria-label="Скачать: БЦ «Ново»">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="меркурий тауэр косметический ремонт помещений москва, 1-й красногвардейский проезд, 15  обновить окраску стен, колонн, балок и дверей с защитой существующей отделки и оборудования. тендеры 2026 / № 206">
-      <a class="card-open" href="#p39" data-view="p39" aria-label="Смотреть: Меркурий Тауэр">
-        <div class="card-photo"><img src="previews/p39.webp" alt="Косметический ремонт помещений. Меркурий Тауэр" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Косметический ремонт помещений</span><h3>Меркурий Тауэр <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, 1-й Красногвардейский проезд, 15</p></div><p class="card-task"><span>Задача:</span> Обновить окраску стен, колонн, балок и дверей с защитой существующей отделки и оборудования.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 206<br>PDF / 3 стр. / 0,6 МБ</span><a href="p39.pdf" class="card-download" download="РесурсПроект — Тендер 206, Меркурий Тауэр.pdf" aria-label="Скачать: Меркурий Тауэр">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси полянка и котельники переоборудование под стоматологию москва, ул. малая полянка, д. 3; московская обл., г. котельники, ул. сосновая, д. 5 гк «медси» перепрофилировать кабинеты: выполнить перепланировку, рентгенозащиту, отделку и коммуникации для медицинского оборудования. тендеры 2026 / № 29">
-      <a class="card-open" href="#p40" data-view="p40" aria-label="Смотреть: Медси Полянка и Котельники">
-        <div class="card-photo"><img src="previews/p40.webp" alt="Переоборудование под стоматологию. Медси Полянка и Котельники" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Переоборудование под стоматологию</span><h3>Медси Полянка и Котельники <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Малая Полянка, д. 3; Московская обл., г. Котельники, ул. Сосновая, д. 5</p><p class="card-customer"><span>Заказчик:</span> ГК «Медси»</p></div><p class="card-task"><span>Задача:</span> Перепрофилировать кабинеты: выполнить перепланировку, рентгенозащиту, отделку и коммуникации для медицинского оборудования.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 29<br>PDF / 3 стр. / 0,8 МБ</span><a href="p40.pdf" class="card-download" download="РесурсПроект — Тендер 29, Медси Полянка и Котельники.pdf" aria-label="Скачать: Медси Полянка и Котельники">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="главстрой менделеевская 4 отделка технических помещений москва, ул. менделеевская, д. 4 филиал ооо «главстрой-спб специализированный застройщик» выполнить черновую и чистовую отделку: перегородки, стяжки, гидроизоляцию, окраску, плитку и потолки. тендеры 2026 / № 4">
-      <a class="card-open" href="#p41" data-view="p41" aria-label="Смотреть: Главстрой Менделеевская 4">
-        <div class="card-photo"><img src="previews/p41.webp" alt="Отделка технических помещений. Главстрой Менделеевская 4" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка технических помещений</span><h3>Главстрой Менделеевская 4 <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Менделеевская, д. 4</p><p class="card-customer"><span>Генподрядчик:</span> Филиал ООО «Главстрой-СПб специализированный застройщик»</p></div><p class="card-task"><span>Задача:</span> Выполнить черновую и чистовую отделку: перегородки, стяжки, гидроизоляцию, окраску, плитку и потолки.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 4<br>PDF / 3 стр. / 1,0 МБ</span><a href="p41.pdf" class="card-download" download="РесурсПроект — Тендер 4, Главстрой Менделеевская 4.pdf" aria-label="Скачать: Главстрой Менделеевская 4">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="вти ленинская слобода ремонт помещений четырёх этажей москва, ул. ленинская слобода, д. 23, стр. 3 ао «вти» выполнить отделку и перегородки, обновить электрику, водоснабжение, сантехнику и дверные блоки. тендеры 2026 / № 40">
-      <a class="card-open" href="#p42" data-view="p42" aria-label="Смотреть: ВТИ Ленинская Слобода">
-        <div class="card-photo"><img src="previews/p42.webp" alt="Ремонт помещений четырёх этажей. ВТИ Ленинская Слобода" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт помещений четырёх этажей</span><h3>ВТИ Ленинская Слобода <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Ленинская Слобода, д. 23, стр. 3</p><p class="card-customer"><span>Заказчик:</span> АО «ВТИ»</p></div><p class="card-task"><span>Задача:</span> Выполнить отделку и перегородки, обновить электрику, водоснабжение, сантехнику и дверные блоки.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 40<br>PDF / 3 стр. / 0,9 МБ</span><a href="p42.pdf" class="card-download" download="РесурсПроект — Тендер 40, ВТИ Ленинская Слобода.pdf" aria-label="Скачать: ВТИ Ленинская Слобода">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="рен тв партийный переулок ремонт действующего офиса москва, партийный пер., д. 1, к. 57, стр. 3 ооо «акцепт» (рен тв) обновить отделку, потолки, освещение и двери, отремонтировать лестницу без остановки работы офиса. тендеры 2026 / № 44">
-      <a class="card-open" href="#p43" data-view="p43" aria-label="Смотреть: РЕН ТВ Партийный переулок">
-        <div class="card-photo"><img src="previews/p43.webp" alt="Ремонт действующего офиса. РЕН ТВ Партийный переулок" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт действующего офиса</span><h3>РЕН ТВ Партийный переулок <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Партийный пер., д. 1, к. 57, стр. 3</p><p class="card-customer"><span>Заказчик:</span> ООО «АКЦЕПТ» (РЕН ТВ)</p></div><p class="card-task"><span>Задача:</span> Обновить отделку, потолки, освещение и двери, отремонтировать лестницу без остановки работы офиса.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 44<br>PDF / 3 стр. / 0,5 МБ</span><a href="p43.pdf" class="card-download" download="РесурсПроект — Тендер 44, РЕН ТВ Партийный переулок.pdf" aria-label="Скачать: РЕН ТВ Партийный переулок">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="новоалексеевская вк замена систем водоснабжения москва, ул. новоалексеевская, 22, корп. 1 и 2 ооо ук «эго-комфорт» (управляющая компания) заменить вводы, лежаки и стояки хвс и гвс в двух корпусах, выполнить промывку и гидравлические испытания. тендеры 2026 / № 46">
-      <a class="card-open" href="#p44" data-view="p44" aria-label="Смотреть: Новоалексеевская ВК">
-        <div class="card-photo"><img src="previews/p44.webp" alt="Замена систем водоснабжения. Новоалексеевская ВК" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Замена систем водоснабжения</span><h3>Новоалексеевская ВК <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Новоалексеевская, 22, корп. 1 и 2</p><p class="card-customer"><span>Заказчик:</span> ООО УК «Эго-Комфорт» (управляющая компания)</p></div><p class="card-task"><span>Задача:</span> Заменить вводы, лежаки и стояки ХВС и ГВС в двух корпусах, выполнить промывку и гидравлические испытания.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 46<br>PDF / 3 стр. / 1,0 МБ</span><a href="p44.pdf" class="card-download" download="РесурсПроект — Тендер 46, Новоалексеевская ВК.pdf" aria-label="Скачать: Новоалексеевская ВК">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси зелёный проспект отделка коридора клиники москва, зелёный проспект, д. 7 гк «медси» снять декоративные наклейки, подготовить и окрасить стены по брендбуку «медси» без остановки работы клиники. тендеры 2026 / № 53">
-      <a class="card-open" href="#p45" data-view="p45" aria-label="Смотреть: Медси Зелёный проспект">
-        <div class="card-photo"><img src="previews/p45.webp" alt="Отделка коридора клиники. Медси Зелёный проспект" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка коридора клиники</span><h3>Медси Зелёный проспект <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Зелёный проспект, д. 7</p><p class="card-customer"><span>Заказчик:</span> ГК «Медси»</p></div><p class="card-task"><span>Задача:</span> Снять декоративные наклейки, подготовить и окрасить стены по брендбуку «Медси» без остановки работы клиники.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 53<br>PDF / 2 стр. / 0,5 МБ</span><a href="p45.pdf" class="card-download" download="РесурсПроект — Тендер 53, Медси Зелёный проспект.pdf" aria-label="Скачать: Медси Зелёный проспект">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="детский мир колумбус реконфигурация магазина москва, ул. кировоградская, д. 13а ооо «дм» («детский мир») подготовить рабочую документацию, обновить торговое помещение и входную группу, выполнить отделку и инженерные системы. тендеры 2026 / № 54">
-      <a class="card-open" href="#p46" data-view="p46" aria-label="Смотреть: Детский мир Колумбус">
-        <div class="card-photo"><img src="previews/p46.webp" alt="Реконфигурация магазина. Детский мир Колумбус" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Реконфигурация магазина</span><h3>Детский мир Колумбус <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Кировоградская, д. 13А</p><p class="card-customer"><span>Заказчик:</span> ООО «ДМ» («Детский мир»)</p></div><p class="card-task"><span>Задача:</span> Подготовить рабочую документацию, обновить торговое помещение и входную группу, выполнить отделку и инженерные системы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 54<br>PDF / 3 стр. / 0,9 МБ</span><a href="p46.pdf" class="card-download" download="РесурсПроект — Тендер 54, Детский мир Колумбус.pdf" aria-label="Скачать: Детский мир Колумбус">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="медси текущий ремонт текущий ремонт клиник москва, ул. красная пресня, д. 16 и другие адреса группа компаний «медси» обновить отделку лестниц и холлов, выполнить локальные ремонты помещений и работы по рентгенозащите. тендеры 2026 / № 56">
-      <a class="card-open" href="#p47" data-view="p47" aria-label="Смотреть: Медси текущий ремонт">
-        <div class="card-photo"><img src="previews/p47.webp" alt="Текущий ремонт клиник. Медси текущий ремонт" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Текущий ремонт клиник</span><h3>Медси текущий ремонт <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Красная Пресня, д. 16 и другие адреса</p><p class="card-customer"><span>Заказчик:</span> Группа компаний «Медси»</p></div><p class="card-task"><span>Задача:</span> Обновить отделку лестниц и холлов, выполнить локальные ремонты помещений и работы по рентгенозащите.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 56<br>PDF / 4 стр. / 1,2 МБ</span><a href="p47.pdf" class="card-download" download="РесурсПроект — Тендер 56, Медси текущий ремонт.pdf" aria-label="Скачать: Медси текущий ремонт">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="перегородки гкл, алтуфьевское шоссе монтаж перегородок из гкл москва, алтуфьевское шоссе, вл. 27а  смонтировать перегородки, шахты и обстройки на девяти уровнях, включая противопожарные конструкции. тендеры 2026 / № 62">
-      <a class="card-open" href="#p48" data-view="p48" aria-label="Смотреть: перегородки ГКЛ, Алтуфьевское шоссе">
-        <div class="card-photo"><img src="previews/p48.webp" alt="Монтаж перегородок из ГКЛ. перегородки ГКЛ, Алтуфьевское шоссе" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Монтаж перегородок из ГКЛ</span><h3>перегородки ГКЛ, Алтуфьевское шоссе <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Алтуфьевское шоссе, вл. 27А</p></div><p class="card-task"><span>Задача:</span> Смонтировать перегородки, шахты и обстройки на девяти уровнях, включая противопожарные конструкции.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 62<br>PDF / 3 стр. / 0,5 МБ</span><a href="p48.pdf" class="card-download" download="РесурсПроект — Тендер 62, перегородки ГКЛ, Алтуфьевское шоссе.pdf" aria-label="Скачать: перегородки ГКЛ, Алтуфьевское шоссе">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="трц «метрополис» ремонт общественных зон трц москва, ленинградское ш., д. 16а, стр. 4 ао «тпс недвижимость» обновить фризы, колонны и вестибюль, заменить освещение и выполнить отделочные работы на высоте. тендеры 2026 / № 73">
-      <a class="card-open" href="#p49" data-view="p49" aria-label="Смотреть: ТРЦ «Метрополис»">
-        <div class="card-photo"><img src="previews/p49.webp" alt="Ремонт общественных зон ТРЦ. ТРЦ «Метрополис»" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт общественных зон ТРЦ</span><h3>ТРЦ «Метрополис» <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Ленинградское ш., д. 16А, стр. 4</p><p class="card-customer"><span>Заказчик:</span> АО «ТПС Недвижимость»</p></div><p class="card-task"><span>Задача:</span> Обновить фризы, колонны и вестибюль, заменить освещение и выполнить отделочные работы на высоте.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 73<br>PDF / 4 стр. / 1,2 МБ</span><a href="p49.pdf" class="card-download" download="РесурсПроект — Тендер 73, ТРЦ «Метрополис».pdf" aria-label="Скачать: ТРЦ «Метрополис»">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="снос убежища, некрасовка проектирование и снос сооружения москва, муниципальный округ некрасовка, ул. 1-я вольская, д. 22, соор. 1 фгуп «ртрс», филиал «мрц» разработать документацию на снос убежища, демонтировать конструкции и фундаменты, засыпать котлован и вывезти отходы. тендеры 2026 / № 79">
-      <a class="card-open" href="#p50" data-view="p50" aria-label="Смотреть: снос убежища, Некрасовка">
-        <div class="card-photo"><img src="previews/p50.webp" alt="Проектирование и снос сооружения. снос убежища, Некрасовка" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Проектирование и снос сооружения</span><h3>снос убежища, Некрасовка <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, муниципальный округ Некрасовка, ул. 1-я Вольская, д. 22, соор. 1</p><p class="card-customer"><span>Заказчик:</span> ФГУП «РТРС», филиал «МРЦ»</p></div><p class="card-task"><span>Задача:</span> Разработать документацию на снос убежища, демонтировать конструкции и фундаменты, засыпать котлован и вывезти отходы.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 79<br>PDF / 3 стр. / 0,9 МБ</span><a href="p50.pdf" class="card-download" download="РесурсПроект — Тендер 79, снос убежища, Некрасовка.pdf" aria-label="Скачать: снос убежища, Некрасовка">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="гк «автомир», иркутская улица ремонт автомобильного комплекса москва, ул. иркутская, д. 5/6, стр. 1 тск «байкальская» гк «автомир» заменить трубопроводы и теплообменники, обновить отделку мойки и душевых, выполнить ремонт отдельных конструкций. тендеры 2026 / № 81">
-      <a class="card-open" href="#p51" data-view="p51" aria-label="Смотреть: ГК «Автомир», Иркутская улица">
-        <div class="card-photo"><img src="previews/p51.webp" alt="Ремонт автомобильного комплекса. ГК «Автомир», Иркутская улица" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Ремонт автомобильного комплекса</span><h3>ГК «Автомир», Иркутская улица <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Иркутская, д. 5/6, стр. 1</p><p class="card-customer"><span>Заказчик:</span> ТСК «Байкальская» ГК «Автомир»</p></div><p class="card-task"><span>Задача:</span> Заменить трубопроводы и теплообменники, обновить отделку мойки и душевых, выполнить ремонт отдельных конструкций.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 81<br>PDF / 3 стр. / 0,7 МБ</span><a href="p51.pdf" class="card-download" download="РесурсПроект — Тендер 81, ГК «Автомир», Иркутская улица.pdf" aria-label="Скачать: ГК «Автомир», Иркутская улица">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="трубопроводы, маломосковская улица замена трубопроводов хвс и гвс москва, ул. маломосковская, д. 14  демонтировать изношенные трубы, смонтировать новые оцинкованные трубопроводы, арматуру и теплоизоляцию. тендеры 2026 / № 94">
-      <a class="card-open" href="#p52" data-view="p52" aria-label="Смотреть: трубопроводы, Маломосковская улица">
-        <div class="card-photo"><img src="previews/p52.webp" alt="Замена трубопроводов ХВС и ГВС. трубопроводы, Маломосковская улица" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Замена трубопроводов ХВС и ГВС</span><h3>трубопроводы, Маломосковская улица <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, ул. Маломосковская, д. 14</p></div><p class="card-task"><span>Задача:</span> Демонтировать изношенные трубы, смонтировать новые оцинкованные трубопроводы, арматуру и теплоизоляцию.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 94<br>PDF / 2 стр. / 0,5 МБ</span><a href="p52.pdf" class="card-download" download="РесурсПроект — Тендер 94, трубопроводы, Маломосковская улица.pdf" aria-label="Скачать: трубопроводы, Маломосковская улица">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article>
-<article class="document" data-group="tenders-2026" data-search="отделка квартир, куркино отделка квартир москва, куркино, куркинское ш., вл. 15 ооо «сетистрой» выполнить подготовку white box и чистовую отделку квартир, смонтировать электрику, сантехнику и климатическое оборудование. тендеры 2026 / № 97">
-      <a class="card-open" href="#p53" data-view="p53" aria-label="Смотреть: отделка квартир, Куркино">
-        <div class="card-photo"><img src="previews/p53.webp" alt="Отделка квартир. отделка квартир, Куркино" loading="lazy" decoding="async" width="1100" height="820"></div>
-        <span class="card-type">Отделка квартир</span><h3>отделка квартир, Куркино <span aria-hidden="true">↗</span></h3>
-        <div class="card-meta"><p class="card-address"><span>Адрес:</span> Москва, Куркино, Куркинское ш., вл. 15</p><p class="card-customer"><span>Заказчик:</span> ООО «СетиСтрой»</p></div><p class="card-task"><span>Задача:</span> Выполнить подготовку white box и чистовую отделку квартир, смонтировать электрику, сантехнику и климатическое оборудование.</p>
-      </a><div class="card-footer"><span>Тендеры 2026 / № 97<br>PDF / 4 стр. / 1,3 МБ</span><a href="p53.pdf" class="card-download" download="РесурсПроект — Тендер 97, отделка квартир, Куркино.pdf" aria-label="Скачать: отделка квартир, Куркино">Скачать PDF <span aria-hidden="true">↓</span></a></div>
-    </article></div><p class="empty" id="empty" hidden>По вашему запросу презентации не найдены. Попробуйте другое название или раздел.</p></div></section>
+<section class="hero"><div class="wrap">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Презентация компании и работ</p>
+      <h1>Проектирование, строительство <span>и отделка</span></h1>
+      <p class="intro">«РесурсПроект» выполняет проектные и строительно-монтажные работы, капитальный ремонт и отделку помещений. Работаем с коммерческими, общественными и жилыми объектами.</p>
+      <div class="hero-actions"><a href="#main" class="button" data-view="main">Смотреть портфолио <span aria-hidden="true">↗</span></a><a href="resursproekt-portfolio.pdf" class="button ghost" download="РесурсПроект — портфолио.pdf">Скачать PDF <span aria-hidden="true">↓</span></a></div>
+      <p class="file-meta">Портфолио компании · 39 страниц · 14,2 МБ</p>
+    </div>
+    <figure class="hero-figure"><img src="hero.jpg" alt="Интерьер ресторана центра «Сенеж» с декоративными стеновыми и потолочными панелями" width="872" height="654" fetchpriority="high"><figcaption><strong>Мастерская управления «Сенеж»</strong>Декоративные стеновые и потолочные панели</figcaption></figure>
+  </div>
+  <ul class="stats" aria-label="Материалы на странице">
+    <li><b>39</b><span>страниц в основном портфолио</span></li>
+    <li><b>16</b><span>презентаций по объектам</span></li>
+    <li><b>37</b><span>тендерных презентаций 2025–2026</span></li>
+    <li><b>4</b><span>направления работы</span></li>
+  </ul>
+</div></section>
+<section class="section" id="about"><div class="wrap">
+  <div class="section-heading"><div><p class="label">О компании</p><h2>Направления работы</h2></div><p>От проектной документации до строительных работ и инженерных систем. Работаем по государственным и коммерческим контрактам.</p></div>
+  <div class="directions">
+    <article class="direction"><span class="n">01</span><h3>Проектирование и генподряд</h3><p>Проектная и рабочая документация. Организация и выполнение строительных работ.</p></article>
+    <article class="direction"><span class="n">02</span><h3>Капитальный ремонт и fit-out</h3><p>Офисы, банковские отделения, медицинские и торговые помещения. Перепланировка и отделка.</p></article>
+    <article class="direction"><span class="n">03</span><h3>Инженерные системы</h3><p>Водоснабжение, отопление, вентиляция, электроснабжение. Внутренние и наружные сети.</p></article>
+    <article class="direction"><span class="n">04</span><h3>Строительство и производство</h3><p>Общестроительные работы, фасады и благоустройство. Панели, металлоконструкции и модульные здания.</p></article>
+  </div>
+</div></section>
+<section class="section catalog" id="presentations"><div class="wrap">
+  <div class="section-heading"><div><p class="label">Каталог</p><h2>Объекты в деталях</h2></div><p>Фотографии, заказчики, адреса и задачи по всем 53 презентациям. Нажмите на карточку, чтобы посмотреть материал целиком.</p></div>
+  <div class="toolbar">
+    <div class="filters" role="group" aria-label="Раздел презентаций"><button class="filter" type="button" aria-pressed="true" data-filter="all">Все <span>53</span></button><button class="filter" type="button" aria-pressed="false" data-filter="objects">Объекты <span>16</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2026">Тендеры 2026 <span>32</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2025">Тендеры 2025 <span>5</span></button></div>
+    <div class="search-wrap"><label class="sr-only" for="search">Поиск презентации</label><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Объект, адрес, заказчик или вид работ" autocomplete="off"></div>
+    <span class="result-count" id="result-count" role="status" aria-live="polite">Показано 53 из 53</span>
+  </div>
+  <div id="document-list">
+<div class="group-head" data-head="objects"><h3>Объекты <span>16</span></h3><p>Материалы по объектам с указанными в них статусами работ.</p></div>
+<article class="card" data-group="objects" data-search="земляной вал, 75 капитальный ремонт офиса москва, ул. земляной вал, д. 75 ооо «ангел ист рус» выполнить капитальный ремонт 5–6 этажей: перепланировку, отделку и обновление инженерных систем. объекты">
+  <a class="card-open" href="#p02" data-view="p02" aria-label="Смотреть: Земляной Вал, 75">
+    <div class="card-photo"><img src="office.jpg" alt="Капитальный ремонт офиса. Земляной Вал, 75" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Капитальный ремонт офиса</span>
+      <h3>Земляной Вал, 75</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Земляной Вал, д. 75</dd></div><div><dt>Заказчик</dt><dd>ООО «Ангел Ист Рус»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить капитальный ремонт 5–6 этажей: перепланировку, отделку и обновление инженерных систем.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,0 МБ</span><a href="p02.pdf" class="card-download" download="РесурсПроект — Земляной Вал, 75.pdf" aria-label="Скачать PDF: Земляной Вал, 75">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="центр «сенеж» гостиница и ресторан московская обл., г.о. солнечногорск, г. солнечногорск, ул. прибрежная, стр. 2 ооо «неоклассик»; ао «концерн титан-2» поставить и смонтировать декоративные стеновые и потолочные панели, выполнить потолки и сборку мебели. объекты">
+  <a class="card-open" href="#p09" data-view="p09" aria-label="Смотреть: Центр «Сенеж»">
+    <div class="card-photo"><img src="senezh.jpg" alt="Гостиница и ресторан. Центр «Сенеж»" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Гостиница и ресторан</span>
+      <h3>Центр «Сенеж»</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., г.о. Солнечногорск, г. Солнечногорск, ул. Прибрежная, стр. 2</dd></div><div><dt>Заказчик</dt><dd>ООО «НЕОКЛАССИК»; АО «Концерн Титан-2»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Поставить и смонтировать декоративные стеновые и потолочные панели, выполнить потолки и сборку мебели.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 5 стр. · 1,3 МБ</span><a href="p09.pdf" class="card-download" download="РесурсПроект — Сенеж, гостиница и ресторан.pdf" aria-label="Скачать PDF: Центр «Сенеж»">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="отп банк, проспект мира, 29 банковское отделение москва, проспект мира, д. 29 ао «отп банк» спроектировать и отремонтировать отделение: выполнить перепланировку, отделку, инженерные системы и кассовый узел. объекты">
+  <a class="card-open" href="#p06" data-view="p06" aria-label="Смотреть: ОТП Банк, проспект Мира, 29">
+    <div class="card-photo"><img src="bank.jpg" alt="Банковское отделение. ОТП Банк, проспект Мира, 29" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Банковское отделение</span>
+      <h3>ОТП Банк, проспект Мира, 29</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, проспект Мира, д. 29</dd></div><div><dt>Заказчик</dt><dd>АО «ОТП Банк»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Спроектировать и отремонтировать отделение: выполнить перепланировку, отделку, инженерные системы и кассовый узел.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 5 стр. · 1,2 МБ</span><a href="p06.pdf" class="card-download" download="РесурсПроект — ОТП Банк, проспект Мира, 29.pdf" aria-label="Скачать PDF: ОТП Банк, проспект Мира, 29">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="автодом, санузлы ремонт санузлов московская обл., ул. луговая, 1.2 ао «автодом» отремонтировать два санузла: заменить отделку, перегородки, сантехнику и инженерные разводки. объекты">
+  <a class="card-open" href="#p01" data-view="p01" aria-label="Смотреть: Автодом, санузлы">
+    <div class="card-photo"><img src="previews/p01.webp" alt="Ремонт санузлов. Автодом, санузлы" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт санузлов</span>
+      <h3>Автодом, санузлы</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., ул. Луговая, 1.2</dd></div><div><dt>Заказчик</dt><dd>АО «АВТОДОМ»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Отремонтировать два санузла: заменить отделку, перегородки, сантехнику и инженерные разводки.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,4 МБ</span><a href="p01.pdf" class="card-download" download="РесурсПроект — Автодом, санузлы.pdf" aria-label="Скачать PDF: Автодом, санузлы">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="лодочная, 27 наружные инженерные сети москва, сзао, ул. лодочная, вл. 27, корп. 2 ооо «сз «лодочная» вынести водопровод и теплосеть из зоны строительства, подключить новые участки и восстановить благоустройство. объекты">
+  <a class="card-open" href="#p03" data-view="p03" aria-label="Смотреть: Лодочная, 27">
+    <div class="card-photo"><img src="previews/p03.webp" alt="Наружные инженерные сети. Лодочная, 27" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Наружные инженерные сети</span>
+      <h3>Лодочная, 27</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, СЗАО, ул. Лодочная, вл. 27, корп. 2</dd></div><div><dt>Заказчик</dt><dd>ООО «СЗ «Лодочная»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Вынести водопровод и теплосеть из зоны строительства, подключить новые участки и восстановить благоустройство.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,9 МБ</span><a href="p03.pdf" class="card-download" download="РесурсПроект — Лодочная, 27.pdf" aria-label="Скачать PDF: Лодочная, 27">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="магазин мцз, трк «бум» отделка торгового помещения москва, ул. перерва, 43, стр. 1, трк «бум» ооо «солнечный свет» (sunlight) переоборудовать магазин: выполнить демонтаж, новую отделку, остекление, освещение и системы вентиляции. объекты">
+  <a class="card-open" href="#p04" data-view="p04" aria-label="Смотреть: Магазин МЦЗ, ТРК «БУМ»">
+    <div class="card-photo"><img src="previews/p04.webp" alt="Отделка торгового помещения. магазин МЦЗ, ТРК «БУМ»" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка торгового помещения</span>
+      <h3>Магазин МЦЗ, ТРК «БУМ»</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Перерва, 43, стр. 1, ТРК «БУМ»</dd></div><div><dt>Заказчик</dt><dd>ООО «Солнечный свет» (SUNLIGHT)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Переоборудовать магазин: выполнить демонтаж, новую отделку, остекление, освещение и системы вентиляции.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,6 МБ</span><a href="p04.pdf" class="card-download" download="РесурсПроект — магазин МЦЗ, ТРК «БУМ».pdf" aria-label="Скачать PDF: Магазин МЦЗ, ТРК «БУМ»">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="медси, зелёный проспект, 7 демонтаж в медицинском здании москва, зелёный проспект, д. 7 гк «медси» подготовить 4–7 этажи к капитальному ремонту: разобрать отделку, перегородки и инженерные сети, вывезти мусор. объекты">
+  <a class="card-open" href="#p05" data-view="p05" aria-label="Смотреть: Медси, Зелёный проспект, 7">
+    <div class="card-photo"><img src="previews/p05.webp" alt="Демонтаж в медицинском здании. Медси, Зелёный проспект, 7" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Демонтаж в медицинском здании</span>
+      <h3>Медси, Зелёный проспект, 7</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Зелёный проспект, д. 7</dd></div><div><dt>Заказчик</dt><dd>ГК «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить 4–7 этажи к капитальному ремонту: разобрать отделку, перегородки и инженерные сети, вывезти мусор.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p05.pdf" class="card-download" download="РесурсПроект — Медси, Зелёный проспект, 7.pdf" aria-label="Скачать PDF: Медси, Зелёный проспект, 7">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="сгк, дубининская, 53 ремонт административного здания москва, ул. дубининская, д. 53, стр. 5, этажи 1–3 ооо «сибирская генерирующая компания» обновить лестничный холл 1–3 этажей: отделку, ограждения, противопожарные перегородки и инженерные системы. объекты">
+  <a class="card-open" href="#p07" data-view="p07" aria-label="Смотреть: СГК, Дубининская, 53">
+    <div class="card-photo"><img src="previews/p07.webp" alt="Ремонт административного здания. СГК, Дубининская, 53" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт административного здания</span>
+      <h3>СГК, Дубининская, 53</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Дубининская, д. 53, стр. 5, этажи 1–3</dd></div><div><dt>Заказчик</dt><dd>ООО «Сибирская генерирующая компания»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить лестничный холл 1–3 этажей: отделку, ограждения, противопожарные перегородки и инженерные системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p07.pdf" class="card-download" download="РесурсПроект — СГК, Дубининская, 53.pdf" aria-label="Скачать PDF: СГК, Дубининская, 53">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="севастопольский пр-т, 66 многопрофильный медицинский центр москва, севастопольский проспект, д. 66 банк россии; чу «сервисная компания банка россии» отремонтировать помещения кардиологии, операционный блок, входные группы и ограждение территории. объекты">
+  <a class="card-open" href="#p08" data-view="p08" aria-label="Смотреть: Севастопольский пр-т, 66">
+    <div class="card-photo"><img src="previews/p08.webp" alt="Многопрофильный медицинский центр. Севастопольский пр-т, 66" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Многопрофильный медицинский центр</span>
+      <h3>Севастопольский пр-т, 66</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Севастопольский проспект, д. 66</dd></div><div><dt>Заказчик</dt><dd>Банк России; ЧУ «Сервисная компания Банка России»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Отремонтировать помещения кардиологии, операционный блок, входные группы и ограждение территории.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 9 стр. · 4,0 МБ</span><a href="p08.pdf" class="card-download" download="РесурсПроект — Севастопольский пр-т, 66.pdf" aria-label="Скачать PDF: Севастопольский пр-т, 66">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="тали, пятницкая, 44 реконструкция и отделка помещений москва, ул. пятницкая, д. 44, стр. 3 ооо «тали» выполнить отделку этажей, заменить внутренние лестницы, устроить новые крыльца и усилить проёмы. объекты">
+  <a class="card-open" href="#p10" data-view="p10" aria-label="Смотреть: ТАЛИ, Пятницкая, 44">
+    <div class="card-photo"><img src="previews/p10.webp" alt="Реконструкция и отделка помещений. ТАЛИ, Пятницкая, 44" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Реконструкция и отделка помещений</span>
+      <h3>ТАЛИ, Пятницкая, 44</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Пятницкая, д. 44, стр. 3</dd></div><div><dt>Заказчик</dt><dd>ООО «ТАЛИ»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить отделку этажей, заменить внутренние лестницы, устроить новые крыльца и усилить проёмы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,1 МБ</span><a href="p10.pdf" class="card-download" download="РесурсПроект — ТАЛИ, Пятницкая, 44.pdf" aria-label="Скачать PDF: ТАЛИ, Пятницкая, 44">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, ларюшино ремонт зданий и территории московская обл., одинцовский г. о., д. ларюшино, д. 100 банк россии, многопрофильный медицинский центр обновить библиотеку, палаты и коридор, отремонтировать ограждение, фасад склада и аварийный участок теплосети. объекты">
+  <a class="card-open" href="#p11" data-view="p11" aria-label="Смотреть: ЦБ, Ларюшино">
+    <div class="card-photo"><img src="previews/p11.webp" alt="Ремонт зданий и территории. ЦБ, Ларюшино" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт зданий и территории</span>
+      <h3>ЦБ, Ларюшино</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Одинцовский г. о., д. Ларюшино, д. 100</dd></div><div><dt>Заказчик</dt><dd>Банк России, Многопрофильный медицинский центр</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить библиотеку, палаты и коридор, отремонтировать ограждение, фасад склада и аварийный участок теплосети.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,9 МБ</span><a href="p11.pdf" class="card-download" download="РесурсПроект — ЦБ, Ларюшино.pdf" aria-label="Скачать PDF: ЦБ, Ларюшино">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, настасьинский пер., 5 ремонт гостиничных помещений москва, настасьинский пер., д. 5, стр. 7 банк россии отремонтировать номера, ресепшен и коридоры, помещения подвала, фасад и козырьки. объекты">
+  <a class="card-open" href="#p12" data-view="p12" aria-label="Смотреть: ЦБ, Настасьинский пер., 5">
+    <div class="card-photo"><img src="previews/p12.webp" alt="Ремонт гостиничных помещений. ЦБ, Настасьинский пер., 5" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт гостиничных помещений</span>
+      <h3>ЦБ, Настасьинский пер., 5</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Настасьинский пер., д. 5, стр. 7</dd></div><div><dt>Заказчик</dt><dd>Банк России</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Отремонтировать номера, ресепшен и коридоры, помещения подвала, фасад и козырьки.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p12.pdf" class="card-download" download="РесурсПроект — ЦБ, Настасьинский пер., 5.pdf" aria-label="Скачать PDF: ЦБ, Настасьинский пер., 5">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, севастопольский пр-т, 66 ремонт медицинского центра москва, севастопольский проспект, д. 66 банк россии (с 2026 года — чу «сервисная компания банка россии») обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение. объекты">
+  <a class="card-open" href="#p13" data-view="p13" aria-label="Смотреть: ЦБ, Севастопольский пр-т, 66">
+    <div class="card-photo"><img src="previews/p13.webp" alt="Ремонт медицинского центра. ЦБ, Севастопольский пр-т, 66" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт медицинского центра</span>
+      <h3>ЦБ, Севастопольский пр-т, 66</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Севастопольский проспект, д. 66</dd></div><div><dt>Заказчик</dt><dd>Банк России (с 2026 года — ЧУ «Сервисная компания Банка России»)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p13.pdf" class="card-download" download="РесурсПроект — ЦБ, Севастопольский пр-т, 66.pdf" aria-label="Скачать PDF: ЦБ, Севастопольский пр-т, 66">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, селивёрстов пер., 6 ремонт офисных помещений москва, селивёрстов пер., д. 6 банк россии заменить противопожарные двери, демонтировать перегородку и отремонтировать санузлы на 1 и 4 этажах. объекты">
+  <a class="card-open" href="#p14" data-view="p14" aria-label="Смотреть: ЦБ, Селивёрстов пер., 6">
+    <div class="card-photo"><img src="previews/p14.webp" alt="Ремонт офисных помещений. ЦБ, Селивёрстов пер., 6" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт офисных помещений</span>
+      <h3>ЦБ, Селивёрстов пер., 6</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Селивёрстов пер., д. 6</dd></div><div><dt>Заказчик</dt><dd>Банк России</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Заменить противопожарные двери, демонтировать перегородку и отремонтировать санузлы на 1 и 4 этажах.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,3 МБ</span><a href="p14.pdf" class="card-download" download="РесурсПроект — ЦБ, Селивёрстов пер., 6.pdf" aria-label="Скачать PDF: ЦБ, Селивёрстов пер., 6">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, ул. мосфильмовская, 8 отделка лестниц и коридоров москва, ул. мосфильмовская, д. 8, корп. 2 банк россии отремонтировать четыре лестничных марша и стены коридоров офисной части здания. объекты">
+  <a class="card-open" href="#p15" data-view="p15" aria-label="Смотреть: ЦБ, ул. Мосфильмовская, 8">
+    <div class="card-photo"><img src="previews/p15.webp" alt="Отделка лестниц и коридоров. ЦБ, ул. Мосфильмовская, 8" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка лестниц и коридоров</span>
+      <h3>ЦБ, ул. Мосфильмовская, 8</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Мосфильмовская, д. 8, корп. 2</dd></div><div><dt>Заказчик</dt><dd>Банк России</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Отремонтировать четыре лестничных марша и стены коридоров офисной части здания.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,5 МБ</span><a href="p15.pdf" class="card-download" download="РесурсПроект — ЦБ, ул. Мосфильмовская, 8.pdf" aria-label="Скачать PDF: ЦБ, ул. Мосфильмовская, 8">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="цб, ул. свободы, 57 ремонт административного комплекса москва, ул. свободы, д. 57, корп. 1 банк россии; чу «сервисная компания банка россии» отремонтировать кабинеты, ситуационный центр и конференц-зал, заменить кровлю над главным входом. объекты">
+  <a class="card-open" href="#p16" data-view="p16" aria-label="Смотреть: ЦБ, ул. Свободы, 57">
+    <div class="card-photo"><img src="previews/p16.webp" alt="Ремонт административного комплекса. ЦБ, ул. Свободы, 57" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт административного комплекса</span>
+      <h3>ЦБ, ул. Свободы, 57</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Свободы, д. 57, корп. 1</dd></div><div><dt>Заказчик</dt><dd>Банк России; ЧУ «Сервисная компания Банка России»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Отремонтировать кабинеты, ситуационный центр и конференц-зал, заменить кровлю над главным входом.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p16.pdf" class="card-download" download="РесурсПроект — ЦБ, ул. Свободы, 57.pdf" aria-label="Скачать PDF: ЦБ, ул. Свободы, 57">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<div class="group-head" data-head="tenders-2026"><h3>Тендеры 2026 <span>32</span></h3><p>Задачи закупок и исходное состояние помещений.</p></div>
+<article class="card" data-group="tenders-2026" data-search="бкс проспект мира 69 ремонт офисных помещений москва, проспект мира, д. 69, стр. 1 ооо «компания брокеркредитсервис» (бкс) обновить офис: выполнить перегородки, полы, потолки, освещение, скс, вентиляцию и кондиционирование. тендеры 2026 / № 1">
+  <a class="card-open" href="#p22" data-view="p22" aria-label="Смотреть: БКС проспект Мира 69">
+    <div class="card-photo"><img src="previews/p22.webp" alt="Ремонт офисных помещений. БКС проспект Мира 69" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 1</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт офисных помещений</span>
+      <h3>БКС проспект Мира 69</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, проспект Мира, д. 69, стр. 1</dd></div><div><dt>Заказчик</dt><dd>ООО «Компания Брокеркредитсервис» (БКС)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить офис: выполнить перегородки, полы, потолки, освещение, СКС, вентиляцию и кондиционирование.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p22.pdf" class="card-download" download="РесурсПроект — Тендер 1, БКС проспект Мира 69.pdf" aria-label="Скачать PDF: БКС проспект Мира 69">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="банный комплекс демонтажные работы москва, пл. ганецкого, д. 1 ооо «варшава» демонтировать железобетонные полы и фундаменты внутри здания, вывезти и утилизировать строительный мусор. тендеры 2026 / № 12">
+  <a class="card-open" href="#p23" data-view="p23" aria-label="Смотреть: Банный комплекс">
+    <div class="card-photo"><img src="previews/p23.webp" alt="Демонтажные работы. Банный комплекс" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 12</span></div>
+    <div class="card-body">
+      <span class="card-type">Демонтажные работы</span>
+      <h3>Банный комплекс</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, пл. Ганецкого, д. 1</dd></div><div><dt>Заказчик</dt><dd>ООО «Варшава»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Демонтировать железобетонные полы и фундаменты внутри здания, вывезти и утилизировать строительный мусор.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,4 МБ</span><a href="p23.pdf" class="card-download" download="РесурсПроект — Тендер 12, Банный комплекс.pdf" aria-label="Скачать PDF: Банный комплекс">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси на пироговской стоматологические кабинеты москва, ул. б. пироговская, д. 7 ао «медси 2» подготовить кабинеты под новые стоматологические установки: обновить отделку и подвести необходимые коммуникации. тендеры 2026 / № 124">
+  <a class="card-open" href="#p24" data-view="p24" aria-label="Смотреть: Медси на Пироговской">
+    <div class="card-photo"><img src="previews/p24.webp" alt="Стоматологические кабинеты. Медси на Пироговской" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 124</span></div>
+    <div class="card-body">
+      <span class="card-type">Стоматологические кабинеты</span>
+      <h3>Медси на Пироговской</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Б. Пироговская, д. 7</dd></div><div><dt>Заказчик</dt><dd>АО «Медси 2»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить кабинеты под новые стоматологические установки: обновить отделку и подвести необходимые коммуникации.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p24.pdf" class="card-download" download="РесурсПроект — Тендер 124, Медси на Пироговской.pdf" aria-label="Скачать PDF: Медси на Пироговской">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="мцз охотный ряд ремонт торгового помещения москва, манежная площадь, д. 1, стр. 2 ооо «мцз ритейл» выполнить демонтаж, новые перегородки и отделку магазина, освещение, вентиляцию и кондиционирование. тендеры 2026 / № 128">
+  <a class="card-open" href="#p25" data-view="p25" aria-label="Смотреть: МЦЗ Охотный ряд">
+    <div class="card-photo"><img src="previews/p25.webp" alt="Ремонт торгового помещения. МЦЗ Охотный ряд" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 128</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт торгового помещения</span>
+      <h3>МЦЗ Охотный ряд</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Манежная площадь, д. 1, стр. 2</dd></div><div><dt>Заказчик</dt><dd>ООО «МЦЗ Ритейл»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить демонтаж, новые перегородки и отделку магазина, освещение, вентиляцию и кондиционирование.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,7 МБ</span><a href="p25.pdf" class="card-download" download="РесурсПроект — Тендер 128, МЦЗ Охотный ряд.pdf" aria-label="Скачать PDF: МЦЗ Охотный ряд">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="ресо-гарантия ремонт офиса москва, нагорный проезд, д. 6 сао «ресо-гарантия» обновить отделку офиса: полы, стены и потолки, смонтировать освещение и доработать климатические системы. тендеры 2026 / № 13">
+  <a class="card-open" href="#p26" data-view="p26" aria-label="Смотреть: РЕСО-Гарантия">
+    <div class="card-photo"><img src="previews/p26.webp" alt="Ремонт офиса. РЕСО-Гарантия" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 13</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт офиса</span>
+      <h3>РЕСО-Гарантия</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Нагорный проезд, д. 6</dd></div><div><dt>Заказчик</dt><dd>САО «РЕСО-Гарантия»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить отделку офиса: полы, стены и потолки, смонтировать освещение и доработать климатические системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p26.pdf" class="card-download" download="РесурсПроект — Тендер 13, РЕСО-Гарантия.pdf" aria-label="Скачать PDF: РЕСО-Гарантия">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="отель «стандарт» отделка гостиничного номера москва, страстной бульвар, д. 2 ооо «сфера» выполнить отделку и мебелирование номера, смонтировать инженерные системы, автоматику и противопожарные системы. тендеры 2026 / № 137">
+  <a class="card-open" href="#p27" data-view="p27" aria-label="Смотреть: Отель «СтандАрт»">
+    <div class="card-photo"><img src="previews/p27.webp" alt="Отделка гостиничного номера. Отель «СтандАрт»" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 137</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка гостиничного номера</span>
+      <h3>Отель «СтандАрт»</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Страстной бульвар, д. 2</dd></div><div><dt>Заказчик</dt><dd>ООО «Сфера»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить отделку и мебелирование номера, смонтировать инженерные системы, автоматику и противопожарные системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p27.pdf" class="card-download" download="РесурсПроект — Тендер 137, Отель «СтандАрт».pdf" aria-label="Скачать PDF: Отель «СтандАрт»">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="мцз владимир отделка магазина г. владимир, ул. тракторная, д. 45 ооо «мцз ритейл» подготовить магазин: выполнить демонтаж, отделку, входную группу, освещение и климатические системы. тендеры 2026 / № 138">
+  <a class="card-open" href="#p28" data-view="p28" aria-label="Смотреть: МЦЗ Владимир">
+    <div class="card-photo"><img src="previews/p28.webp" alt="Отделка магазина. МЦЗ Владимир" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 138</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка магазина</span>
+      <h3>МЦЗ Владимир</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>г. Владимир, ул. Тракторная, д. 45</dd></div><div><dt>Заказчик</dt><dd>ООО «МЦЗ Ритейл»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить магазин: выполнить демонтаж, отделку, входную группу, освещение и климатические системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,4 МБ</span><a href="p28.pdf" class="card-download" download="РесурсПроект — Тендер 138, МЦЗ Владимир.pdf" aria-label="Скачать PDF: МЦЗ Владимир">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси на красной пресне ремонт полов в клинике москва, ул. красная пресня, д. 16 ао «медси 2» заменить линолеум в 35 кабинетах, подготовить основания и обновить плинтусы без остановки работы клиники. тендеры 2026 / № 140">
+  <a class="card-open" href="#p29" data-view="p29" aria-label="Смотреть: Медси на Красной Пресне">
+    <div class="card-photo"><img src="previews/p29.webp" alt="Ремонт полов в клинике. Медси на Красной Пресне" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 140</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт полов в клинике</span>
+      <h3>Медси на Красной Пресне</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Красная Пресня, д. 16</dd></div><div><dt>Заказчик</dt><dd>АО «Медси 2»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Заменить линолеум в 35 кабинетах, подготовить основания и обновить плинтусы без остановки работы клиники.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,5 МБ</span><a href="p29.pdf" class="card-download" download="РесурсПроект — Тендер 140, Медси на Красной Пресне.pdf" aria-label="Скачать PDF: Медси на Красной Пресне">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="см-клиника, перерва 32 электроснабжение медицинского здания москва, ул. перерва, д. 32 ооо «см-клиника» смонтировать электрощиты и кабельные сети, обеспечить питание вентиляции, кондиционирования и дымоудаления. тендеры 2026 / № 142">
+  <a class="card-open" href="#p30" data-view="p30" aria-label="Смотреть: СМ-Клиника, Перерва 32">
+    <div class="card-photo"><img src="previews/p30.webp" alt="Электроснабжение медицинского здания. СМ-Клиника, Перерва 32" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 142</span></div>
+    <div class="card-body">
+      <span class="card-type">Электроснабжение медицинского здания</span>
+      <h3>СМ-Клиника, Перерва 32</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Перерва, д. 32</dd></div><div><dt>Заказчик</dt><dd>ООО «СМ-Клиника»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Смонтировать электрощиты и кабельные сети, обеспечить питание вентиляции, кондиционирования и дымоудаления.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p30.pdf" class="card-download" download="РесурсПроект — Тендер 142, СМ-Клиника, Перерва 32.pdf" aria-label="Скачать PDF: СМ-Клиника, Перерва 32">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="ттк рублёвский ремонт автомобильного центра москва, рублёвское шоссе, д. 74 ооо «сп бизнес кар» обновить отделку шоурума, клиентских зон и санузлов, заменить отдельные покрытия и дверные блоки. тендеры 2026 / № 145">
+  <a class="card-open" href="#p31" data-view="p31" aria-label="Смотреть: ТТК Рублёвский">
+    <div class="card-photo"><img src="previews/p31.webp" alt="Ремонт автомобильного центра. ТТК Рублёвский" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 145</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт автомобильного центра</span>
+      <h3>ТТК Рублёвский</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Рублёвское шоссе, д. 74</dd></div><div><dt>Заказчик</dt><dd>ООО «СП Бизнес Кар»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить отделку шоурума, клиентских зон и санузлов, заменить отдельные покрытия и дверные блоки.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p31.pdf" class="card-download" download="РесурсПроект — Тендер 145, ТТК Рублёвский.pdf" aria-label="Скачать PDF: ТТК Рублёвский">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="садовод противопожарные конструкции москва, ул. верхние поля: корпус 1, пск 4 и корпус 5 ооо «рынок «садовод» смонтировать противопожарный экран, изготовить и установить стальные двери, ворота и люки в корпусах комплекса. тендеры 2026 / № 146">
+  <a class="card-open" href="#p32" data-view="p32" aria-label="Смотреть: Садовод">
+    <div class="card-photo"><img src="previews/p32.webp" alt="Противопожарные конструкции. Садовод" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 146</span></div>
+    <div class="card-body">
+      <span class="card-type">Противопожарные конструкции</span>
+      <h3>Садовод</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Верхние Поля: корпус 1, ПСК 4 и корпус 5</dd></div><div><dt>Заказчик</dt><dd>ООО «Рынок «Садовод»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Смонтировать противопожарный экран, изготовить и установить стальные двери, ворота и люки в корпусах комплекса.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p32.pdf" class="card-download" download="РесурсПроект — Тендер 146, Садовод.pdf" aria-label="Скачать PDF: Садовод">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="новохохловская, 23 перепланировка офисных помещений москва, ул. новохохловская, д. 23, стр. 1 ооо «азур эйр» изменить планировку кабинетов, заменить перегородки, восстановить потолки и обновить отделку стен и полов. тендеры 2026 / № 150">
+  <a class="card-open" href="#p33" data-view="p33" aria-label="Смотреть: Новохохловская, 23">
+    <div class="card-photo"><img src="previews/p33.webp" alt="Перепланировка офисных помещений. Новохохловская, 23" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 150</span></div>
+    <div class="card-body">
+      <span class="card-type">Перепланировка офисных помещений</span>
+      <h3>Новохохловская, 23</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Новохохловская, д. 23, стр. 1</dd></div><div><dt>Заказчик</dt><dd>ООО «АЗУР эйр»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Изменить планировку кабинетов, заменить перегородки, восстановить потолки и обновить отделку стен и полов.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p33.pdf" class="card-download" download="РесурсПроект — Тендер 150, Новохохловская, 23.pdf" aria-label="Скачать PDF: Новохохловская, 23">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси в красногорске проектирование и ремонт клиники московская обл., г. красногорск, ул. успенская, д. 5 гк «медси» разработать рабочую документацию и выполнить капитальный ремонт с перепланировкой, отделкой и медицинскими инженерными системами. тендеры 2026 / № 167">
+  <a class="card-open" href="#p34" data-view="p34" aria-label="Смотреть: Медси в Красногорске">
+    <div class="card-photo"><img src="previews/p34.webp" alt="Проектирование и ремонт клиники. Медси в Красногорске" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 167</span></div>
+    <div class="card-body">
+      <span class="card-type">Проектирование и ремонт клиники</span>
+      <h3>Медси в Красногорске</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., г. Красногорск, ул. Успенская, д. 5</dd></div><div><dt>Заказчик</dt><dd>ГК «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Разработать рабочую документацию и выполнить капитальный ремонт с перепланировкой, отделкой и медицинскими инженерными системами.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p34.pdf" class="card-download" download="РесурсПроект — Тендер 167, Медси в Красногорске.pdf" aria-label="Скачать PDF: Медси в Красногорске">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="кафе на ленинградке ремонт кафетерия  ооо «городской супермаркет» переоборудовать кафетерий «лп52»: выполнить отделку, сантехнические системы, кондиционирование и электромонтаж. тендеры 2026 / № 171">
+  <a class="card-open" href="#p35" data-view="p35" aria-label="Смотреть: Кафе на Ленинградке">
+    <div class="card-photo"><img src="previews/p35.webp" alt="Ремонт кафетерия. кафе на Ленинградке" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 171</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт кафетерия</span>
+      <h3>Кафе на Ленинградке</h3>
+      <dl class="card-meta"><div><dt>Заказчик</dt><dd>ООО «Городской супермаркет»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Переоборудовать кафетерий «ЛП52»: выполнить отделку, сантехнические системы, кондиционирование и электромонтаж.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,5 МБ</span><a href="p35.pdf" class="card-download" download="РесурсПроект — Тендер 171, кафе на Ленинградке.pdf" aria-label="Скачать PDF: Кафе на Ленинградке">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="жк на ул. веткина отделка подземных этажей жк москва, муниципальный округ марьина роща, ул. веткина, з/у 2/1 ооо «осз» выполнить отделку лифтовых холлов, лестниц, кладовых, автостоянки и рампы на подземных этажах −1 и −2. тендеры 2026 / № 175">
+  <a class="card-open" href="#p36" data-view="p36" aria-label="Смотреть: ЖК на ул. Веткина">
+    <div class="card-photo"><img src="previews/p36.webp" alt="Отделка подземных этажей ЖК. ЖК на ул. Веткина" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 175</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка подземных этажей ЖК</span>
+      <h3>ЖК на ул. Веткина</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, муниципальный округ Марьина роща, ул. Веткина, з/у 2/1</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить отделку лифтовых холлов, лестниц, кладовых, автостоянки и рампы на подземных этажах −1 и −2.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,1 МБ</span><a href="p36.pdf" class="card-download" download="РесурсПроект — Тендер 175, ЖК на ул. Веткина.pdf" aria-label="Скачать PDF: ЖК на ул. Веткина">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="конференц-зал мосэнергосбыта ремонт конференц-зала москва, ул. вавилова, д. 9 ао «мосэнергосбыт» обновить сцену, акустическую отделку и потолки, выполнить электроснабжение, освещение и инженерные системы. тендеры 2026 / № 176">
+  <a class="card-open" href="#p37" data-view="p37" aria-label="Смотреть: Конференц-зал Мосэнергосбыта">
+    <div class="card-photo"><img src="previews/p37.webp" alt="Ремонт конференц-зала. конференц-зал Мосэнергосбыта" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 176</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт конференц-зала</span>
+      <h3>Конференц-зал Мосэнергосбыта</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Вавилова, д. 9</dd></div><div><dt>Заказчик</dt><dd>АО «Мосэнергосбыт»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить сцену, акустическую отделку и потолки, выполнить электроснабжение, освещение и инженерные системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p37.pdf" class="card-download" download="РесурсПроект — Тендер 176, конференц-зал Мосэнергосбыта.pdf" aria-label="Скачать PDF: Конференц-зал Мосэнергосбыта">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="бц «ново» перепланировка и ремонт офиса москва, ул. сущёвский вал, д. 18 ооо «ново»; работы для ооо «медея хоумапплайнс» перенести стеклянные перегородки, изменить планировку, обновить отделку, электрику и скс, переставить рабочие места. тендеры 2026 / № 186">
+  <a class="card-open" href="#p38" data-view="p38" aria-label="Смотреть: БЦ «Ново»">
+    <div class="card-photo"><img src="previews/p38.webp" alt="Перепланировка и ремонт офиса. БЦ «Ново»" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 186</span></div>
+    <div class="card-body">
+      <span class="card-type">Перепланировка и ремонт офиса</span>
+      <h3>БЦ «Ново»</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Сущёвский Вал, д. 18</dd></div><div><dt>Заказчик</dt><dd>ООО «Ново»; работы для ООО «Медея Хоумапплайнс»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Перенести стеклянные перегородки, изменить планировку, обновить отделку, электрику и СКС, переставить рабочие места.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p38.pdf" class="card-download" download="РесурсПроект — Тендер 186, БЦ «Ново».pdf" aria-label="Скачать PDF: БЦ «Ново»">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="меркурий тауэр косметический ремонт помещений москва, 1-й красногвардейский проезд, 15  обновить окраску стен, колонн, балок и дверей с защитой существующей отделки и оборудования. тендеры 2026 / № 206">
+  <a class="card-open" href="#p39" data-view="p39" aria-label="Смотреть: Меркурий Тауэр">
+    <div class="card-photo"><img src="previews/p39.webp" alt="Косметический ремонт помещений. Меркурий Тауэр" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 206</span></div>
+    <div class="card-body">
+      <span class="card-type">Косметический ремонт помещений</span>
+      <h3>Меркурий Тауэр</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, 1-й Красногвардейский проезд, 15</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить окраску стен, колонн, балок и дверей с защитой существующей отделки и оборудования.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,6 МБ</span><a href="p39.pdf" class="card-download" download="РесурсПроект — Тендер 206, Меркурий Тауэр.pdf" aria-label="Скачать PDF: Меркурий Тауэр">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси полянка и котельники переоборудование под стоматологию москва, ул. малая полянка, д. 3; московская обл., г. котельники, ул. сосновая, д. 5 гк «медси» перепрофилировать кабинеты: выполнить перепланировку, рентгенозащиту, отделку и коммуникации для медицинского оборудования. тендеры 2026 / № 29">
+  <a class="card-open" href="#p40" data-view="p40" aria-label="Смотреть: Медси Полянка и Котельники">
+    <div class="card-photo"><img src="previews/p40.webp" alt="Переоборудование под стоматологию. Медси Полянка и Котельники" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 29</span></div>
+    <div class="card-body">
+      <span class="card-type">Переоборудование под стоматологию</span>
+      <h3>Медси Полянка и Котельники</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Малая Полянка, д. 3; Московская обл., г. Котельники, ул. Сосновая, д. 5</dd></div><div><dt>Заказчик</dt><dd>ГК «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Перепрофилировать кабинеты: выполнить перепланировку, рентгенозащиту, отделку и коммуникации для медицинского оборудования.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p40.pdf" class="card-download" download="РесурсПроект — Тендер 29, Медси Полянка и Котельники.pdf" aria-label="Скачать PDF: Медси Полянка и Котельники">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="главстрой менделеевская 4 отделка технических помещений москва, ул. менделеевская, д. 4 филиал ооо «главстрой-спб специализированный застройщик» выполнить черновую и чистовую отделку: перегородки, стяжки, гидроизоляцию, окраску, плитку и потолки. тендеры 2026 / № 4">
+  <a class="card-open" href="#p41" data-view="p41" aria-label="Смотреть: Главстрой Менделеевская 4">
+    <div class="card-photo"><img src="previews/p41.webp" alt="Отделка технических помещений. Главстрой Менделеевская 4" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 4</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка технических помещений</span>
+      <h3>Главстрой Менделеевская 4</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Менделеевская, д. 4</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить черновую и чистовую отделку: перегородки, стяжки, гидроизоляцию, окраску, плитку и потолки.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 1,0 МБ</span><a href="p41.pdf" class="card-download" download="РесурсПроект — Тендер 4, Главстрой Менделеевская 4.pdf" aria-label="Скачать PDF: Главстрой Менделеевская 4">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="вти ленинская слобода ремонт помещений четырёх этажей москва, ул. ленинская слобода, д. 23, стр. 3 ао «вти» выполнить отделку и перегородки, обновить электрику, водоснабжение, сантехнику и дверные блоки. тендеры 2026 / № 40">
+  <a class="card-open" href="#p42" data-view="p42" aria-label="Смотреть: ВТИ Ленинская Слобода">
+    <div class="card-photo"><img src="previews/p42.webp" alt="Ремонт помещений четырёх этажей. ВТИ Ленинская Слобода" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 40</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт помещений четырёх этажей</span>
+      <h3>ВТИ Ленинская Слобода</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Ленинская Слобода, д. 23, стр. 3</dd></div><div><dt>Заказчик</dt><dd>АО «ВТИ»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить отделку и перегородки, обновить электрику, водоснабжение, сантехнику и дверные блоки.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,9 МБ</span><a href="p42.pdf" class="card-download" download="РесурсПроект — Тендер 40, ВТИ Ленинская Слобода.pdf" aria-label="Скачать PDF: ВТИ Ленинская Слобода">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="рен тв партийный переулок ремонт действующего офиса москва, партийный пер., д. 1, к. 57, стр. 3 ооо «акцепт» (рен тв) обновить отделку, потолки, освещение и двери, отремонтировать лестницу без остановки работы офиса. тендеры 2026 / № 44">
+  <a class="card-open" href="#p43" data-view="p43" aria-label="Смотреть: РЕН ТВ Партийный переулок">
+    <div class="card-photo"><img src="previews/p43.webp" alt="Ремонт действующего офиса. РЕН ТВ Партийный переулок" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 44</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт действующего офиса</span>
+      <h3>РЕН ТВ Партийный переулок</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Партийный пер., д. 1, к. 57, стр. 3</dd></div><div><dt>Заказчик</dt><dd>ООО «АКЦЕПТ» (РЕН ТВ)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить отделку, потолки, освещение и двери, отремонтировать лестницу без остановки работы офиса.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,5 МБ</span><a href="p43.pdf" class="card-download" download="РесурсПроект — Тендер 44, РЕН ТВ Партийный переулок.pdf" aria-label="Скачать PDF: РЕН ТВ Партийный переулок">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="новоалексеевская вк замена систем водоснабжения москва, ул. новоалексеевская, 22, корп. 1 и 2 ооо ук «эго-комфорт» (управляющая компания) заменить вводы, лежаки и стояки хвс и гвс в двух корпусах, выполнить промывку и гидравлические испытания. тендеры 2026 / № 46">
+  <a class="card-open" href="#p44" data-view="p44" aria-label="Смотреть: Новоалексеевская ВК">
+    <div class="card-photo"><img src="previews/p44.webp" alt="Замена систем водоснабжения. Новоалексеевская ВК" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 46</span></div>
+    <div class="card-body">
+      <span class="card-type">Замена систем водоснабжения</span>
+      <h3>Новоалексеевская ВК</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Новоалексеевская, 22, корп. 1 и 2</dd></div><div><dt>Заказчик</dt><dd>ООО УК «Эго-Комфорт» (управляющая компания)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Заменить вводы, лежаки и стояки ХВС и ГВС в двух корпусах, выполнить промывку и гидравлические испытания.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 1,0 МБ</span><a href="p44.pdf" class="card-download" download="РесурсПроект — Тендер 46, Новоалексеевская ВК.pdf" aria-label="Скачать PDF: Новоалексеевская ВК">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси зелёный проспект отделка коридора клиники москва, зелёный проспект, д. 7 гк «медси» снять декоративные наклейки, подготовить и окрасить стены по брендбуку «медси» без остановки работы клиники. тендеры 2026 / № 53">
+  <a class="card-open" href="#p45" data-view="p45" aria-label="Смотреть: Медси Зелёный проспект">
+    <div class="card-photo"><img src="previews/p45.webp" alt="Отделка коридора клиники. Медси Зелёный проспект" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 53</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка коридора клиники</span>
+      <h3>Медси Зелёный проспект</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Зелёный проспект, д. 7</dd></div><div><dt>Заказчик</dt><dd>ГК «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Снять декоративные наклейки, подготовить и окрасить стены по брендбуку «Медси» без остановки работы клиники.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,5 МБ</span><a href="p45.pdf" class="card-download" download="РесурсПроект — Тендер 53, Медси Зелёный проспект.pdf" aria-label="Скачать PDF: Медси Зелёный проспект">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="детский мир колумбус реконфигурация магазина москва, ул. кировоградская, д. 13а ооо «дм» («детский мир») подготовить рабочую документацию, обновить торговое помещение и входную группу, выполнить отделку и инженерные системы. тендеры 2026 / № 54">
+  <a class="card-open" href="#p46" data-view="p46" aria-label="Смотреть: Детский мир Колумбус">
+    <div class="card-photo"><img src="previews/p46.webp" alt="Реконфигурация магазина. Детский мир Колумбус" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 54</span></div>
+    <div class="card-body">
+      <span class="card-type">Реконфигурация магазина</span>
+      <h3>Детский мир Колумбус</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Кировоградская, д. 13А</dd></div><div><dt>Заказчик</dt><dd>ООО «ДМ» («Детский мир»)</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить рабочую документацию, обновить торговое помещение и входную группу, выполнить отделку и инженерные системы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,9 МБ</span><a href="p46.pdf" class="card-download" download="РесурсПроект — Тендер 54, Детский мир Колумбус.pdf" aria-label="Скачать PDF: Детский мир Колумбус">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="медси текущий ремонт текущий ремонт клиник москва, ул. красная пресня, д. 16 и другие адреса группа компаний «медси» обновить отделку лестниц и холлов, выполнить локальные ремонты помещений и работы по рентгенозащите. тендеры 2026 / № 56">
+  <a class="card-open" href="#p47" data-view="p47" aria-label="Смотреть: Медси текущий ремонт">
+    <div class="card-photo"><img src="previews/p47.webp" alt="Текущий ремонт клиник. Медси текущий ремонт" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 56</span></div>
+    <div class="card-body">
+      <span class="card-type">Текущий ремонт клиник</span>
+      <h3>Медси текущий ремонт</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Красная Пресня, д. 16 и другие адреса</dd></div><div><dt>Заказчик</dt><dd>Группа компаний «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить отделку лестниц и холлов, выполнить локальные ремонты помещений и работы по рентгенозащите.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p47.pdf" class="card-download" download="РесурсПроект — Тендер 56, Медси текущий ремонт.pdf" aria-label="Скачать PDF: Медси текущий ремонт">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="перегородки гкл, алтуфьевское шоссе монтаж перегородок из гкл москва, алтуфьевское шоссе, вл. 27а  смонтировать перегородки, шахты и обстройки на девяти уровнях, включая противопожарные конструкции. тендеры 2026 / № 62">
+  <a class="card-open" href="#p48" data-view="p48" aria-label="Смотреть: Перегородки ГКЛ, Алтуфьевское шоссе">
+    <div class="card-photo"><img src="previews/p48.webp" alt="Монтаж перегородок из ГКЛ. перегородки ГКЛ, Алтуфьевское шоссе" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 62</span></div>
+    <div class="card-body">
+      <span class="card-type">Монтаж перегородок из ГКЛ</span>
+      <h3>Перегородки ГКЛ, Алтуфьевское шоссе</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Алтуфьевское шоссе, вл. 27А</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Смонтировать перегородки, шахты и обстройки на девяти уровнях, включая противопожарные конструкции.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,5 МБ</span><a href="p48.pdf" class="card-download" download="РесурсПроект — Тендер 62, перегородки ГКЛ, Алтуфьевское шоссе.pdf" aria-label="Скачать PDF: Перегородки ГКЛ, Алтуфьевское шоссе">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="трц «метрополис» ремонт общественных зон трц москва, ленинградское ш., д. 16а, стр. 4 ао «тпс недвижимость» обновить фризы, колонны и вестибюль, заменить освещение и выполнить отделочные работы на высоте. тендеры 2026 / № 73">
+  <a class="card-open" href="#p49" data-view="p49" aria-label="Смотреть: ТРЦ «Метрополис»">
+    <div class="card-photo"><img src="previews/p49.webp" alt="Ремонт общественных зон ТРЦ. ТРЦ «Метрополис»" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 73</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт общественных зон ТРЦ</span>
+      <h3>ТРЦ «Метрополис»</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Ленинградское ш., д. 16А, стр. 4</dd></div><div><dt>Заказчик</dt><dd>АО «ТПС Недвижимость»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Обновить фризы, колонны и вестибюль, заменить освещение и выполнить отделочные работы на высоте.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p49.pdf" class="card-download" download="РесурсПроект — Тендер 73, ТРЦ «Метрополис».pdf" aria-label="Скачать PDF: ТРЦ «Метрополис»">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="снос убежища, некрасовка проектирование и снос сооружения москва, муниципальный округ некрасовка, ул. 1-я вольская, д. 22, соор. 1 фгуп «ртрс», филиал «мрц» разработать документацию на снос убежища, демонтировать конструкции и фундаменты, засыпать котлован и вывезти отходы. тендеры 2026 / № 79">
+  <a class="card-open" href="#p50" data-view="p50" aria-label="Смотреть: Снос убежища, Некрасовка">
+    <div class="card-photo"><img src="previews/p50.webp" alt="Проектирование и снос сооружения. снос убежища, Некрасовка" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 79</span></div>
+    <div class="card-body">
+      <span class="card-type">Проектирование и снос сооружения</span>
+      <h3>Снос убежища, Некрасовка</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, муниципальный округ Некрасовка, ул. 1-я Вольская, д. 22, соор. 1</dd></div><div><dt>Заказчик</dt><dd>ФГУП «РТРС», филиал «МРЦ»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Разработать документацию на снос убежища, демонтировать конструкции и фундаменты, засыпать котлован и вывезти отходы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,9 МБ</span><a href="p50.pdf" class="card-download" download="РесурсПроект — Тендер 79, снос убежища, Некрасовка.pdf" aria-label="Скачать PDF: Снос убежища, Некрасовка">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="гк «автомир», иркутская улица ремонт автомобильного комплекса москва, ул. иркутская, д. 5/6, стр. 1 тск «байкальская» гк «автомир» заменить трубопроводы и теплообменники, обновить отделку мойки и душевых, выполнить ремонт отдельных конструкций. тендеры 2026 / № 81">
+  <a class="card-open" href="#p51" data-view="p51" aria-label="Смотреть: ГК «Автомир», Иркутская улица">
+    <div class="card-photo"><img src="previews/p51.webp" alt="Ремонт автомобильного комплекса. ГК «Автомир», Иркутская улица" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 81</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт автомобильного комплекса</span>
+      <h3>ГК «Автомир», Иркутская улица</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Иркутская, д. 5/6, стр. 1</dd></div><div><dt>Заказчик</dt><dd>ТСК «Байкальская» ГК «Автомир»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Заменить трубопроводы и теплообменники, обновить отделку мойки и душевых, выполнить ремонт отдельных конструкций.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,7 МБ</span><a href="p51.pdf" class="card-download" download="РесурсПроект — Тендер 81, ГК «Автомир», Иркутская улица.pdf" aria-label="Скачать PDF: ГК «Автомир», Иркутская улица">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="трубопроводы, маломосковская улица замена трубопроводов хвс и гвс москва, ул. маломосковская, д. 14  демонтировать изношенные трубы, смонтировать новые оцинкованные трубопроводы, арматуру и теплоизоляцию. тендеры 2026 / № 94">
+  <a class="card-open" href="#p52" data-view="p52" aria-label="Смотреть: Трубопроводы, Маломосковская улица">
+    <div class="card-photo"><img src="previews/p52.webp" alt="Замена трубопроводов ХВС и ГВС. трубопроводы, Маломосковская улица" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 94</span></div>
+    <div class="card-body">
+      <span class="card-type">Замена трубопроводов ХВС и ГВС</span>
+      <h3>Трубопроводы, Маломосковская улица</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Маломосковская, д. 14</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Демонтировать изношенные трубы, смонтировать новые оцинкованные трубопроводы, арматуру и теплоизоляцию.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,5 МБ</span><a href="p52.pdf" class="card-download" download="РесурсПроект — Тендер 94, трубопроводы, Маломосковская улица.pdf" aria-label="Скачать PDF: Трубопроводы, Маломосковская улица">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2026" data-search="отделка квартир, куркино отделка квартир москва, куркино, куркинское ш., вл. 15 ооо «сетистрой» выполнить подготовку white box и чистовую отделку квартир, смонтировать электрику, сантехнику и климатическое оборудование. тендеры 2026 / № 97">
+  <a class="card-open" href="#p53" data-view="p53" aria-label="Смотреть: Отделка квартир, Куркино">
+    <div class="card-photo"><img src="previews/p53.webp" alt="Отделка квартир. отделка квартир, Куркино" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2026 · № 97</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка квартир</span>
+      <h3>Отделка квартир, Куркино</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Куркино, Куркинское ш., вл. 15</dd></div><div><dt>Заказчик</dt><dd>ООО «СетиСтрой»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Выполнить подготовку white box и чистовую отделку квартир, смонтировать электрику, сантехнику и климатическое оборудование.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,3 МБ</span><a href="p53.pdf" class="card-download" download="РесурсПроект — Тендер 97, отделка квартир, Куркино.pdf" aria-label="Скачать PDF: Отделка квартир, Куркино">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<div class="group-head" data-head="tenders-2025"><h3>Тендеры 2025 <span>5</span></h3><p>Задачи закупок и исходное состояние помещений.</p></div>
+<article class="card" data-group="tenders-2025" data-search="отп банк, б. дорогомиловская, 8 проектирование и ремонт банка москва, ул. большая дорогомиловская, д. 8 ао «отп банк» перепланировать отделение, выполнить отделку, инженерные системы, зону 24/7 и техническое укрепление кассы. тендеры 2025 / № 22">
+  <a class="card-open" href="#p17" data-view="p17" aria-label="Смотреть: ОТП Банк, Б. Дорогомиловская, 8">
+    <div class="card-photo"><img src="previews/p17.webp" alt="Проектирование и ремонт банка. ОТП Банк, Б. Дорогомиловская, 8" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2025 · № 22</span></div>
+    <div class="card-body">
+      <span class="card-type">Проектирование и ремонт банка</span>
+      <h3>ОТП Банк, Б. Дорогомиловская, 8</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Большая Дорогомиловская, д. 8</dd></div><div><dt>Заказчик</dt><dd>АО «ОТП Банк»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Перепланировать отделение, выполнить отделку, инженерные системы, зону 24/7 и техническое укрепление кассы.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,6 МБ</span><a href="p17.pdf" class="card-download" download="РесурсПроект — Тендер 22, ОТП Банк, Б. Дорогомиловская, 8.pdf" aria-label="Скачать PDF: ОТП Банк, Б. Дорогомиловская, 8">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2025" data-search="отп банк, королёв проектирование и ремонт банка московская обл., г. королёв, пр-т королёва, д. 22 ао «отп банк» подготовить проект и переоборудовать отделение: отделку, инженерные сети, кассовую зону и входную группу. тендеры 2025 / № 23">
+  <a class="card-open" href="#p18" data-view="p18" aria-label="Смотреть: ОТП Банк, Королёв">
+    <div class="card-photo"><img src="previews/p18.webp" alt="Проектирование и ремонт банка. ОТП Банк, Королёв" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2025 · № 23</span></div>
+    <div class="card-body">
+      <span class="card-type">Проектирование и ремонт банка</span>
+      <h3>ОТП Банк, Королёв</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., г. Королёв, пр-т Королёва, д. 22</dd></div><div><dt>Заказчик</dt><dd>АО «ОТП Банк»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить проект и переоборудовать отделение: отделку, инженерные сети, кассовую зону и входную группу.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,5 МБ</span><a href="p18.pdf" class="card-download" download="РесурсПроект — Тендер 23, ОТП Банк, Королёв.pdf" aria-label="Скачать PDF: ОТП Банк, Королёв">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2025" data-search="шоурум талату, artplay отделка шоурума москва, ул. нижняя сыромятническая, д. 10, стр. 3 ооо «талату» подготовить шоурум и колеровочную: выполнить перегородки, отделку, освещение, вентиляцию и кондиционирование. тендеры 2025 / № 31">
+  <a class="card-open" href="#p19" data-view="p19" aria-label="Смотреть: Шоурум ТАЛАТУ, ARTPLAY">
+    <div class="card-photo"><img src="previews/p19.webp" alt="Отделка шоурума. шоурум ТАЛАТУ, ARTPLAY" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2025 · № 31</span></div>
+    <div class="card-body">
+      <span class="card-type">Отделка шоурума</span>
+      <h3>Шоурум ТАЛАТУ, ARTPLAY</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Нижняя Сыромятническая, д. 10, стр. 3</dd></div><div><dt>Заказчик</dt><dd>ООО «ТАЛАТУ»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Подготовить шоурум и колеровочную: выполнить перегородки, отделку, освещение, вентиляцию и кондиционирование.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,6 МБ</span><a href="p19.pdf" class="card-download" download="РесурсПроект — Тендер 31, шоурум ТАЛАТУ, ARTPLAY.pdf" aria-label="Скачать PDF: Шоурум ТАЛАТУ, ARTPLAY">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2025" data-search="санузлы сгк, дубининская ремонт санузлов под ключ  санузлы сгк, ул. дубининская обновить санузлы 2–3 этажей: заменить плитку, кабины, сантехнику, потолок и освещение. тендеры 2025 / № 35">
+  <a class="card-open" href="#p20" data-view="p20" aria-label="Смотреть: Санузлы СГК, Дубининская">
+    <div class="card-photo"><img src="previews/p20.webp" alt="Ремонт санузлов под ключ. санузлы СГК, Дубининская" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2025 · № 35</span></div>
+    <div class="card-body">
+      <span class="card-type">Ремонт санузлов под ключ</span>
+      <h3>Санузлы СГК, Дубининская</h3>
+      
+      <p class="card-task"><span>Задача</span>Обновить санузлы 2–3 этажей: заменить плитку, кабины, сантехнику, потолок и освещение.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 2 стр. · 0,7 МБ</span><a href="p20.pdf" class="card-download" download="РесурсПроект — Тендер 35, санузлы СГК, Дубининская.pdf" aria-label="Скачать PDF: Санузлы СГК, Дубининская">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="tenders-2025" data-search="медси, зелёный пр-т, 7 подготовка клиники к ремонту москва, зелёный проспект, д. 7 гк «медси» разобрать отделку, ненесущие перегородки и инженерные сети на 4–7 этажах, организовать вывоз и утилизацию отходов. тендеры 2025 / № 87">
+  <a class="card-open" href="#p21" data-view="p21" aria-label="Смотреть: МЕДСИ, Зелёный пр-т, 7">
+    <div class="card-photo"><img src="previews/p21.webp" alt="Подготовка клиники к ремонту. МЕДСИ, Зелёный пр-т, 7" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Тендер 2025 · № 87</span></div>
+    <div class="card-body">
+      <span class="card-type">Подготовка клиники к ремонту</span>
+      <h3>МЕДСИ, Зелёный пр-т, 7</h3>
+      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Зелёный проспект, д. 7</dd></div><div><dt>Заказчик</dt><dd>ГК «Медси»</dd></div></dl>
+      <p class="card-task"><span>Задача</span>Разобрать отделку, ненесущие перегородки и инженерные сети на 4–7 этажах, организовать вывоз и утилизацию отходов.</p>
+    </div>
+  </a>
+  <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,3 МБ</span><a href="p21.pdf" class="card-download" download="РесурсПроект — Тендер 87, МЕДСИ, Зелёный пр-т, 7.pdf" aria-label="Скачать PDF: МЕДСИ, Зелёный пр-т, 7">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+  </div>
+  <p class="empty" id="empty" hidden>По вашему запросу презентации не найдены. Попробуйте другое название или раздел.</p>
+</div></section>
 </main>
-<footer class="contacts" id="contacts"><div class="wrap"><div class="contact-grid"><div><p class="eyebrow">Контакты</p><h2>Обсудим ваш объект</h2><div class="contact-links"><a href="tel:+74994041167">+7 (499) 404-11-67</a><a href="mailto:resprog@mail.ru">resprog@mail.ru</a><a href="https://res-proekt.ru/" class="website" target="_blank" rel="noopener noreferrer">res-proekt.ru ↗</a></div></div><dl class="requisites"><div><dt>Компания</dt><dd>Общество с ограниченной ответственностью «РЕСУРСПРОЕКТ»</dd></div><div><dt>ИНН / КПП</dt><dd>5024164046 / 502401001</dd></div><div><dt>ОГРН</dt><dd>1165024052830</dd></div><div><dt>ОКПО</dt><dd>01766253</dd></div><div><dt>Юридический адрес</dt><dd>143404, Московская область, г. Красногорск, ул. Дачная, д. 11А, пом. 14/28, ком. 02</dd></div></dl></div><div class="footer-line"><span>© РесурсПроект, 2026<br>Презентация компании и работ</span><a class="back-top" href="#">В начало ↑</a></div></div></footer>
+<footer class="contacts" id="contacts"><div class="wrap">
+  <div class="contact-grid">
+    <div><p class="eyebrow">Контакты</p><h2>Обсудим ваш объект</h2><div class="contact-links"><a href="tel:+74994041167">+7 (499) 404-11-67</a><a href="mailto:resprog@mail.ru">resprog@mail.ru</a><a href="https://res-proekt.ru/" class="website" target="_blank" rel="noopener noreferrer">res-proekt.ru ↗</a></div></div>
+    <dl class="requisites"><div><dt>Компания</dt><dd>Общество с ограниченной ответственностью «РЕСУРСПРОЕКТ»</dd></div><div><dt>ИНН / КПП</dt><dd>5024164046 / 502401001</dd></div><div><dt>ОГРН</dt><dd>1165024052830</dd></div><div><dt>ОКПО</dt><dd>01766253</dd></div><div><dt>Юридический адрес</dt><dd>143404, Московская область, г. Красногорск, ул. Дачная, д. 11А, пом. 14/28, ком. 02</dd></div></dl>
+  </div>
+  <div class="footer-line"><img src="assets/logo.svg" alt="" width="404" height="316"><span>© РесурсПроект, 2026 · Презентация компании и работ</span><a class="back-top" href="#">В начало ↑</a></div>
+</div></footer>
 <dialog class="viewer" id="viewer" aria-labelledby="viewer-title"><div class="viewer-bar"><div class="viewer-title"><h2 id="viewer-title">Презентация</h2><p id="viewer-meta"></p></div><div class="viewer-tools"><a class="desktop-open" id="viewer-open" href="#" target="_blank" rel="noopener noreferrer">В отдельной вкладке ↗</a><a class="save-pdf" id="viewer-save" href="#" download>Скачать PDF ↓</a><button type="button" class="close-viewer" id="viewer-close" aria-label="Закрыть презентацию">×</button></div></div><a class="mobile-open" id="mobile-open" href="#" target="_blank" rel="noopener noreferrer">Открыть PDF на весь экран ↗</a><iframe class="viewer-frame" id="viewer-frame" title="Просмотр PDF-презентации" src="about:blank"></iframe></dialog>
 <script>
 'use strict';
 const presentations={"main": {"title": "Основная презентация РесурсПроекта", "file": "resursproekt-portfolio.pdf", "pages": 39}, "p01": {"title": "Автодом, санузлы", "file": "p01.pdf", "pages": 2}, "p02": {"title": "Земляной Вал, 75", "file": "p02.pdf", "pages": 4}, "p03": {"title": "Лодочная, 27", "file": "p03.pdf", "pages": 2}, "p04": {"title": "магазин МЦЗ, ТРК «БУМ»", "file": "p04.pdf", "pages": 3}, "p05": {"title": "Медси, Зелёный проспект, 7", "file": "p05.pdf", "pages": 4}, "p06": {"title": "ОТП Банк, проспект Мира, 29", "file": "p06.pdf", "pages": 5}, "p07": {"title": "СГК, Дубининская, 53", "file": "p07.pdf", "pages": 4}, "p08": {"title": "Севастопольский пр-т, 66", "file": "p08.pdf", "pages": 9}, "p09": {"title": "Сенеж, гостиница и ресторан", "file": "p09.pdf", "pages": 5}, "p10": {"title": "ТАЛИ, Пятницкая, 44", "file": "p10.pdf", "pages": 4}, "p11": {"title": "ЦБ, Ларюшино", "file": "p11.pdf", "pages": 3}, "p12": {"title": "ЦБ, Настасьинский пер., 5", "file": "p12.pdf", "pages": 3}, "p13": {"title": "ЦБ, Севастопольский пр-т, 66", "file": "p13.pdf", "pages": 4}, "p14": {"title": "ЦБ, Селивёрстов пер., 6", "file": "p14.pdf", "pages": 2}, "p15": {"title": "ЦБ, ул. Мосфильмовская, 8", "file": "p15.pdf", "pages": 3}, "p16": {"title": "ЦБ, ул. Свободы, 57", "file": "p16.pdf", "pages": 4}, "p17": {"title": "Тендер 22, ОТП Банк, Б. Дорогомиловская, 8", "file": "p17.pdf", "pages": 3}, "p18": {"title": "Тендер 23, ОТП Банк, Королёв", "file": "p18.pdf", "pages": 3}, "p19": {"title": "Тендер 31, шоурум ТАЛАТУ, ARTPLAY", "file": "p19.pdf", "pages": 3}, "p20": {"title": "Тендер 35, санузлы СГК, Дубининская", "file": "p20.pdf", "pages": 2}, "p21": {"title": "Тендер 87, МЕДСИ, Зелёный пр-т, 7", "file": "p21.pdf", "pages": 3}, "p22": {"title": "Тендер 1, БКС проспект Мира 69", "file": "p22.pdf", "pages": 3}, "p23": {"title": "Тендер 12, Банный комплекс", "file": "p23.pdf", "pages": 2}, "p24": {"title": "Тендер 124, Медси на Пироговской", "file": "p24.pdf", "pages": 3}, "p25": {"title": "Тендер 128, МЦЗ Охотный ряд", "file": "p25.pdf", "pages": 2}, "p26": {"title": "Тендер 13, РЕСО-Гарантия", "file": "p26.pdf", "pages": 4}, "p27": {"title": "Тендер 137, Отель «СтандАрт»", "file": "p27.pdf", "pages": 3}, "p28": {"title": "Тендер 138, МЦЗ Владимир", "file": "p28.pdf", "pages": 2}, "p29": {"title": "Тендер 140, Медси на Красной Пресне", "file": "p29.pdf", "pages": 2}, "p30": {"title": "Тендер 142, СМ-Клиника, Перерва 32", "file": "p30.pdf", "pages": 3}, "p31": {"title": "Тендер 145, ТТК Рублёвский", "file": "p31.pdf", "pages": 3}, "p32": {"title": "Тендер 146, Садовод", "file": "p32.pdf", "pages": 3}, "p33": {"title": "Тендер 150, Новохохловская, 23", "file": "p33.pdf", "pages": 3}, "p34": {"title": "Тендер 167, Медси в Красногорске", "file": "p34.pdf", "pages": 3}, "p35": {"title": "Тендер 171, кафе на Ленинградке", "file": "p35.pdf", "pages": 2}, "p36": {"title": "Тендер 175, ЖК на ул. Веткина", "file": "p36.pdf", "pages": 4}, "p37": {"title": "Тендер 176, конференц-зал Мосэнергосбыта", "file": "p37.pdf", "pages": 3}, "p38": {"title": "Тендер 186, БЦ «Ново»", "file": "p38.pdf", "pages": 3}, "p39": {"title": "Тендер 206, Меркурий Тауэр", "file": "p39.pdf", "pages": 3}, "p40": {"title": "Тендер 29, Медси Полянка и Котельники", "file": "p40.pdf", "pages": 3}, "p41": {"title": "Тендер 4, Главстрой Менделеевская 4", "file": "p41.pdf", "pages": 3}, "p42": {"title": "Тендер 40, ВТИ Ленинская Слобода", "file": "p42.pdf", "pages": 3}, "p43": {"title": "Тендер 44, РЕН ТВ Партийный переулок", "file": "p43.pdf", "pages": 3}, "p44": {"title": "Тендер 46, Новоалексеевская ВК", "file": "p44.pdf", "pages": 3}, "p45": {"title": "Тендер 53, Медси Зелёный проспект", "file": "p45.pdf", "pages": 2}, "p46": {"title": "Тендер 54, Детский мир Колумбус", "file": "p46.pdf", "pages": 3}, "p47": {"title": "Тендер 56, Медси текущий ремонт", "file": "p47.pdf", "pages": 4}, "p48": {"title": "Тендер 62, перегородки ГКЛ, Алтуфьевское шоссе", "file": "p48.pdf", "pages": 3}, "p49": {"title": "Тендер 73, ТРЦ «Метрополис»", "file": "p49.pdf", "pages": 4}, "p50": {"title": "Тендер 79, снос убежища, Некрасовка", "file": "p50.pdf", "pages": 3}, "p51": {"title": "Тендер 81, ГК «Автомир», Иркутская улица", "file": "p51.pdf", "pages": 3}, "p52": {"title": "Тендер 94, трубопроводы, Маломосковская улица", "file": "p52.pdf", "pages": 2}, "p53": {"title": "Тендер 97, отделка квартир, Куркино", "file": "p53.pdf", "pages": 4}};
 const dialog=document.querySelector('#viewer'),frame=document.querySelector('#viewer-frame');
 let lastTrigger=null;
-function showDocument(id){const item=presentations[id];if(!item)return;document.querySelector('#viewer-title').textContent=item.title;document.querySelector('#viewer-meta').textContent=item.pages+' стр. / PDF. Если просмотр недоступен, откройте файл в отдельной вкладке.';for(const el of [document.querySelector('#viewer-open'),document.querySelector('#viewer-save'),document.querySelector('#mobile-open')])el.href=item.file;document.querySelector('#viewer-save').download=item.title+'.pdf';frame.src='viewer.html?file='+encodeURIComponent(item.file);if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden'}document.querySelector('#viewer-close').focus()}
+function showDocument(id){const item=presentations[id];if(!item)return;document.querySelector('#viewer-title').textContent=item.title;document.querySelector('#viewer-meta').textContent=item.pages+' стр. · PDF. Если просмотр недоступен, откройте файл в отдельной вкладке.';for(const el of [document.querySelector('#viewer-open'),document.querySelector('#viewer-save'),document.querySelector('#mobile-open')])el.href=item.file;document.querySelector('#viewer-save').download=item.title+'.pdf';frame.src='viewer.html?file='+encodeURIComponent(item.file);if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden'}document.querySelector('#viewer-close').focus()}
 document.querySelectorAll('[data-view]').forEach(el=>el.addEventListener('click',()=>{lastTrigger=el;if(location.hash==='#'+el.dataset.view)showDocument(el.dataset.view)}));
 function openFromHash(){const id=location.hash.slice(1);if(presentations[id])showDocument(id);else if(dialog.open)dialog.close()}
 window.addEventListener('hashchange',openFromHash);openFromHash();
@@ -432,9 +940,9 @@ function closeDocument(){if(dialog.open)dialog.close()}
 document.querySelector('#viewer-close').addEventListener('click',closeDocument);
 dialog.addEventListener('click',event=>{if(event.target===dialog)closeDocument()});
 dialog.addEventListener('close',()=>{frame.src='about:blank';document.body.style.overflow='';if(presentations[location.hash.slice(1)])history.replaceState(null,'',location.pathname+location.search);if(lastTrigger)lastTrigger.focus()});
-let group='all';const search=document.querySelector('#search'),rows=[...document.querySelectorAll('.document')];
+let group='all';const search=document.querySelector('#search'),rows=[...document.querySelectorAll('.card')],heads=[...document.querySelectorAll('.group-head')];
 const normalize=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-function filterDocuments(){const words=normalize(search.value).split(' ').filter(Boolean);let visible=0;for(const row of rows){row.hidden=!(group==='all'||row.dataset.group===group)||!words.every(w=>normalize(row.dataset.search).includes(w));if(!row.hidden)visible++}document.querySelector('#result-count').textContent='Показано '+visible+' из 53';document.querySelector('#empty').hidden=visible!==0}
+function filterDocuments(){const words=normalize(search.value).split(' ').filter(Boolean);let visible=0;const shown={};for(const row of rows){row.hidden=!(group==='all'||row.dataset.group===group)||!words.every(w=>normalize(row.dataset.search).includes(w));if(!row.hidden){visible++;shown[row.dataset.group]=true}}for(const h of heads)h.hidden=!shown[h.dataset.head];document.querySelector('#result-count').textContent='Показано '+visible+' из 53';document.querySelector('#empty').hidden=visible!==0}
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{group=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterDocuments()}));search.addEventListener('input',filterDocuments);
 </script>
 </body></html>

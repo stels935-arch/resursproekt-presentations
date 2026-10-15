@@ -2,11 +2,13 @@ const content=document.querySelector('#content');
 const params=new URLSearchParams(location.search);
 const file=params.get('file');
 const projectId=params.get('project');
+const removedProjects=new Set(['n04','n20','n37']);
 const validFile=file==='resursproekt-portfolio.pdf'||/^p(0[1-9]|[1-4]\d|5[0-3])\.pdf$/.test(file||'');
-const validProject=/^n(0[1-9]|[12]\d|3[0-8])$/.test(projectId||'');
+const validProject=/^n(0[1-9]|[12]\d|3[0-8])$/.test(projectId||'')&&!removedProjects.has(projectId);
 if(window.self===window.top)document.body.classList.add('standalone');
 const primaryDownload=document.querySelector('#download-pdf');
-if(validFile)primaryDownload.href=file;else primaryDownload.hidden=true;
+const sourceURL=file==='resursproekt-portfolio.pdf'?file+'?v=6':file;
+if(validFile)primaryDownload.href=sourceURL;else primaryDownload.hidden=true;
 
 function element(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node}
 function metadata(label,value){const row=element('div');row.append(element('dt','',label),element('dd','',value));return row}
@@ -18,7 +20,7 @@ function photograph(photo,index,title,eager=false){
 }
 
 async function renderGallery(){
-  const id=validProject?projectId:file==='p13.pdf'?'p08':file.slice(0,-4),response=await fetch('galleries/'+id+'.json?v=5');
+  const id=validProject?projectId:file==='p13.pdf'?'p08':file.slice(0,-4),response=await fetch('galleries/'+id+'.json?v=6');
   if(!response.ok)throw new Error('Gallery unavailable');
   const doc=await response.json();document.title=doc.title+' — РесурсПроект';document.body.dataset.mode='gallery';document.body.dataset.photoCount=String(doc.photoCount);
   const page=element('article','document-page');
@@ -42,7 +44,7 @@ async function renderGallery(){
 
 async function renderPortfolio(){
   const pdfjs=await import('./pdf.mjs');pdfjs.GlobalWorkerOptions.workerSrc='./pdf.worker.mjs';
-  const pdf=await pdfjs.getDocument({url:file,isEvalSupported:false,isImageDecoderSupported:false,useSystemFonts:true}).promise;
+  const pdf=await pdfjs.getDocument({url:sourceURL,isEvalSupported:false,isImageDecoderSupported:false,useSystemFonts:true}).promise;
   const firstPage=await pdf.getPage(1),base=firstPage.getViewport({scale:1});
   document.body.dataset.mode='continuous-pdf';document.body.dataset.totalPages=String(pdf.numPages);document.title='Портфолио РесурсПроекта';
   const page=element('article','document-page portfolio-viewer'),heading=element('header','portfolio-heading');heading.append(element('h1','','Портфолио РесурсПроекта'),element('p','','Все материалы расположены одной лентой. Прокручивайте вниз.'));page.append(heading);
@@ -64,5 +66,5 @@ async function renderPortfolio(){
   let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{for(const state of states){if(!state.visible)continue;const canvas=state.holder.querySelector('canvas');if(!canvas||Math.abs(Number(canvas.dataset.renderWidth)-state.holder.clientWidth)>30){state.dirty=true;enqueue(state)}}},200)});
 }
 
-function reportError(){const message=element('p','status','Не удалось загрузить материал.');const link=element('a','error-link',validFile?'Открыть PDF':'Вернуться к каталогу');link.href=validFile?file:'index.html#presentations';content.replaceChildren(message,link)}
+function reportError(){const message=element('p','status',removedProjects.has(projectId)?'Этот материал удалён из презентации.':'Не удалось загрузить материал.');const link=element('a','error-link',validFile?'Открыть PDF':'Вернуться к каталогу');link.href=validFile?sourceURL:'index.html#presentations';content.replaceChildren(message,link)}
 try{if(!validFile&&!validProject)throw new Error('Invalid document');if(file==='resursproekt-portfolio.pdf')await renderPortfolio();else await renderGallery()}catch(error){reportError()}

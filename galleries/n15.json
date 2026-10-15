@@ -1,0 +1,51 @@
+{
+  "id": "n15",
+  "title": "Парк «Федюхины высоты»",
+  "type": "Устройство парковки",
+  "address": "Севастополь, Балаклавский район, Федюхины высоты",
+  "customer": "ООО «Севастопольский военно-исторический клуб»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить комплекс дорожных работ по устройству парковки на территории парка.",
+  "group": "Объекты",
+  "period": "2019",
+  "details": [
+    "Период работ по портфолио: 2019."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n15/portfolio-18-00.webp",
+          "width": 945,
+          "height": 630,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n15/portfolio-18-01.webp",
+          "width": 929,
+          "height": 619,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n15/portfolio-18-02.webp",
+          "width": 504,
+          "height": 674,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n15/portfolio-18-03.webp",
+          "width": 504,
+          "height": 674,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 4,
+  "pdf": null,
+  "sourcePages": [
+    18
+  ]
+}

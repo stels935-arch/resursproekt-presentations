@@ -1,0 +1,45 @@
+{
+  "id": "n14",
+  "title": "ЖК «Зелёные аллеи», корпус 9",
+  "type": "Отделка жилого дома",
+  "address": "Московская обл., Видное, вблизи д. Тарычево, корпус 9",
+  "customer": "ООО «Московский ипотечный центр-МИЦ»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить внутреннюю отделку под ключ и монтаж инженерных систем.",
+  "group": "Объекты",
+  "period": "2019–2021",
+  "details": [
+    "Период работ по портфолио: 2019–2021."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n14/portfolio-17-00.webp",
+          "width": 1280,
+          "height": 619,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n14/portfolio-17-01.webp",
+          "width": 693,
+          "height": 924,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n14/portfolio-17-02.webp",
+          "width": 864,
+          "height": 1152,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    17
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "n03",
+  "title": "Реновация, Фонвизина, 13",
+  "type": "Отделка квартир",
+  "address": "Москва, ул. Фонвизина, д. 13",
+  "customer": "КП города Москвы «Управление гражданского строительства»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить отделку квартир под ключ и монтаж внутренних инженерных систем.",
+  "group": "Объекты",
+  "period": "2018",
+  "details": [
+    "Период работ по портфолио: 2018."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n03/src-066.webp",
+          "width": 1800,
+          "height": 1350,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-059.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-060.webp",
+          "width": 1800,
+          "height": 1350,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-061.webp",
+          "width": 1800,
+          "height": 1350,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-062.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-063.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-064.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-065.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-067.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-069.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-071.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-073.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-074.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n03/src-076.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 14,
+  "pdf": null,
+  "sourcePages": [
+    19
+  ]
+}

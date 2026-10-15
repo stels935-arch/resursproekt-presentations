@@ -1,0 +1,51 @@
+{
+  "id": "n21",
+  "title": "Электродепо «Планерное»",
+  "type": "Расширение электродепо",
+  "address": "Москва, ул. Планерная, д. 9",
+  "customer": "АО «Мосинжпроект»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить общестроительные работы, инженерные системы, коммуникации и технологическое оборудование.",
+  "group": "Объекты",
+  "period": "2015–2017",
+  "details": [
+    "Период работ по портфолио: 2015–2017."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n21/portfolio-25-00.webp",
+          "width": 623,
+          "height": 467,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n21/portfolio-25-01.webp",
+          "width": 616,
+          "height": 462,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n21/portfolio-25-02.webp",
+          "width": 392,
+          "height": 542,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n21/portfolio-25-03.webp",
+          "width": 954,
+          "height": 564,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 4,
+  "pdf": null,
+  "sourcePages": [
+    25
+  ]
+}

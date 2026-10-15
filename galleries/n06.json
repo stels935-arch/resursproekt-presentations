@@ -1,0 +1,254 @@
+{
+  "id": "n06",
+  "title": "Квартиры и коттеджи",
+  "type": "Отделка жилых интерьеров",
+  "address": "Москва и Подмосковье",
+  "customer": "",
+  "customerLabel": "Заказчик",
+  "summary": "Отделка комнат, кухонь и санузлов. Фотографии жилых интерьеров и общих зон.",
+  "group": "Объекты",
+  "period": "",
+  "details": [
+    "Жилые интерьеры и общие зоны из фотоархива компании.",
+    "Точные адреса и заказчики в фотоархиве не указаны."
+  ],
+  "sections": [
+    {
+      "title": "Коттедж в Подмосковье",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n06/cottage-11.webp",
+          "width": 1280,
+          "height": 577,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-00.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-02.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-03.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-05.webp",
+          "width": 1280,
+          "height": 575,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-07.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-08.webp",
+          "width": 1280,
+          "height": 577,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/cottage-10.webp",
+          "width": 1280,
+          "height": 575,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Квартира в Москве",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n06/apartment-01.webp",
+          "width": 1280,
+          "height": 577,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-03.webp",
+          "width": 1280,
+          "height": 577,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-04.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-05.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-06.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-08.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-09.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-10.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-11.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-12.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-13.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-14.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-15.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-18.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-19.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-21.webp",
+          "width": 577,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/apartment-23.webp",
+          "width": 575,
+          "height": 1280,
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Квартиры и общие зоны",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n06/src-153.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-154.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-155.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-157.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-158.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-160.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-161.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-163.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-166.webp",
+          "width": 1065,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-170.webp",
+          "width": 1200,
+          "height": 1600,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n06/src-171.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 36,
+  "pdf": null,
+  "sourcePages": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "n01",
+  "title": "«Уралсиб», Жуковский",
+  "type": "Проектирование и ремонт банка",
+  "address": "Московская обл., Жуковский, ул. Гагарина, д. 58",
+  "customer": "ПАО «БАНК УРАЛСИБ»",
+  "customerLabel": "Заказчик",
+  "summary": "Разработать рабочую документацию, выполнить отделку, внутренние инженерные системы и устройство кассового узла.",
+  "group": "Объекты",
+  "period": "2024",
+  "details": [
+    "Период работ по портфолио: 2024."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n01/portfolio-09-00.webp",
+          "width": 469,
+          "height": 624,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n01/portfolio-09-04.webp",
+          "width": 469,
+          "height": 624,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n01/portfolio-09-01.webp",
+          "width": 749,
+          "height": 560,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n01/portfolio-09-03.webp",
+          "width": 469,
+          "height": 624,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n01/portfolio-09-02.webp",
+          "width": 572,
+          "height": 749,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 5,
+  "pdf": null,
+  "sourcePages": [
+    9
+  ]
+}

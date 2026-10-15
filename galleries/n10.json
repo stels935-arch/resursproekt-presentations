@@ -1,0 +1,63 @@
+{
+  "id": "n10",
+  "title": "Жилые дома, Рязанский проспект",
+  "type": "Отделка квартир и общих зон",
+  "address": "Москва, Рязанский проспект, вл. 26, з/у 1",
+  "customer": "АО «Главстрой»; генподрядчик ООО «ГС Констракшен»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить отделку квартир и мест общего пользования под ключ, смонтировать внутренние инженерные системы.",
+  "group": "Объекты",
+  "period": "2021–2023",
+  "details": [
+    "Период работ по портфолио: 2021–2023."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n10/portfolio-13-06.webp",
+          "width": 527,
+          "height": 395,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n10/portfolio-13-00.webp",
+          "width": 583,
+          "height": 388,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n10/portfolio-13-01.webp",
+          "width": 549,
+          "height": 366,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n10/portfolio-13-02.webp",
+          "width": 599,
+          "height": 400,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n10/portfolio-13-04.webp",
+          "width": 387,
+          "height": 517,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n10/portfolio-13-05.webp",
+          "width": 543,
+          "height": 724,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 6,
+  "pdf": null,
+  "sourcePages": [
+    13
+  ]
+}

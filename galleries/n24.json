@@ -1,0 +1,51 @@
+{
+  "id": "n24",
+  "title": "Производство «Кубань-Полимер»",
+  "type": "Общестроительные работы",
+  "address": "Краснодар, пос. Берёзовый, 7/8",
+  "customer": "ООО «Кубань-Полимер»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить общестроительные работы при строительстве сушильной установки для полимерных порошков.",
+  "group": "Объекты",
+  "period": "2016",
+  "details": [
+    "Период работ по портфолио: 2016."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n24/portfolio-28-03.webp",
+          "width": 699,
+          "height": 525,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n24/portfolio-28-00.webp",
+          "width": 699,
+          "height": 524,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n24/portfolio-28-01.webp",
+          "width": 699,
+          "height": 525,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n24/portfolio-28-02.webp",
+          "width": 699,
+          "height": 524,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 4,
+  "pdf": null,
+  "sourcePages": [
+    28
+  ]
+}

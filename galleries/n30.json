@@ -1,0 +1,45 @@
+{
+  "id": "n30",
+  "title": "Торгово-офисное здание, Заокский",
+  "type": "Отделка и инженерные системы",
+  "address": "Тульская обл., р.п. Заокский, ул. Поленова, д. 19",
+  "customer": "ООО «Заокская геоинформационная система»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить отделку внутренних помещений и прокладку внутренних инженерных систем.",
+  "group": "Объекты",
+  "period": "2015",
+  "details": [
+    "Период работ по портфолио: 2015."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n30/portfolio-33-04.webp",
+          "width": 519,
+          "height": 692,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n30/portfolio-33-05.webp",
+          "width": 569,
+          "height": 429,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n30/portfolio-33-06.webp",
+          "width": 429,
+          "height": 429,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    33
+  ]
+}

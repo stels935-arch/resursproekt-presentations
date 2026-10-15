@@ -1,0 +1,123 @@
+{
+  "id": "n02",
+  "title": "ЖК «Барбарис», Бибирево",
+  "type": "Отделка апартаментов",
+  "address": "Москва, ул. Бибиревская, вл. 4",
+  "customer": "ООО «Московский ипотечный центр-МИЦ»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить отделку апартаментов под ключ и смонтировать внутренние инженерные системы.",
+  "group": "Объекты",
+  "period": "2019",
+  "details": [
+    "Период работ по портфолио: 2019."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n02/src-012.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-013.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-014.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-009.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-010.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-000.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-001.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-003.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-004.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-005.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-006.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-007.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-011.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-015.webp",
+          "width": 960,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/src-018.webp",
+          "width": 1280,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n02/portfolio-16-04.webp",
+          "width": 1000,
+          "height": 562,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 16,
+  "pdf": null,
+  "sourcePages": [
+    16
+  ]
+}

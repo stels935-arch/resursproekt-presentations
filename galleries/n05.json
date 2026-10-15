@@ -1,0 +1,128 @@
+{
+  "id": "n05",
+  "title": "Фабрика Верхне-Менкече",
+  "type": "Монтаж люков дымоудаления",
+  "address": "Республика Саха (Якутия), Томпонский район, месторождение Верхне-Менкече",
+  "customer": "ООО «РЕМСТРОЙМАШ»",
+  "customerLabel": "Заказчик",
+  "summary": "Смонтировать люки дымоудаления в главном корпусе обогатительной фабрики.",
+  "group": "Объекты",
+  "period": "",
+  "details": [
+    "Объект: главный корпус обогатительной фабрики по переработке серебро-полиметаллической руды месторождения Верхне-Менкече.",
+    "В галерее показаны подготовка и ход монтажа. Фотографии не являются подтверждением ввода всего объекта в эксплуатацию."
+  ],
+  "sections": [
+    {
+      "title": "Подготовка и ход монтажа",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n05/src-147.webp",
+          "width": 1280,
+          "height": 960,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-112.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-113.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-114.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-117.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-119.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-122.webp",
+          "width": 720,
+          "height": 1280,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-126.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-130.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-132.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-133.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-134.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-135.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-137.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-138.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-142.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n05/src-145.webp",
+          "width": 1280,
+          "height": 720,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 17,
+  "pdf": null,
+  "sourcePages": []
+}

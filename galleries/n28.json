@@ -1,0 +1,51 @@
+{
+  "id": "n28",
+  "title": "Жилой микрорайон в Люберцах",
+  "type": "Кирпичная кладка",
+  "address": "Московская обл., Люберцы, северо-восточная часть города, квартал 2, 1-й пусковой комплекс",
+  "customer": "ООО «Самолёт Девелопмент»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить кирпичную кладку наружных и внутренних стен.",
+  "group": "Объекты",
+  "period": "2014–2015",
+  "details": [
+    "Период работ по портфолио: 2014–2015."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n28/portfolio-32-03.webp",
+          "width": 693,
+          "height": 400,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n28/portfolio-32-00.webp",
+          "width": 440,
+          "height": 583,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n28/portfolio-32-01.webp",
+          "width": 693,
+          "height": 520,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n28/portfolio-32-02.webp",
+          "width": 438,
+          "height": 584,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 4,
+  "pdf": null,
+  "sourcePages": [
+    32
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "n25",
+  "title": "Детские площадки, Первомайский",
+  "type": "Благоустройство дворов",
+  "address": "Московская обл., Истринский район, пос. Первомайский, дворы домов 1, 10, 12, 13, 14, 23, 25",
+  "customer": "",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить благоустройство детских площадок во дворах жилых домов.",
+  "group": "Объекты",
+  "period": "2016",
+  "details": [
+    "Период работ по портфолио: 2016."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n25/portfolio-29-01.webp",
+          "width": 716,
+          "height": 404,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n25/portfolio-29-00.webp",
+          "width": 714,
+          "height": 403,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n25/portfolio-29-02.webp",
+          "width": 714,
+          "height": 402,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n25/portfolio-29-03.webp",
+          "width": 716,
+          "height": 404,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n25/portfolio-29-04.webp",
+          "width": 714,
+          "height": 402,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n25/portfolio-29-05.webp",
+          "width": 716,
+          "height": 404,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 6,
+  "pdf": null,
+  "sourcePages": [
+    29
+  ]
+}

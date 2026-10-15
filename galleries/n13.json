@@ -1,0 +1,45 @@
+{
+  "id": "n13",
+  "title": "ЖК «Филатов Луг»",
+  "type": "Отделка квартир",
+  "address": "Москва, поселение Московский, д. Картмазово, уч. 16/1",
+  "customer": "ООО «Инвестиции в градостроительство» (ГК «Инград»)",
+  "customerLabel": "Заказчик",
+  "summary": "Смонтировать внутренние инженерные системы, выполнить муниципальную и чистовую отделку квартир.",
+  "group": "Объекты",
+  "period": "2020–2021",
+  "details": [
+    "Период работ по портфолио: 2020–2021."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n13/portfolio-15-02.webp",
+          "width": 463,
+          "height": 686,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n13/portfolio-15-01.webp",
+          "width": 463,
+          "height": 686,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n13/portfolio-15-03.webp",
+          "width": 463,
+          "height": 686,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    15
+  ]
+}

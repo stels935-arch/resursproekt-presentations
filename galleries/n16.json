@@ -1,0 +1,51 @@
+{
+  "id": "n16",
+  "title": "Капремонт жилых домов Севастополя",
+  "type": "Внутренние инженерные системы",
+  "address": "Севастополь",
+  "customer": "НКО «Фонд содействия капитальному ремонту города Севастополя»",
+  "customerLabel": "Заказчик",
+  "summary": "Отремонтировать внутренние инженерные системы, смонтировать и обслужить узлы учёта тепловой энергии.",
+  "group": "Объекты",
+  "period": "2017–2018",
+  "details": [
+    "Период работ по портфолио: 2017–2018."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n16/portfolio-20-03.webp",
+          "width": 666,
+          "height": 499,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n16/portfolio-20-00.webp",
+          "width": 616,
+          "height": 462,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n16/portfolio-20-01.webp",
+          "width": 816,
+          "height": 459,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n16/portfolio-20-02.webp",
+          "width": 733,
+          "height": 503,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 4,
+  "pdf": null,
+  "sourcePages": [
+    20
+  ]
+}

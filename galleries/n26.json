@@ -1,0 +1,45 @@
+{
+  "id": "n26",
+  "title": "18-й автобусный парк",
+  "type": "Реконструкция ливневых стоков",
+  "address": "Москва, Новоясеневский проспект, д. 4",
+  "customer": "ГУП «Мосгортранс»",
+  "customerLabel": "Заказчик",
+  "summary": "Реконструировать систему ливневых стоков автобусного парка.",
+  "group": "Объекты",
+  "period": "2015",
+  "details": [
+    "Период работ по портфолио: 2015."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n26/portfolio-30-01.webp",
+          "width": 681,
+          "height": 511,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n26/portfolio-30-00.webp",
+          "width": 693,
+          "height": 924,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n26/portfolio-30-02.webp",
+          "width": 693,
+          "height": 924,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    30
+  ]
+}

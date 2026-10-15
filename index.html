@@ -232,6 +232,12 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
+
+/* Continuous presentation content */
+.viewer[open]{display:flex;flex-direction:column;overflow:hidden}
+.viewer-bar,.mobile-open{flex:none}
+.viewer-frame{flex:1;min-height:0;height:auto}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
@@ -254,7 +260,7 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
   </div>
   <ul class="stats" aria-label="Материалы на странице">
     <li><b>39</b><span>страниц в основном портфолио</span></li>
-    <li><b>16</b><span>презентаций по объектам</span></li>
+    <li><b>52</b><span>материала по объектам и работам</span></li>
     <li><b>37</b><span>тендерных презентаций 2025–2026</span></li>
     <li><b>4</b><span>направления работы</span></li>
   </ul>
@@ -269,14 +275,14 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
   </div>
 </div></section>
 <section class="section catalog" id="presentations"><div class="wrap">
-  <div class="section-heading"><div><p class="label">Каталог</p><h2>Объекты в деталях</h2></div><p>Фотографии, заказчики, адреса и задачи по всем 53 презентациям. Нажмите на карточку, чтобы посмотреть материал целиком.</p></div>
+  <div class="section-heading"><div><p class="label">Каталог</p><h2>Объекты в деталях</h2></div><p>Фотографии, адреса, заказчики и задачи по объектам компании. Откройте карточку — описание и все фотографии идут одной лентой.</p></div>
   <div class="toolbar">
-    <div class="filters" role="group" aria-label="Раздел презентаций"><button class="filter" type="button" aria-pressed="true" data-filter="all">Все <span>53</span></button><button class="filter" type="button" aria-pressed="false" data-filter="objects">Объекты <span>16</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2026">Тендеры 2026 <span>32</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2025">Тендеры 2025 <span>5</span></button></div>
+    <div class="filters" role="group" aria-label="Раздел презентаций"><button class="filter" type="button" aria-pressed="true" data-filter="all">Все <span>89</span></button><button class="filter" type="button" aria-pressed="false" data-filter="objects">Объекты <span>52</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2026">Тендеры 2026 <span>32</span></button><button class="filter" type="button" aria-pressed="false" data-filter="tenders-2025">Тендеры 2025 <span>5</span></button></div>
     <div class="search-wrap"><label class="sr-only" for="search">Поиск презентации</label><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Объект, адрес, заказчик или вид работ" autocomplete="off"></div>
-    <span class="result-count" id="result-count" role="status" aria-live="polite">Показано 53 из 53</span>
+    <span class="result-count" id="result-count" role="status" aria-live="polite">Показано 89 из 89</span>
   </div>
   <div id="document-list">
-<div class="group-head" data-head="objects"><h3>Объекты <span>16</span></h3><p>Материалы по объектам с указанными в них статусами работ.</p></div>
+<div class="group-head" data-head="objects"><h3>Объекты <span>52</span></h3><p>Материалы по объектам с указанными в них статусами работ.</p></div>
 <article class="card" data-group="objects" data-search="земляной вал, 75 капитальный ремонт офиса москва, ул. земляной вал, д. 75 ооо «ангел ист рус» выполнить капитальный ремонт 5–6 этажей: перепланировку, отделку и обновление инженерных систем. объекты">
   <a class="card-open" href="#p02" data-view="p02" aria-label="Смотреть: Земляной Вал, 75">
     <div class="card-photo"><img src="office.jpg" alt="Капитальный ремонт офиса. Земляной Вал, 75" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
@@ -313,6 +319,49 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
   </a>
   <div class="card-footer"><span class="card-file">PDF · 5 стр. · 1,2 МБ</span><a href="p06.pdf" class="card-download" download="РесурсПроект — ОТП Банк, проспект Мира, 29.pdf" aria-label="Скачать PDF: ОТП Банк, проспект Мира, 29">PDF <span aria-hidden="true">↓</span></a></div>
 </article>
+<article class="card" data-group="objects" data-search="«уралсиб», жуковский проектирование и ремонт банка московская обл., жуковский, ул. гагарина, д. 58 пао «банк уралсиб» разработать рабочую документацию, выполнить отделку, внутренние инженерные системы и устройство кассового узла. 2024">
+  <a class="card-open" href="#n01" data-view="n01" aria-label="Смотреть: «Уралсиб», Жуковский">
+    <div class="card-photo"><img src="galleries/n01/portfolio-09-00.webp" alt="«Уралсиб», Жуковский" loading="lazy" decoding="async" width="469" height="624"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Проектирование и ремонт банка</span><h3>«Уралсиб», Жуковский</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Жуковский, ул. Гагарина, д. 58</dd></div><div><dt>Заказчик</dt><dd>ПАО «БАНК УРАЛСИБ»</dd></div></dl><p class="card-task"><span>Задача</span>Разработать рабочую документацию, выполнить отделку, внутренние инженерные системы и устройство кассового узла.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 5 фото</span><a href="#n01" data-view="n01" class="card-download" aria-label="Смотреть фото: «Уралсиб», Жуковский">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жк «барбарис», бибирево отделка апартаментов москва, ул. бибиревская, вл. 4 ооо «московский ипотечный центр-миц» выполнить отделку апартаментов под ключ и смонтировать внутренние инженерные системы. 2019">
+  <a class="card-open" href="#n02" data-view="n02" aria-label="Смотреть: ЖК «Барбарис», Бибирево">
+    <div class="card-photo"><img src="galleries/n02/src-012.webp" alt="ЖК «Барбарис», Бибирево" loading="lazy" decoding="async" width="960" height="1280"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка апартаментов</span><h3>ЖК «Барбарис», Бибирево</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Бибиревская, вл. 4</dd></div><div><dt>Заказчик</dt><dd>ООО «Московский ипотечный центр-МИЦ»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить отделку апартаментов под ключ и смонтировать внутренние инженерные системы.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 16 фото</span><a href="#n02" data-view="n02" class="card-download" aria-label="Смотреть фото: ЖК «Барбарис», Бибирево">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="реновация, фонвизина, 13 отделка квартир москва, ул. фонвизина, д. 13 кп города москвы «управление гражданского строительства» выполнить отделку квартир под ключ и монтаж внутренних инженерных систем. 2018">
+  <a class="card-open" href="#n03" data-view="n03" aria-label="Смотреть: Реновация, Фонвизина, 13">
+    <div class="card-photo"><img src="galleries/n03/src-066.webp" alt="Реновация, Фонвизина, 13" loading="lazy" decoding="async" width="1800" height="1350"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка квартир</span><h3>Реновация, Фонвизина, 13</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Фонвизина, д. 13</dd></div><div><dt>Заказчик</dt><dd>КП города Москвы «Управление гражданского строительства»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить отделку квартир под ключ и монтаж внутренних инженерных систем.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 14 фото</span><a href="#n03" data-view="n03" class="card-download" aria-label="Смотреть фото: Реновация, Фонвизина, 13">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="квартиры в митино отделка квартир и инженерные системы москва, пятницкое шоссе, д. 21 ооо «пионерстройинвест» выполнить внутреннюю отделку жилых помещений и монтаж инженерных систем. 2013–2015">
+  <a class="card-open" href="#n04" data-view="n04" aria-label="Смотреть: Квартиры в Митино">
+    <div class="card-photo"><img src="galleries/n04/src-043.webp" alt="Квартиры в Митино" loading="lazy" decoding="async" width="1200" height="1600"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка квартир и инженерные системы</span><h3>Квартиры в Митино</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Пятницкое шоссе, д. 21</dd></div><div><dt>Заказчик</dt><dd>ООО «ПионерСтройИнвест»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить внутреннюю отделку жилых помещений и монтаж инженерных систем.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 26 фото</span><a href="#n04" data-view="n04" class="card-download" aria-label="Смотреть фото: Квартиры в Митино">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="фабрика верхне-менкече монтаж люков дымоудаления республика саха (якутия), томпонский район, месторождение верхне-менкече ооо «ремстроймаш» смонтировать люки дымоудаления в главном корпусе обогатительной фабрики. ">
+  <a class="card-open" href="#n05" data-view="n05" aria-label="Смотреть: Фабрика Верхне-Менкече">
+    <div class="card-photo"><img src="galleries/n05/src-147.webp" alt="Фабрика Верхне-Менкече" loading="lazy" decoding="async" width="1280" height="960"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монтаж люков дымоудаления</span><h3>Фабрика Верхне-Менкече</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Республика Саха (Якутия), Томпонский район, месторождение Верхне-Менкече</dd></div><div><dt>Заказчик</dt><dd>ООО «РЕМСТРОЙМАШ»</dd></div></dl><p class="card-task"><span>Задача</span>Смонтировать люки дымоудаления в главном корпусе обогатительной фабрики.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 17 фото</span><a href="#n05" data-view="n05" class="card-download" aria-label="Смотреть фото: Фабрика Верхне-Менкече">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="квартиры и коттеджи отделка жилых интерьеров москва и подмосковье  отделка комнат, кухонь и санузлов. фотографии жилых интерьеров и общих зон. ">
+  <a class="card-open" href="#n06" data-view="n06" aria-label="Смотреть: Квартиры и коттеджи">
+    <div class="card-photo"><img src="galleries/n06/cottage-11.webp" alt="Квартиры и коттеджи" loading="lazy" decoding="async" width="1280" height="577"><span class="card-badge">Фотогалерея</span></div>
+    <div class="card-body"><span class="card-type">Отделка жилых интерьеров</span><h3>Квартиры и коттеджи</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва и Подмосковье</dd></div></dl><p class="card-task"><span>Задача</span>Отделка комнат, кухонь и санузлов. Фотографии жилых интерьеров и общих зон.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 36 фото</span><a href="#n06" data-view="n06" class="card-download" aria-label="Смотреть фото: Квартиры и коттеджи">Смотреть ↗</a></div>
+</article>
+
 <article class="card" data-group="objects" data-search="автодом, санузлы ремонт санузлов московская обл., ул. луговая, 1.2 ао «автодом» отремонтировать два санузла: заменить отделку, перегородки, сантехнику и инженерные разводки. объекты">
   <a class="card-open" href="#p01" data-view="p01" aria-label="Смотреть: Автодом, санузлы">
     <div class="card-photo"><img src="previews/p01.webp" alt="Ремонт санузлов. Автодом, санузлы" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
@@ -421,18 +470,6 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
   </a>
   <div class="card-footer"><span class="card-file">PDF · 3 стр. · 0,8 МБ</span><a href="p12.pdf" class="card-download" download="РесурсПроект — ЦБ, Настасьинский пер., 5.pdf" aria-label="Скачать PDF: ЦБ, Настасьинский пер., 5">PDF <span aria-hidden="true">↓</span></a></div>
 </article>
-<article class="card" data-group="objects" data-search="цб, севастопольский пр-т, 66 ремонт медицинского центра москва, севастопольский проспект, д. 66 банк россии (с 2026 года — чу «сервисная компания банка россии») обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение. объекты">
-  <a class="card-open" href="#p13" data-view="p13" aria-label="Смотреть: ЦБ, Севастопольский пр-т, 66">
-    <div class="card-photo"><img src="previews/p13.webp" alt="Ремонт медицинского центра. ЦБ, Севастопольский пр-т, 66" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
-    <div class="card-body">
-      <span class="card-type">Ремонт медицинского центра</span>
-      <h3>ЦБ, Севастопольский пр-т, 66</h3>
-      <dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Севастопольский проспект, д. 66</dd></div><div><dt>Заказчик</dt><dd>Банк России (с 2026 года — ЧУ «Сервисная компания Банка России»)</dd></div></dl>
-      <p class="card-task"><span>Задача</span>Обновить кардиологию и медицинские помещения, входные группы, световые приямки и ограждение.</p>
-    </div>
-  </a>
-  <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p13.pdf" class="card-download" download="РесурсПроект — ЦБ, Севастопольский пр-т, 66.pdf" aria-label="Скачать PDF: ЦБ, Севастопольский пр-т, 66">PDF <span aria-hidden="true">↓</span></a></div>
-</article>
 <article class="card" data-group="objects" data-search="цб, селивёрстов пер., 6 ремонт офисных помещений москва, селивёрстов пер., д. 6 банк россии заменить противопожарные двери, демонтировать перегородку и отремонтировать санузлы на 1 и 4 этажах. объекты">
   <a class="card-open" href="#p14" data-view="p14" aria-label="Смотреть: ЦБ, Селивёрстов пер., 6">
     <div class="card-photo"><img src="previews/p14.webp" alt="Ремонт офисных помещений. ЦБ, Селивёрстов пер., 6" loading="lazy" decoding="async" width="1100" height="820"><span class="card-badge">Объект</span></div>
@@ -468,6 +505,223 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
     </div>
   </a>
   <div class="card-footer"><span class="card-file">PDF · 4 стр. · 1,2 МБ</span><a href="p16.pdf" class="card-download" download="РесурсПроект — ЦБ, ул. Свободы, 57.pdf" aria-label="Скачать PDF: ЦБ, ул. Свободы, 57">PDF <span aria-hidden="true">↓</span></a></div>
+</article>
+<article class="card" data-group="objects" data-search="детский сад в видном отделка детского сада на 155 мест московская обл., видное, жк «зелёные аллеи», вблизи д. тарычево гк миц выполнить внутреннюю отделку и монтаж внутренних инженерных систем детского сада. 2021–2022">
+  <a class="card-open" href="#n07" data-view="n07" aria-label="Смотреть: Детский сад в Видном">
+    <div class="card-photo"><img src="galleries/n07/portfolio-11-02.webp" alt="Детский сад в Видном" loading="lazy" decoding="async" width="866" height="398"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка детского сада на 155 мест</span><h3>Детский сад в Видном</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Видное, ЖК «Зелёные аллеи», вблизи д. Тарычево</dd></div><div><dt>Застройщик</dt><dd>ГК МИЦ</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить внутреннюю отделку и монтаж внутренних инженерных систем детского сада.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 1 фото</span><a href="#n07" data-view="n07" class="card-download" aria-label="Смотреть фото: Детский сад в Видном">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилые корпуса 10–11 в столбове монолитные и кладочные работы москва, поселение сосенское, вблизи д. столбово, корпуса 10–11 гк миц выполнить монолитные и кладочные работы жилых корпусов. ">
+  <a class="card-open" href="#n08" data-view="n08" aria-label="Смотреть: Жилые корпуса 10–11 в Столбове">
+    <div class="card-photo"><img src="galleries/n08/portfolio-11-01.webp" alt="Жилые корпуса 10–11 в Столбове" loading="lazy" decoding="async" width="559" height="421"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монолитные и кладочные работы</span><h3>Жилые корпуса 10–11 в Столбове</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, поселение Сосенское, вблизи д. Столбово, корпуса 10–11</dd></div><div><dt>Застройщик</dt><dd>ГК МИЦ</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить монолитные и кладочные работы жилых корпусов.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n08" data-view="n08" class="card-download" aria-label="Смотреть фото: Жилые корпуса 10–11 в Столбове">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="миниполис «рафинад» отделка квартир и общих зон московская обл., г.о. химки, квартал свистуха ао «сити-xxi век» возвести стены и перегородки, выполнить черновую и чистовую отделку, смонтировать внутренние инженерные системы. 2021–2023">
+  <a class="card-open" href="#n09" data-view="n09" aria-label="Смотреть: Миниполис «Рафинад»">
+    <div class="card-photo"><img src="galleries/n09/portfolio-12-03.webp" alt="Миниполис «Рафинад»" loading="lazy" decoding="async" width="430" height="574"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка квартир и общих зон</span><h3>Миниполис «Рафинад»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., г.о. Химки, квартал Свистуха</dd></div><div><dt>Заказчик</dt><dd>АО «Сити-XXI век»</dd></div></dl><p class="card-task"><span>Задача</span>Возвести стены и перегородки, выполнить черновую и чистовую отделку, смонтировать внутренние инженерные системы.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n09" data-view="n09" class="card-download" aria-label="Смотреть фото: Миниполис «Рафинад»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилые дома, рязанский проспект отделка квартир и общих зон москва, рязанский проспект, вл. 26, з/у 1 ао «главстрой»; генподрядчик ооо «гс констракшен» выполнить отделку квартир и мест общего пользования под ключ, смонтировать внутренние инженерные системы. 2021–2023">
+  <a class="card-open" href="#n10" data-view="n10" aria-label="Смотреть: Жилые дома, Рязанский проспект">
+    <div class="card-photo"><img src="galleries/n10/portfolio-13-06.webp" alt="Жилые дома, Рязанский проспект" loading="lazy" decoding="async" width="527" height="395"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка квартир и общих зон</span><h3>Жилые дома, Рязанский проспект</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Рязанский проспект, вл. 26, з/у 1</dd></div><div><dt>Заказчик</dt><dd>АО «Главстрой»; генподрядчик ООО «ГС Констракшен»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить отделку квартир и мест общего пользования под ключ, смонтировать внутренние инженерные системы.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 6 фото</span><a href="#n10" data-view="n10" class="card-download" aria-label="Смотреть фото: Жилые дома, Рязанский проспект">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="детский сад, новые котельники детский сад на 225 мест московская обл., котельники, мкр. новые котельники  выполнить полный цикл работ по детскому саду под ключ. 2019">
+  <a class="card-open" href="#n11" data-view="n11" aria-label="Смотреть: Детский сад, Новые Котельники">
+    <div class="card-photo"><img src="galleries/n11/portfolio-14-02.webp" alt="Детский сад, Новые Котельники" loading="lazy" decoding="async" width="795" height="570"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Детский сад на 225 мест</span><h3>Детский сад, Новые Котельники</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Котельники, мкр. Новые Котельники</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить полный цикл работ по детскому саду под ключ.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 1 фото</span><a href="#n11" data-view="n11" class="card-download" aria-label="Смотреть фото: Детский сад, Новые Котельники">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилые дома, новые котельники строительство жилых домов московская обл., котельники, мкр. новые котельники, корпуса 1–7  выполнить полный цикл работ по жилым домам под ключ. 2018–2021">
+  <a class="card-open" href="#n12" data-view="n12" aria-label="Смотреть: Жилые дома, Новые Котельники">
+    <div class="card-photo"><img src="galleries/n12/portfolio-14-00.webp" alt="Жилые дома, Новые Котельники" loading="lazy" decoding="async" width="622" height="854"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Строительство жилых домов</span><h3>Жилые дома, Новые Котельники</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Котельники, мкр. Новые Котельники, корпуса 1–7</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить полный цикл работ по жилым домам под ключ.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n12" data-view="n12" class="card-download" aria-label="Смотреть фото: Жилые дома, Новые Котельники">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жк «филатов луг» отделка квартир москва, поселение московский, д. картмазово, уч. 16/1 ооо «инвестиции в градостроительство» (гк «инград») смонтировать внутренние инженерные системы, выполнить муниципальную и чистовую отделку квартир. 2020–2021">
+  <a class="card-open" href="#n13" data-view="n13" aria-label="Смотреть: ЖК «Филатов Луг»">
+    <div class="card-photo"><img src="galleries/n13/portfolio-15-02.webp" alt="ЖК «Филатов Луг»" loading="lazy" decoding="async" width="463" height="686"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка квартир</span><h3>ЖК «Филатов Луг»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, поселение Московский, д. Картмазово, уч. 16/1</dd></div><div><dt>Заказчик</dt><dd>ООО «Инвестиции в градостроительство» (ГК «Инград»)</dd></div></dl><p class="card-task"><span>Задача</span>Смонтировать внутренние инженерные системы, выполнить муниципальную и чистовую отделку квартир.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n13" data-view="n13" class="card-download" aria-label="Смотреть фото: ЖК «Филатов Луг»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жк «зелёные аллеи», корпус 9 отделка жилого дома московская обл., видное, вблизи д. тарычево, корпус 9 ооо «московский ипотечный центр-миц» выполнить внутреннюю отделку под ключ и монтаж инженерных систем. 2019–2021">
+  <a class="card-open" href="#n14" data-view="n14" aria-label="Смотреть: ЖК «Зелёные аллеи», корпус 9">
+    <div class="card-photo"><img src="galleries/n14/portfolio-17-00.webp" alt="ЖК «Зелёные аллеи», корпус 9" loading="lazy" decoding="async" width="1280" height="619"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка жилого дома</span><h3>ЖК «Зелёные аллеи», корпус 9</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Видное, вблизи д. Тарычево, корпус 9</dd></div><div><dt>Заказчик</dt><dd>ООО «Московский ипотечный центр-МИЦ»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить внутреннюю отделку под ключ и монтаж инженерных систем.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n14" data-view="n14" class="card-download" aria-label="Смотреть фото: ЖК «Зелёные аллеи», корпус 9">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="парк «федюхины высоты» устройство парковки севастополь, балаклавский район, федюхины высоты ооо «севастопольский военно-исторический клуб» выполнить комплекс дорожных работ по устройству парковки на территории парка. 2019">
+  <a class="card-open" href="#n15" data-view="n15" aria-label="Смотреть: Парк «Федюхины высоты»">
+    <div class="card-photo"><img src="galleries/n15/portfolio-18-00.webp" alt="Парк «Федюхины высоты»" loading="lazy" decoding="async" width="945" height="630"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Устройство парковки</span><h3>Парк «Федюхины высоты»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Севастополь, Балаклавский район, Федюхины высоты</dd></div><div><dt>Заказчик</dt><dd>ООО «Севастопольский военно-исторический клуб»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить комплекс дорожных работ по устройству парковки на территории парка.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n15" data-view="n15" class="card-download" aria-label="Смотреть фото: Парк «Федюхины высоты»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="капремонт жилых домов севастополя внутренние инженерные системы севастополь нко «фонд содействия капитальному ремонту города севастополя» отремонтировать внутренние инженерные системы, смонтировать и обслужить узлы учёта тепловой энергии. 2017–2018">
+  <a class="card-open" href="#n16" data-view="n16" aria-label="Смотреть: Капремонт жилых домов Севастополя">
+    <div class="card-photo"><img src="galleries/n16/portfolio-20-03.webp" alt="Капремонт жилых домов Севастополя" loading="lazy" decoding="async" width="666" height="499"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Внутренние инженерные системы</span><h3>Капремонт жилых домов Севастополя</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Севастополь</dd></div><div><dt>Заказчик</dt><dd>НКО «Фонд содействия капитальному ремонту города Севастополя»</dd></div></dl><p class="card-task"><span>Задача</span>Отремонтировать внутренние инженерные системы, смонтировать и обслужить узлы учёта тепловой энергии.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n16" data-view="n16" class="card-download" aria-label="Смотреть фото: Капремонт жилых домов Севастополя">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="капремонт жилых домов москвы фасады, кровли и инженерные системы москва фонд капитального ремонта многоквартирных домов города москвы выполнить капитальный ремонт внутренних инженерных систем, фасадов и кровель. 2017–2019">
+  <a class="card-open" href="#n17" data-view="n17" aria-label="Смотреть: Капремонт жилых домов Москвы">
+    <div class="card-photo"><img src="galleries/n17/portfolio-21-01.webp" alt="Капремонт жилых домов Москвы" loading="lazy" decoding="async" width="1427" height="803"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Фасады, кровли и инженерные системы</span><h3>Капремонт жилых домов Москвы</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва</dd></div><div><dt>Заказчик</dt><dd>Фонд капитального ремонта многоквартирных домов города Москвы</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить капитальный ремонт внутренних инженерных систем, фасадов и кровель.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n17" data-view="n17" class="card-download" aria-label="Смотреть фото: Капремонт жилых домов Москвы">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="федеральная трасса р-158 габионные конструкции нижегородская обл., трасса р-158, км 32+000 — км 40+900 фку «управление автомобильной магистрали москва — нижний новгород»; генподрядчик ооо «транскомплектстрой» устроить армированные насыпи и подпорную стенку из габионных конструкций при реконструкции трассы. 2017–2018">
+  <a class="card-open" href="#n18" data-view="n18" aria-label="Смотреть: Федеральная трасса Р-158">
+    <div class="card-photo"><img src="galleries/n18/portfolio-22-00.webp" alt="Федеральная трасса Р-158" loading="lazy" decoding="async" width="1207" height="564"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Габионные конструкции</span><h3>Федеральная трасса Р-158</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Нижегородская обл., трасса Р-158, км 32+000 — км 40+900</dd></div><div><dt>Заказчик</dt><dd>ФКУ «Управление автомобильной магистрали Москва — Нижний Новгород»; генподрядчик ООО «Транскомплектстрой»</dd></div></dl><p class="card-task"><span>Задача</span>Устроить армированные насыпи и подпорную стенку из габионных конструкций при реконструкции трассы.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n18" data-view="n18" class="card-download" aria-label="Смотреть фото: Федеральная трасса Р-158">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="театр кукол имени с. в. образцова капитальный ремонт и сохранение объекта москва, ул. садовая-самотёчная, д. 3 фгбук «государственный академический центральный театр кукол имени с. в. образцова» выполнить капитальный ремонт и работы по сохранению выявленного объекта культурного наследия. 2013–2019">
+  <a class="card-open" href="#n19" data-view="n19" aria-label="Смотреть: Театр кукол имени С. В. Образцова">
+    <div class="card-photo"><img src="galleries/n19/portfolio-23-00.webp" alt="Театр кукол имени С. В. Образцова" loading="lazy" decoding="async" width="1000" height="667"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Капитальный ремонт и сохранение объекта</span><h3>Театр кукол имени С. В. Образцова</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Садовая-Самотёчная, д. 3</dd></div><div><dt>Заказчик</dt><dd>ФГБУК «Государственный академический центральный театр кукол имени С. В. Образцова»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить капитальный ремонт и работы по сохранению выявленного объекта культурного наследия.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 1 фото</span><a href="#n19" data-view="n19" class="card-download" aria-label="Смотреть фото: Театр кукол имени С. В. Образцова">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="электродепо «митино» здание эксплуатационных служб москва, электродепо «митино» оао «мосинжпроект»; генподрядчик зао «моспромстрой» выполнить комплекс общестроительных работ, инженерные системы, коммуникации и технологическое оборудование. 2015–2017">
+  <a class="card-open" href="#n20" data-view="n20" aria-label="Смотреть: Электродепо «Митино»">
+    <div class="card-photo"><img src="galleries/n20/portfolio-24-03.webp" alt="Электродепо «Митино»" loading="lazy" decoding="async" width="724" height="543"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Здание эксплуатационных служб</span><h3>Электродепо «Митино»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, электродепо «Митино»</dd></div><div><dt>Заказчик</dt><dd>ОАО «Мосинжпроект»; генподрядчик ЗАО «Моспромстрой»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить комплекс общестроительных работ, инженерные системы, коммуникации и технологическое оборудование.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n20" data-view="n20" class="card-download" aria-label="Смотреть фото: Электродепо «Митино»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="электродепо «планерное» расширение электродепо москва, ул. планерная, д. 9 ао «мосинжпроект» выполнить общестроительные работы, инженерные системы, коммуникации и технологическое оборудование. 2015–2017">
+  <a class="card-open" href="#n21" data-view="n21" aria-label="Смотреть: Электродепо «Планерное»">
+    <div class="card-photo"><img src="galleries/n21/portfolio-25-00.webp" alt="Электродепо «Планерное»" loading="lazy" decoding="async" width="623" height="467"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Расширение электродепо</span><h3>Электродепо «Планерное»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Планерная, д. 9</dd></div><div><dt>Заказчик</dt><dd>АО «Мосинжпроект»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить общестроительные работы, инженерные системы, коммуникации и технологическое оборудование.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n21" data-view="n21" class="card-download" aria-label="Смотреть фото: Электродепо «Планерное»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="храм на ходынском поле монолитные и кладочные работы москва, ходынский бульвар, д. 2 приход храма преподобного сергия радонежского на ходынском поле выполнить монолитные конструкции и кирпичную кладку наружных и внутренних стен. 2015–2017">
+  <a class="card-open" href="#n22" data-view="n22" aria-label="Смотреть: Храм на Ходынском поле">
+    <div class="card-photo"><img src="galleries/n22/portfolio-26-00.webp" alt="Храм на Ходынском поле" loading="lazy" decoding="async" width="960" height="720"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монолитные и кладочные работы</span><h3>Храм на Ходынском поле</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Ходынский бульвар, д. 2</dd></div><div><dt>Заказчик</dt><dd>Приход храма преподобного Сергия Радонежского на Ходынском поле</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить монолитные конструкции и кирпичную кладку наружных и внутренних стен.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n22" data-view="n22" class="card-download" aria-label="Смотреть фото: Храм на Ходынском поле">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилой комплекс, маломосковская, 14 строительство с подземным гаражом москва, ул. маломосковская, д. 14 ооо ск «сму-55» выполнить комплекс работ по строительству жилого комплекса с подземным гаражом. 2015–2017">
+  <a class="card-open" href="#n23" data-view="n23" aria-label="Смотреть: Жилой комплекс, Маломосковская, 14">
+    <div class="card-photo"><img src="galleries/n23/portfolio-27-00.webp" alt="Жилой комплекс, Маломосковская, 14" loading="lazy" decoding="async" width="1099" height="733"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Строительство с подземным гаражом</span><h3>Жилой комплекс, Маломосковская, 14</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, ул. Маломосковская, д. 14</dd></div><div><dt>Генподрядчик</dt><dd>ООО СК «СМУ-55»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить комплекс работ по строительству жилого комплекса с подземным гаражом.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n23" data-view="n23" class="card-download" aria-label="Смотреть фото: Жилой комплекс, Маломосковская, 14">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="производство «кубань-полимер» общестроительные работы краснодар, пос. берёзовый, 7/8 ооо «кубань-полимер» выполнить общестроительные работы при строительстве сушильной установки для полимерных порошков. 2016">
+  <a class="card-open" href="#n24" data-view="n24" aria-label="Смотреть: Производство «Кубань-Полимер»">
+    <div class="card-photo"><img src="galleries/n24/portfolio-28-03.webp" alt="Производство «Кубань-Полимер»" loading="lazy" decoding="async" width="699" height="525"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Общестроительные работы</span><h3>Производство «Кубань-Полимер»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Краснодар, пос. Берёзовый, 7/8</dd></div><div><dt>Заказчик</dt><dd>ООО «Кубань-Полимер»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить общестроительные работы при строительстве сушильной установки для полимерных порошков.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n24" data-view="n24" class="card-download" aria-label="Смотреть фото: Производство «Кубань-Полимер»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="детские площадки, первомайский благоустройство дворов московская обл., истринский район, пос. первомайский, дворы домов 1, 10, 12, 13, 14, 23, 25  выполнить благоустройство детских площадок во дворах жилых домов. 2016">
+  <a class="card-open" href="#n25" data-view="n25" aria-label="Смотреть: Детские площадки, Первомайский">
+    <div class="card-photo"><img src="galleries/n25/portfolio-29-01.webp" alt="Детские площадки, Первомайский" loading="lazy" decoding="async" width="716" height="404"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Благоустройство дворов</span><h3>Детские площадки, Первомайский</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Истринский район, пос. Первомайский, дворы домов 1, 10, 12, 13, 14, 23, 25</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить благоустройство детских площадок во дворах жилых домов.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 6 фото</span><a href="#n25" data-view="n25" class="card-download" aria-label="Смотреть фото: Детские площадки, Первомайский">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="18-й автобусный парк реконструкция ливневых стоков москва, новоясеневский проспект, д. 4 гуп «мосгортранс» реконструировать систему ливневых стоков автобусного парка. 2015">
+  <a class="card-open" href="#n26" data-view="n26" aria-label="Смотреть: 18-й автобусный парк">
+    <div class="card-photo"><img src="galleries/n26/portfolio-30-01.webp" alt="18-й автобусный парк" loading="lazy" decoding="async" width="681" height="511"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Реконструкция ливневых стоков</span><h3>18-й автобусный парк</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Новоясеневский проспект, д. 4</dd></div><div><dt>Заказчик</dt><dd>ГУП «Мосгортранс»</dd></div></dl><p class="card-task"><span>Задача</span>Реконструировать систему ливневых стоков автобусного парка.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n26" data-view="n26" class="card-download" aria-label="Смотреть фото: 18-й автобусный парк">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилой дом в голубом отделка, фасад и инженерные системы московская обл., солнечногорский район, д. голубое, корпус 15 ооо «сибжилстрой» выполнить внутреннюю отделку, разводку инженерных систем, вентилируемый фасад и остекление. 2013–2015">
+  <a class="card-open" href="#n27" data-view="n27" aria-label="Смотреть: Жилой дом в Голубом">
+    <div class="card-photo"><img src="galleries/n27/portfolio-32-04.webp" alt="Жилой дом в Голубом" loading="lazy" decoding="async" width="335" height="461"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка, фасад и инженерные системы</span><h3>Жилой дом в Голубом</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Солнечногорский район, д. Голубое, корпус 15</dd></div><div><dt>Заказчик</dt><dd>ООО «СибЖилСтрой»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить внутреннюю отделку, разводку инженерных систем, вентилируемый фасад и остекление.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n27" data-view="n27" class="card-download" aria-label="Смотреть фото: Жилой дом в Голубом">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилой микрорайон в люберцах кирпичная кладка московская обл., люберцы, северо-восточная часть города, квартал 2, 1-й пусковой комплекс ооо «самолёт девелопмент» выполнить кирпичную кладку наружных и внутренних стен. 2014–2015">
+  <a class="card-open" href="#n28" data-view="n28" aria-label="Смотреть: Жилой микрорайон в Люберцах">
+    <div class="card-photo"><img src="galleries/n28/portfolio-32-03.webp" alt="Жилой микрорайон в Люберцах" loading="lazy" decoding="async" width="693" height="400"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Кирпичная кладка</span><h3>Жилой микрорайон в Люберцах</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Люберцы, северо-восточная часть города, квартал 2, 1-й пусковой комплекс</dd></div><div><dt>Заказчик</dt><dd>ООО «Самолёт Девелопмент»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить кирпичную кладку наружных и внутренних стен.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 4 фото</span><a href="#n28" data-view="n28" class="card-download" aria-label="Смотреть фото: Жилой микрорайон в Люберцах">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жк «бутовские аллеи» жилые дома серии «малая москва» москва, вблизи д. сосенское, жк «бутовские аллеи» ооо ск «сму-55» выполнить комплекс работ по жилым домам серии «малая москва». 2012–2017">
+  <a class="card-open" href="#n29" data-view="n29" aria-label="Смотреть: ЖК «Бутовские аллеи»">
+    <div class="card-photo"><img src="galleries/n29/portfolio-33-07.webp" alt="ЖК «Бутовские аллеи»" loading="lazy" decoding="async" width="518" height="341"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Жилые дома серии «Малая Москва»</span><h3>ЖК «Бутовские аллеи»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, вблизи д. Сосенское, ЖК «Бутовские аллеи»</dd></div><div><dt>Генподрядчик</dt><dd>ООО СК «СМУ-55»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить комплекс работ по жилым домам серии «Малая Москва».</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n29" data-view="n29" class="card-download" aria-label="Смотреть фото: ЖК «Бутовские аллеи»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="торгово-офисное здание, заокский отделка и инженерные системы тульская обл., р.п. заокский, ул. поленова, д. 19 ооо «заокская геоинформационная система» выполнить отделку внутренних помещений и прокладку внутренних инженерных систем. 2015">
+  <a class="card-open" href="#n30" data-view="n30" aria-label="Смотреть: Торгово-офисное здание, Заокский">
+    <div class="card-photo"><img src="galleries/n30/portfolio-33-04.webp" alt="Торгово-офисное здание, Заокский" loading="lazy" decoding="async" width="519" height="692"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка и инженерные системы</span><h3>Торгово-офисное здание, Заокский</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Тульская обл., р.п. Заокский, ул. Поленова, д. 19</dd></div><div><dt>Заказчик</dt><dd>ООО «Заокская геоинформационная система»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить отделку внутренних помещений и прокладку внутренних инженерных систем.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n30" data-view="n30" class="card-download" aria-label="Смотреть фото: Торгово-офисное здание, Заокский">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="выставочный зал экспоцентра отделка выставочного пространства москва, краснопресненская набережная, д. 14 ооо «компания эппол» выполнить отделку внутренних помещений и прокладку инженерных систем выставочного зала. ">
+  <a class="card-open" href="#n31" data-view="n31" aria-label="Смотреть: Выставочный зал Экспоцентра">
+    <div class="card-photo"><img src="galleries/n31/portfolio-34-02.webp" alt="Выставочный зал Экспоцентра" loading="lazy" decoding="async" width="593" height="398"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка выставочного пространства</span><h3>Выставочный зал Экспоцентра</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Москва, Краснопресненская набережная, д. 14</dd></div><div><dt>Заказчик</dt><dd>ООО «Компания ЭППОЛ»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить отделку внутренних помещений и прокладку инженерных систем выставочного зала.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n31" data-view="n31" class="card-download" aria-label="Смотреть фото: Выставочный зал Экспоцентра">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="магазин «дикси», маринки отделка торговых помещений калужская обл., д. маринки, д. 101 зао «дикси юг» выполнить внутреннюю отделку и монтаж внутренних инженерных систем. 2014">
+  <a class="card-open" href="#n32" data-view="n32" aria-label="Смотреть: Магазин «Дикси», Маринки">
+    <div class="card-photo"><img src="galleries/n32/portfolio-34-04.webp" alt="Магазин «Дикси», Маринки" loading="lazy" decoding="async" width="659" height="495"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Отделка торговых помещений</span><h3>Магазин «Дикси», Маринки</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Калужская обл., д. Маринки, д. 101</dd></div><div><dt>Заказчик</dt><dd>ЗАО «ДИКСИ Юг»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить внутреннюю отделку и монтаж внутренних инженерных систем.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n32" data-view="n32" class="card-download" aria-label="Смотреть фото: Магазин «Дикси», Маринки">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="жилой комплекс у деревни глухово монолитные конструкции московская обл., красногорский район, вблизи д. глухово, корпус 4 зао «моспромстрой» выполнить комплекс работ по устройству монолитных конструкций девятиэтажного жилого комплекса. 2012">
+  <a class="card-open" href="#n33" data-view="n33" aria-label="Смотреть: Жилой комплекс у деревни Глухово">
+    <div class="card-photo"><img src="galleries/n33/portfolio-35-00.webp" alt="Жилой комплекс у деревни Глухово" loading="lazy" decoding="async" width="555" height="417"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монолитные конструкции</span><h3>Жилой комплекс у деревни Глухово</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Красногорский район, вблизи д. Глухово, корпус 4</dd></div><div><dt>Заказчик</dt><dd>ЗАО «Моспромстрой»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить комплекс работ по устройству монолитных конструкций девятиэтажного жилого комплекса.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 1 фото</span><a href="#n33" data-view="n33" class="card-download" aria-label="Смотреть фото: Жилой комплекс у деревни Глухово">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="комплекс «горная карусель» монолитные конструкции краснодарский край, сочи, адлерский район, пос. эсто-садок ооо «транскомстрой» выполнить монолитные конструкции комплекса зданий спортивно-туристического комплекса. 2010–2012">
+  <a class="card-open" href="#n34" data-view="n34" aria-label="Смотреть: Комплекс «Горная Карусель»">
+    <div class="card-photo"><img src="galleries/n34/portfolio-35-01.webp" alt="Комплекс «Горная Карусель»" loading="lazy" decoding="async" width="671" height="500"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монолитные конструкции</span><h3>Комплекс «Горная Карусель»</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Краснодарский край, Сочи, Адлерский район, пос. Эсто-Садок</dd></div><div><dt>Заказчик</dt><dd>ООО «ТрансКомСтрой»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить монолитные конструкции комплекса зданий спортивно-туристического комплекса.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 2 фото</span><a href="#n34" data-view="n34" class="card-download" aria-label="Смотреть фото: Комплекс «Горная Карусель»">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="логистический центр, люберцы конструкции, отделка и инженерные системы московская обл., люберцы, ул. транспортная, д. 5б ооо «алс-терминал» устроить железобетонные, металлические и ограждающие конструкции, выполнить отделку офисов и инженерные системы. 2010–2012">
+  <a class="card-open" href="#n35" data-view="n35" aria-label="Смотреть: Логистический центр, Люберцы">
+    <div class="card-photo"><img src="galleries/n35/portfolio-36-02.webp" alt="Логистический центр, Люберцы" loading="lazy" decoding="async" width="621" height="423"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Конструкции, отделка и инженерные системы</span><h3>Логистический центр, Люберцы</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>Московская обл., Люберцы, ул. Транспортная, д. 5Б</dd></div><div><dt>Заказчик</dt><dd>ООО «АЛС-Терминал»</dd></div></dl><p class="card-task"><span>Задача</span>Устроить железобетонные, металлические и ограждающие конструкции, выполнить отделку офисов и инженерные системы.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 3 фото</span><a href="#n35" data-view="n35" class="card-download" aria-label="Смотреть фото: Логистический центр, Люберцы">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="складской терминал, трефолева, 42 монолитные конструкции ул. трефолева, д. 42 зао «су-11»; генподрядчик ооо «кабур» выполнить монолитные железобетонные конструкции складского терминала. 2005–2006">
+  <a class="card-open" href="#n36" data-view="n36" aria-label="Смотреть: Складской терминал, Трефолева, 42">
+    <div class="card-photo"><img src="galleries/n36/portfolio-36-03.webp" alt="Складской терминал, Трефолева, 42" loading="lazy" decoding="async" width="338" height="249"><span class="card-badge">Объект</span></div>
+    <div class="card-body"><span class="card-type">Монолитные конструкции</span><h3>Складской терминал, Трефолева, 42</h3><dl class="card-meta"><div><dt>Адрес</dt><dd>ул. Трефолева, д. 42</dd></div><div><dt>Заказчик</dt><dd>ЗАО «СУ-11»; генподрядчик ООО «КАБУР»</dd></div></dl><p class="card-task"><span>Задача</span>Выполнить монолитные железобетонные конструкции складского терминала.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 1 фото</span><a href="#n36" data-view="n36" class="card-download" aria-label="Смотреть фото: Складской терминал, Трефолева, 42">Смотреть ↗</a></div>
+</article>
+<article class="card" data-group="objects" data-search="модульные здания и блок-контейнеры производство и отделка   изготовить и оборудовать модульные здания, бытовки и блок-контейнеры: выполнить конструкции, внутреннюю отделку и санитарные помещения. ">
+  <a class="card-open" href="#n37" data-view="n37" aria-label="Смотреть: Модульные здания и блок-контейнеры">
+    <div class="card-photo"><img src="galleries/n37/website-025.webp" alt="Модульные здания и блок-контейнеры" loading="lazy" decoding="async" width="1599" height="1200"><span class="card-badge">Фотогалерея</span></div>
+    <div class="card-body"><span class="card-type">Производство и отделка</span><h3>Модульные здания и блок-контейнеры</h3><dl class="card-meta"></dl><p class="card-task"><span>Задача</span>Изготовить и оборудовать модульные здания, бытовки и блок-контейнеры: выполнить конструкции, внутреннюю отделку и санитарные помещения.</p></div>
+  </a>
+  <div class="card-footer"><span class="card-file">Фотогалерея · 18 фото</span><a href="#n37" data-view="n37" class="card-download" aria-label="Смотреть фото: Модульные здания и блок-контейнеры">Смотреть ↗</a></div>
 </article>
 <div class="group-head" data-head="tenders-2026"><h3>Тендеры 2026 <span>32</span></h3><p>Задачи закупок и исходное состояние помещений.</p></div>
 <article class="card" data-group="tenders-2026" data-search="бкс проспект мира 69 ремонт офисных помещений москва, проспект мира, д. 69, стр. 1 ооо «компания брокеркредитсервис» (бкс) обновить офис: выполнить перегородки, полы, потолки, освещение, скс, вентиляцию и кондиционирование. тендеры 2026 / № 1">
@@ -926,13 +1180,24 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
   </div>
   <div class="footer-line"><img src="assets/logo.svg" alt="" width="404" height="316"><span>© РесурсПроект, 2026 · Презентация компании и работ</span><a class="back-top" href="#">В начало ↑</a></div>
 </div></footer>
-<dialog class="viewer" id="viewer" aria-labelledby="viewer-title"><div class="viewer-bar"><div class="viewer-title"><h2 id="viewer-title">Презентация</h2><p id="viewer-meta"></p></div><div class="viewer-tools"><a class="desktop-open" id="viewer-open" href="#" target="_blank" rel="noopener noreferrer">В отдельной вкладке ↗</a><a class="save-pdf" id="viewer-save" href="#" download>Скачать PDF ↓</a><button type="button" class="close-viewer" id="viewer-close" aria-label="Закрыть презентацию">×</button></div></div><a class="mobile-open" id="mobile-open" href="#" target="_blank" rel="noopener noreferrer">Открыть PDF на весь экран ↗</a><iframe class="viewer-frame" id="viewer-frame" title="Просмотр PDF-презентации" src="about:blank"></iframe></dialog>
+<dialog class="viewer" id="viewer" aria-labelledby="viewer-title"><div class="viewer-bar"><div class="viewer-title"><h2 id="viewer-title">Презентация</h2><p id="viewer-meta"></p></div><div class="viewer-tools"><a class="desktop-open" id="viewer-open" href="#" target="_blank" rel="noopener noreferrer">В отдельной вкладке ↗</a><a class="save-pdf" id="viewer-save" href="#" download>Скачать PDF ↓</a><button type="button" class="close-viewer" id="viewer-close" aria-label="Закрыть презентацию">×</button></div></div><a class="mobile-open" id="mobile-open" href="#" target="_blank" rel="noopener noreferrer">Открыть презентацию на весь экран ↗</a><iframe class="viewer-frame" id="viewer-frame" title="Презентация объекта и фотографии" src="about:blank"></iframe></dialog>
 <script>
 'use strict';
-const presentations={"main": {"title": "Основная презентация РесурсПроекта", "file": "resursproekt-portfolio.pdf", "pages": 39}, "p01": {"title": "Автодом, санузлы", "file": "p01.pdf", "pages": 2}, "p02": {"title": "Земляной Вал, 75", "file": "p02.pdf", "pages": 4}, "p03": {"title": "Лодочная, 27", "file": "p03.pdf", "pages": 2}, "p04": {"title": "магазин МЦЗ, ТРК «БУМ»", "file": "p04.pdf", "pages": 3}, "p05": {"title": "Медси, Зелёный проспект, 7", "file": "p05.pdf", "pages": 4}, "p06": {"title": "ОТП Банк, проспект Мира, 29", "file": "p06.pdf", "pages": 5}, "p07": {"title": "СГК, Дубининская, 53", "file": "p07.pdf", "pages": 4}, "p08": {"title": "Севастопольский пр-т, 66", "file": "p08.pdf", "pages": 9}, "p09": {"title": "Сенеж, гостиница и ресторан", "file": "p09.pdf", "pages": 5}, "p10": {"title": "ТАЛИ, Пятницкая, 44", "file": "p10.pdf", "pages": 4}, "p11": {"title": "ЦБ, Ларюшино", "file": "p11.pdf", "pages": 3}, "p12": {"title": "ЦБ, Настасьинский пер., 5", "file": "p12.pdf", "pages": 3}, "p13": {"title": "ЦБ, Севастопольский пр-т, 66", "file": "p13.pdf", "pages": 4}, "p14": {"title": "ЦБ, Селивёрстов пер., 6", "file": "p14.pdf", "pages": 2}, "p15": {"title": "ЦБ, ул. Мосфильмовская, 8", "file": "p15.pdf", "pages": 3}, "p16": {"title": "ЦБ, ул. Свободы, 57", "file": "p16.pdf", "pages": 4}, "p17": {"title": "Тендер 22, ОТП Банк, Б. Дорогомиловская, 8", "file": "p17.pdf", "pages": 3}, "p18": {"title": "Тендер 23, ОТП Банк, Королёв", "file": "p18.pdf", "pages": 3}, "p19": {"title": "Тендер 31, шоурум ТАЛАТУ, ARTPLAY", "file": "p19.pdf", "pages": 3}, "p20": {"title": "Тендер 35, санузлы СГК, Дубининская", "file": "p20.pdf", "pages": 2}, "p21": {"title": "Тендер 87, МЕДСИ, Зелёный пр-т, 7", "file": "p21.pdf", "pages": 3}, "p22": {"title": "Тендер 1, БКС проспект Мира 69", "file": "p22.pdf", "pages": 3}, "p23": {"title": "Тендер 12, Банный комплекс", "file": "p23.pdf", "pages": 2}, "p24": {"title": "Тендер 124, Медси на Пироговской", "file": "p24.pdf", "pages": 3}, "p25": {"title": "Тендер 128, МЦЗ Охотный ряд", "file": "p25.pdf", "pages": 2}, "p26": {"title": "Тендер 13, РЕСО-Гарантия", "file": "p26.pdf", "pages": 4}, "p27": {"title": "Тендер 137, Отель «СтандАрт»", "file": "p27.pdf", "pages": 3}, "p28": {"title": "Тендер 138, МЦЗ Владимир", "file": "p28.pdf", "pages": 2}, "p29": {"title": "Тендер 140, Медси на Красной Пресне", "file": "p29.pdf", "pages": 2}, "p30": {"title": "Тендер 142, СМ-Клиника, Перерва 32", "file": "p30.pdf", "pages": 3}, "p31": {"title": "Тендер 145, ТТК Рублёвский", "file": "p31.pdf", "pages": 3}, "p32": {"title": "Тендер 146, Садовод", "file": "p32.pdf", "pages": 3}, "p33": {"title": "Тендер 150, Новохохловская, 23", "file": "p33.pdf", "pages": 3}, "p34": {"title": "Тендер 167, Медси в Красногорске", "file": "p34.pdf", "pages": 3}, "p35": {"title": "Тендер 171, кафе на Ленинградке", "file": "p35.pdf", "pages": 2}, "p36": {"title": "Тендер 175, ЖК на ул. Веткина", "file": "p36.pdf", "pages": 4}, "p37": {"title": "Тендер 176, конференц-зал Мосэнергосбыта", "file": "p37.pdf", "pages": 3}, "p38": {"title": "Тендер 186, БЦ «Ново»", "file": "p38.pdf", "pages": 3}, "p39": {"title": "Тендер 206, Меркурий Тауэр", "file": "p39.pdf", "pages": 3}, "p40": {"title": "Тендер 29, Медси Полянка и Котельники", "file": "p40.pdf", "pages": 3}, "p41": {"title": "Тендер 4, Главстрой Менделеевская 4", "file": "p41.pdf", "pages": 3}, "p42": {"title": "Тендер 40, ВТИ Ленинская Слобода", "file": "p42.pdf", "pages": 3}, "p43": {"title": "Тендер 44, РЕН ТВ Партийный переулок", "file": "p43.pdf", "pages": 3}, "p44": {"title": "Тендер 46, Новоалексеевская ВК", "file": "p44.pdf", "pages": 3}, "p45": {"title": "Тендер 53, Медси Зелёный проспект", "file": "p45.pdf", "pages": 2}, "p46": {"title": "Тендер 54, Детский мир Колумбус", "file": "p46.pdf", "pages": 3}, "p47": {"title": "Тендер 56, Медси текущий ремонт", "file": "p47.pdf", "pages": 4}, "p48": {"title": "Тендер 62, перегородки ГКЛ, Алтуфьевское шоссе", "file": "p48.pdf", "pages": 3}, "p49": {"title": "Тендер 73, ТРЦ «Метрополис»", "file": "p49.pdf", "pages": 4}, "p50": {"title": "Тендер 79, снос убежища, Некрасовка", "file": "p50.pdf", "pages": 3}, "p51": {"title": "Тендер 81, ГК «Автомир», Иркутская улица", "file": "p51.pdf", "pages": 3}, "p52": {"title": "Тендер 94, трубопроводы, Маломосковская улица", "file": "p52.pdf", "pages": 2}, "p53": {"title": "Тендер 97, отделка квартир, Куркино", "file": "p53.pdf", "pages": 4}};
+const presentations={"main": {"title": "Основная презентация РесурсПроекта", "file": "resursproekt-portfolio.pdf", "pages": 39}, "p01": {"title": "Автодом, санузлы", "file": "p01.pdf", "pages": 2}, "p02": {"title": "Земляной Вал, 75", "file": "p02.pdf", "pages": 4}, "p03": {"title": "Лодочная, 27", "file": "p03.pdf", "pages": 2}, "p04": {"title": "магазин МЦЗ, ТРК «БУМ»", "file": "p04.pdf", "pages": 3}, "p05": {"title": "Медси, Зелёный проспект, 7", "file": "p05.pdf", "pages": 4}, "p06": {"title": "ОТП Банк, проспект Мира, 29", "file": "p06.pdf", "pages": 5}, "p07": {"title": "СГК, Дубининская, 53", "file": "p07.pdf", "pages": 4}, "p08": {"title": "Севастопольский пр-т, 66", "file": "p08.pdf", "pages": 9}, "p09": {"title": "Сенеж, гостиница и ресторан", "file": "p09.pdf", "pages": 5}, "p10": {"title": "ТАЛИ, Пятницкая, 44", "file": "p10.pdf", "pages": 4}, "p11": {"title": "ЦБ, Ларюшино", "file": "p11.pdf", "pages": 3}, "p12": {"title": "ЦБ, Настасьинский пер., 5", "file": "p12.pdf", "pages": 3}, "p13": {"title": "Севастопольский пр-т, 66", "file": "p08.pdf", "pages": 9}, "p14": {"title": "ЦБ, Селивёрстов пер., 6", "file": "p14.pdf", "pages": 2}, "p15": {"title": "ЦБ, ул. Мосфильмовская, 8", "file": "p15.pdf", "pages": 3}, "p16": {"title": "ЦБ, ул. Свободы, 57", "file": "p16.pdf", "pages": 4}, "p17": {"title": "Тендер 22, ОТП Банк, Б. Дорогомиловская, 8", "file": "p17.pdf", "pages": 3}, "p18": {"title": "Тендер 23, ОТП Банк, Королёв", "file": "p18.pdf", "pages": 3}, "p19": {"title": "Тендер 31, шоурум ТАЛАТУ, ARTPLAY", "file": "p19.pdf", "pages": 3}, "p20": {"title": "Тендер 35, санузлы СГК, Дубининская", "file": "p20.pdf", "pages": 2}, "p21": {"title": "Тендер 87, МЕДСИ, Зелёный пр-т, 7", "file": "p21.pdf", "pages": 3}, "p22": {"title": "Тендер 1, БКС проспект Мира 69", "file": "p22.pdf", "pages": 3}, "p23": {"title": "Тендер 12, Банный комплекс", "file": "p23.pdf", "pages": 2}, "p24": {"title": "Тендер 124, Медси на Пироговской", "file": "p24.pdf", "pages": 3}, "p25": {"title": "Тендер 128, МЦЗ Охотный ряд", "file": "p25.pdf", "pages": 2}, "p26": {"title": "Тендер 13, РЕСО-Гарантия", "file": "p26.pdf", "pages": 4}, "p27": {"title": "Тендер 137, Отель «СтандАрт»", "file": "p27.pdf", "pages": 3}, "p28": {"title": "Тендер 138, МЦЗ Владимир", "file": "p28.pdf", "pages": 2}, "p29": {"title": "Тендер 140, Медси на Красной Пресне", "file": "p29.pdf", "pages": 2}, "p30": {"title": "Тендер 142, СМ-Клиника, Перерва 32", "file": "p30.pdf", "pages": 3}, "p31": {"title": "Тендер 145, ТТК Рублёвский", "file": "p31.pdf", "pages": 3}, "p32": {"title": "Тендер 146, Садовод", "file": "p32.pdf", "pages": 3}, "p33": {"title": "Тендер 150, Новохохловская, 23", "file": "p33.pdf", "pages": 3}, "p34": {"title": "Тендер 167, Медси в Красногорске", "file": "p34.pdf", "pages": 3}, "p35": {"title": "Тендер 171, кафе на Ленинградке", "file": "p35.pdf", "pages": 2}, "p36": {"title": "Тендер 175, ЖК на ул. Веткина", "file": "p36.pdf", "pages": 4}, "p37": {"title": "Тендер 176, конференц-зал Мосэнергосбыта", "file": "p37.pdf", "pages": 3}, "p38": {"title": "Тендер 186, БЦ «Ново»", "file": "p38.pdf", "pages": 3}, "p39": {"title": "Тендер 206, Меркурий Тауэр", "file": "p39.pdf", "pages": 3}, "p40": {"title": "Тендер 29, Медси Полянка и Котельники", "file": "p40.pdf", "pages": 3}, "p41": {"title": "Тендер 4, Главстрой Менделеевская 4", "file": "p41.pdf", "pages": 3}, "p42": {"title": "Тендер 40, ВТИ Ленинская Слобода", "file": "p42.pdf", "pages": 3}, "p43": {"title": "Тендер 44, РЕН ТВ Партийный переулок", "file": "p43.pdf", "pages": 3}, "p44": {"title": "Тендер 46, Новоалексеевская ВК", "file": "p44.pdf", "pages": 3}, "p45": {"title": "Тендер 53, Медси Зелёный проспект", "file": "p45.pdf", "pages": 2}, "p46": {"title": "Тендер 54, Детский мир Колумбус", "file": "p46.pdf", "pages": 3}, "p47": {"title": "Тендер 56, Медси текущий ремонт", "file": "p47.pdf", "pages": 4}, "p48": {"title": "Тендер 62, перегородки ГКЛ, Алтуфьевское шоссе", "file": "p48.pdf", "pages": 3}, "p49": {"title": "Тендер 73, ТРЦ «Метрополис»", "file": "p49.pdf", "pages": 4}, "p50": {"title": "Тендер 79, снос убежища, Некрасовка", "file": "p50.pdf", "pages": 3}, "p51": {"title": "Тендер 81, ГК «Автомир», Иркутская улица", "file": "p51.pdf", "pages": 3}, "p52": {"title": "Тендер 94, трубопроводы, Маломосковская улица", "file": "p52.pdf", "pages": 2}, "p53": {"title": "Тендер 97, отделка квартир, Куркино", "file": "p53.pdf", "pages": 4}, "n01": {"title": "«Уралсиб», Жуковский", "gallery": "n01", "photos": 5}, "n02": {"title": "ЖК «Барбарис», Бибирево", "gallery": "n02", "photos": 16}, "n03": {"title": "Реновация, Фонвизина, 13", "gallery": "n03", "photos": 14}, "n04": {"title": "Квартиры в Митино", "gallery": "n04", "photos": 26}, "n05": {"title": "Фабрика Верхне-Менкече", "gallery": "n05", "photos": 17}, "n06": {"title": "Квартиры и коттеджи", "gallery": "n06", "photos": 36}, "n07": {"title": "Детский сад в Видном", "gallery": "n07", "photos": 1}, "n08": {"title": "Жилые корпуса 10–11 в Столбове", "gallery": "n08", "photos": 2}, "n09": {"title": "Миниполис «Рафинад»", "gallery": "n09", "photos": 4}, "n10": {"title": "Жилые дома, Рязанский проспект", "gallery": "n10", "photos": 6}, "n11": {"title": "Детский сад, Новые Котельники", "gallery": "n11", "photos": 1}, "n12": {"title": "Жилые дома, Новые Котельники", "gallery": "n12", "photos": 2}, "n13": {"title": "ЖК «Филатов Луг»", "gallery": "n13", "photos": 3}, "n14": {"title": "ЖК «Зелёные аллеи», корпус 9", "gallery": "n14", "photos": 3}, "n15": {"title": "Парк «Федюхины высоты»", "gallery": "n15", "photos": 4}, "n16": {"title": "Капремонт жилых домов Севастополя", "gallery": "n16", "photos": 4}, "n17": {"title": "Капремонт жилых домов Москвы", "gallery": "n17", "photos": 2}, "n18": {"title": "Федеральная трасса Р-158", "gallery": "n18", "photos": 2}, "n19": {"title": "Театр кукол имени С. В. Образцова", "gallery": "n19", "photos": 1}, "n20": {"title": "Электродепо «Митино»", "gallery": "n20", "photos": 4}, "n21": {"title": "Электродепо «Планерное»", "gallery": "n21", "photos": 4}, "n22": {"title": "Храм на Ходынском поле", "gallery": "n22", "photos": 3}, "n23": {"title": "Жилой комплекс, Маломосковская, 14", "gallery": "n23", "photos": 2}, "n24": {"title": "Производство «Кубань-Полимер»", "gallery": "n24", "photos": 4}, "n25": {"title": "Детские площадки, Первомайский", "gallery": "n25", "photos": 6}, "n26": {"title": "18-й автобусный парк", "gallery": "n26", "photos": 3}, "n27": {"title": "Жилой дом в Голубом", "gallery": "n27", "photos": 2}, "n28": {"title": "Жилой микрорайон в Люберцах", "gallery": "n28", "photos": 4}, "n29": {"title": "ЖК «Бутовские аллеи»", "gallery": "n29", "photos": 3}, "n30": {"title": "Торгово-офисное здание, Заокский", "gallery": "n30", "photos": 3}, "n31": {"title": "Выставочный зал Экспоцентра", "gallery": "n31", "photos": 2}, "n32": {"title": "Магазин «Дикси», Маринки", "gallery": "n32", "photos": 3}, "n33": {"title": "Жилой комплекс у деревни Глухово", "gallery": "n33", "photos": 1}, "n34": {"title": "Комплекс «Горная Карусель»", "gallery": "n34", "photos": 2}, "n35": {"title": "Логистический центр, Люберцы", "gallery": "n35", "photos": 3}, "n36": {"title": "Складской терминал, Трефолева, 42", "gallery": "n36", "photos": 1}, "n37": {"title": "Модульные здания и блок-контейнеры", "gallery": "n37", "photos": 18}};
 const dialog=document.querySelector('#viewer'),frame=document.querySelector('#viewer-frame');
 let lastTrigger=null;
-function showDocument(id){const item=presentations[id];if(!item)return;document.querySelector('#viewer-title').textContent=item.title;document.querySelector('#viewer-meta').textContent=item.pages+' стр. · PDF. Если просмотр недоступен, откройте файл в отдельной вкладке.';for(const el of [document.querySelector('#viewer-open'),document.querySelector('#viewer-save'),document.querySelector('#mobile-open')])el.href=item.file;document.querySelector('#viewer-save').download=item.title+'.pdf';frame.src='viewer.html?file='+encodeURIComponent(item.file);if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden'}document.querySelector('#viewer-close').focus()}
+function showDocument(id){
+  const item=presentations[id];if(!item)return;
+  const viewerURL='viewer.html?'+(item.gallery?'project='+encodeURIComponent(item.gallery):'file='+encodeURIComponent(item.file))+'&v=4';
+  document.querySelector('#viewer-title').textContent=item.title;
+  document.querySelector('#viewer-meta').textContent=id==='main'?'Все материалы одной лентой. Прокручивайте вниз.':'Описание и фотогалерея. Прокручивайте вниз.';
+  document.querySelector('#viewer-open').href=viewerURL;
+  document.querySelector('#mobile-open').href=viewerURL;
+  const save=document.querySelector('#viewer-save');save.hidden=!item.file;if(item.file){save.href=item.file;save.download=item.title+'.pdf'}
+  frame.src=viewerURL;
+  if(!dialog.open){dialog.showModal();document.body.style.overflow='hidden'}
+  document.querySelector('#viewer-close').focus();
+}
 document.querySelectorAll('[data-view]').forEach(el=>el.addEventListener('click',()=>{lastTrigger=el;if(location.hash==='#'+el.dataset.view)showDocument(el.dataset.view)}));
 function openFromHash(){const id=location.hash.slice(1);if(presentations[id])showDocument(id);else if(dialog.open)dialog.close()}
 window.addEventListener('hashchange',openFromHash);openFromHash();
@@ -942,7 +1207,7 @@ dialog.addEventListener('click',event=>{if(event.target===dialog)closeDocument()
 dialog.addEventListener('close',()=>{frame.src='about:blank';document.body.style.overflow='';if(presentations[location.hash.slice(1)])history.replaceState(null,'',location.pathname+location.search);if(lastTrigger)lastTrigger.focus()});
 let group='all';const search=document.querySelector('#search'),rows=[...document.querySelectorAll('.card')],heads=[...document.querySelectorAll('.group-head')];
 const normalize=s=>s.toLocaleLowerCase('ru').replace(/ё/g,'е').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-function filterDocuments(){const words=normalize(search.value).split(' ').filter(Boolean);let visible=0;const shown={};for(const row of rows){row.hidden=!(group==='all'||row.dataset.group===group)||!words.every(w=>normalize(row.dataset.search).includes(w));if(!row.hidden){visible++;shown[row.dataset.group]=true}}for(const h of heads)h.hidden=!shown[h.dataset.head];document.querySelector('#result-count').textContent='Показано '+visible+' из 53';document.querySelector('#empty').hidden=visible!==0}
+function filterDocuments(){const words=normalize(search.value).split(' ').filter(Boolean);let visible=0;const shown={};for(const row of rows){row.hidden=!(group==='all'||row.dataset.group===group)||!words.every(w=>normalize(row.dataset.search).includes(w));if(!row.hidden){visible++;shown[row.dataset.group]=true}}for(const h of heads)h.hidden=!shown[h.dataset.head];document.querySelector('#result-count').textContent='Показано '+visible+' из '+rows.length;document.querySelector('#empty').hidden=visible!==0}
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{group=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterDocuments()}));search.addEventListener('input',filterDocuments);
 </script>
 </body></html>

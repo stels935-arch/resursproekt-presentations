@@ -1,0 +1,45 @@
+{
+  "id": "n32",
+  "title": "Магазин «Дикси», Маринки",
+  "type": "Отделка торговых помещений",
+  "address": "Калужская обл., д. Маринки, д. 101",
+  "customer": "ЗАО «ДИКСИ Юг»",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить внутреннюю отделку и монтаж внутренних инженерных систем.",
+  "group": "Объекты",
+  "period": "2014",
+  "details": [
+    "Период работ по портфолио: 2014."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n32/portfolio-34-04.webp",
+          "width": 659,
+          "height": 495,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n32/portfolio-34-05.webp",
+          "width": 659,
+          "height": 495,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n32/portfolio-34-06.webp",
+          "width": 666,
+          "height": 500,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    34
+  ]
+}

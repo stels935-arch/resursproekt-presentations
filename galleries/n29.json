@@ -1,0 +1,45 @@
+{
+  "id": "n29",
+  "title": "ЖК «Бутовские аллеи»",
+  "type": "Жилые дома серии «Малая Москва»",
+  "address": "Москва, вблизи д. Сосенское, ЖК «Бутовские аллеи»",
+  "customer": "ООО СК «СМУ-55»",
+  "customerLabel": "Генподрядчик",
+  "summary": "Выполнить комплекс работ по жилым домам серии «Малая Москва».",
+  "group": "Объекты",
+  "period": "2012–2017",
+  "details": [
+    "Период работ по портфолио: 2012–2017."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n29/portfolio-33-07.webp",
+          "width": 518,
+          "height": 341,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n29/portfolio-33-02.webp",
+          "width": 522,
+          "height": 314,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n29/portfolio-33-03.webp",
+          "width": 522,
+          "height": 342,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    33
+  ]
+}

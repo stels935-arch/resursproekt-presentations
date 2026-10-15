@@ -1,0 +1,45 @@
+{
+  "id": "n22",
+  "title": "Храм на Ходынском поле",
+  "type": "Монолитные и кладочные работы",
+  "address": "Москва, Ходынский бульвар, д. 2",
+  "customer": "Приход храма преподобного Сергия Радонежского на Ходынском поле",
+  "customerLabel": "Заказчик",
+  "summary": "Выполнить монолитные конструкции и кирпичную кладку наружных и внутренних стен.",
+  "group": "Объекты",
+  "period": "2015–2017",
+  "details": [
+    "Период работ по портфолио: 2015–2017."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n22/portfolio-26-00.webp",
+          "width": 960,
+          "height": 720,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n22/portfolio-26-01.webp",
+          "width": 724,
+          "height": 543,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n22/portfolio-26-03.webp",
+          "width": 724,
+          "height": 544,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    26
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "n35",
+  "title": "Логистический центр, Люберцы",
+  "type": "Конструкции, отделка и инженерные системы",
+  "address": "Московская обл., Люберцы, ул. Транспортная, д. 5Б",
+  "customer": "ООО «АЛС-Терминал»",
+  "customerLabel": "Заказчик",
+  "summary": "Устроить железобетонные, металлические и ограждающие конструкции, выполнить отделку офисов и инженерные системы.",
+  "group": "Объекты",
+  "period": "2010–2012",
+  "details": [
+    "Период работ по портфолио: 2010–2012."
+  ],
+  "sections": [
+    {
+      "title": "Фотографии объекта",
+      "notes": [],
+      "photos": [
+        {
+          "src": "galleries/n35/portfolio-36-02.webp",
+          "width": 621,
+          "height": 423,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n35/portfolio-36-00.webp",
+          "width": 601,
+          "height": 448,
+          "caption": ""
+        },
+        {
+          "src": "galleries/n35/portfolio-36-01.webp",
+          "width": 543,
+          "height": 405,
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "photoCount": 3,
+  "pdf": null,
+  "sourcePages": [
+    36
+  ]
+}

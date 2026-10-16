@@ -54,6 +54,10 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
 
 /* Первый экран */
 .hero{background:var(--teal) var(--dots);background-size:14px 14px;color:#fff;padding:64px 0 0;overflow:hidden}
+.workflow-entry{display:flex;justify-content:flex-end;margin:-38px 0 30px}
+.workflow-entry a{display:inline-flex;align-items:center;gap:25px;background:var(--orange);color:var(--teal);font-family:var(--head);font-size:15px;font-weight:600;padding:11px 20px;border-radius:var(--radius);border:1px solid var(--orange);transition:background .2s}
+.workflow-entry a:hover{background:var(--orange-deep)}
+@media(max-width:680px){.workflow-entry{margin:-12px 0 27px;justify-content:stretch}.workflow-entry a{width:100%;justify-content:space-between;font-size:14px}}
 .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
 .eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:600;color:var(--mint);margin:0 0 24px}
 .eyebrow::before{content:"";width:36px;height:3px;background:var(--orange);flex:none}
@@ -248,6 +252,7 @@ h1,h2,h3{font-family:var(--head);font-weight:600;margin:0}
 </div></header>
 <main id="main-content">
 <section class="hero"><div class="wrap">
+  <div class="workflow-entry"><a href="workflow/">От заявки до договора <span aria-hidden="true">↗</span></a></div>
   <div class="hero-grid">
     <div class="hero-text">
       <p class="eyebrow">Презентация компании и работ</p>

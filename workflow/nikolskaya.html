@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073c3b">
+  <meta name="description" content="Как РесурсПроект готовит заказ: от первого обращения и технического задания до согласования договора. Пример — гостиница на Никольской.">
+  <title>От заявки до договора — РесурсПроект</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=1">
+  <script src="data.js?v=1" defer></script>
+  <script src="app.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#route">К содержанию</a>
+  <header class="header"><div class="wrap header-inner">
+    <a class="brand" href="../" aria-label="РесурсПроект — главная"><img src="assets/logo.svg" alt="РесурсПроект" width="76" height="59"></a>
+    <nav aria-label="Навигация"><a href="#route">Этапы работы</a><a href="#questions">Что уточнить</a><a href="#documents">Документы</a></nav>
+    <a class="back-link" href="./">Все объекты <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main>
+    <section class="hero wrap" aria-labelledby="page-title">
+      <div class="hero-copy"><p class="eyebrow"><span></span> <a href="./">Все объекты</a> / Гостиница на Никольской</p><h1 id="page-title">От заявки<br>до <em>договора.</em></h1>
+        <p class="intro">Понятный маршрут заказа: кто отвечает, какие документы нужны и что проверяем перед следующим шагом.</p>
+        <div class="hero-actions"><a class="button primary" href="#route">Посмотреть этапы <span aria-hidden="true">↓</span></a><a class="text-link" href="#questions">Вопросы перед согласованием ↗</a></div>
+      </div>
+      <figure class="hero-figure"><img src="assets/photos/13.jpg" alt="Помещение гостиницы на Никольской до чистовой отделки" width="960" height="720" fetchpriority="high"><figcaption><span class="eyebrow">Объект для примера</span><strong>Гостиница на Никольской</strong><span>Москва, ул. Никольская, 4/5</span><small>Архивное фото осмотра · дата в исходной презентации: 23.07.2026</small></figcaption><span class="photo-mark" aria-hidden="true">48<br><small>номеров в расчёте</small></span></figure>
+    </section>
+    <div class="wrap facts" aria-label="Параметры примера"><div><strong>48 <small>номеров</small></strong><span>объём расчётного предложения</span></div><div><strong>11 <small>этапов</small></strong><span>от обращения до договора</span></div><div><strong>24 <small>фото</small></strong><span>помещения и инженерные узлы</span></div><div><strong>16.10.2026</strong><span>дата разбора исходной версии</span></div></div>
+    <section class="wrap snapshot" aria-labelledby="snapshot-title"><div><p class="eyebrow">Разбор исходных материалов</p><h2 id="snapshot-title">Как готовился договорный комплект</h2><p>Объект включён руководителем в подборку «От заявки до договора». Ниже показаны этапы и контрольные вопросы по исходной версии от 16.10.2026; сведения о последующем закрытии замечаний отдельно не добавлялись.</p></div><a class="snapshot-action" href="#questions"><strong id="issue-total">8 вопросов</strong><span>Контроль перед согласованием →</span></a></section>
+    <section class="wrap section route-section" id="route" aria-labelledby="route-title"><div class="section-heading"><div><p class="eyebrow">01 / Маршрут заказа</p><h2 id="route-title">Каждый шаг — с результатом</h2></div><p>Выберите этап. В карточке — порядок действий и отдельно сведения об объекте. Просмотр этапа не меняет его статус.</p></div>
+      <div class="route-layout"><nav id="stage-nav" class="stage-nav" aria-label="Выбор этапа"></nav><article id="stage-panel" class="stage-panel" aria-live="polite"></article></div>
+    </section>
+    <section class="questions-section section" id="questions" aria-labelledby="questions-title"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">02 / Контроль исходной версии</p><h2 id="questions-title">Вопросы перед согласованием</h2></div><p>Вопросы из исходной презентации, а не актуальный журнал замечаний. Роли ниже показывают, кому рекомендуется проверить соответствующий вопрос.</p></div><div id="issues" class="issues"></div></div></section>
+    <section class="wrap section" id="documents" aria-labelledby="documents-title"><div class="section-heading"><div><p class="eyebrow">03 / Комплект документов</p><h2 id="documents-title">У каждого файла своя роль</h2></div><p>Реестр показывает состав пакета и состояние проверки. Рабочие файлы доступны сотрудникам в папке тендера; в открытой версии опубликованы описания.</p></div>
+      <div class="document-controls"><label class="search-label"><span>Поиск документа</span><input id="doc-search" type="search" placeholder="Название или назначение…" autocomplete="off"></label><label><span>Состояние</span><select id="doc-state"><option value="all">Все состояния</option><option value="received">Исходные материалы</option><option value="draft">Черновики</option><option value="review">Требуют сверки</option></select></label><button id="clear-docs" class="button secondary" type="button" hidden>Сбросить фильтр этапа</button></div><p class="result-count" id="doc-count" role="status"></p><div id="doc-list" class="doc-list"></div>
+    </section>
+    <section class="wrap about-version" id="about-version" aria-labelledby="version-title"><div><p class="eyebrow">Основания и границы</p><h2 id="version-title">Процесс виден. Решения проверяемы.</h2><p>Это разбор примера, а не журнал текущего исполнения. Письменное согласование заказчика и подписание договора в проверенных материалах не установлены. Фотографии показывают состояние на момент архивного осмотра.</p><p>Для сверки использованы исходная презентация и перечень файлов папки «208_Гостиница на Никольской». Содержание всех приложений, расчёты и юридические условия заново не проверялись.</p></div><div class="version-files"><a href="prompt.txt" download>Промпт для улучшения <span>TXT ↓</span></a><a href="analysis.txt" download>Разбор и критерии проверки <span>TXT ↓</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><span>РесурсПроект</span><a href="../#presentations">Другие объекты и презентации ↗</a><span>Версия от 16 октября 2026</span></div></footer>
+  <dialog id="photo-dialog" aria-label="Просмотр фотографии"><div class="lightbox-head"><span id="photo-caption"></span><button type="button" id="close-photo" aria-label="Закрыть фотографию">Закрыть ✕</button></div><img id="large-photo" alt=""><div class="lightbox-nav"><button id="prev-photo" type="button">← Предыдущее</button><a id="original-photo" target="_blank" rel="noopener">Открыть фото ↗</a><button id="next-photo" type="button">Следующее →</button></div></dialog>
+</body></html>
